@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+   <fileDesc>
+      <titleStmt>
+         <title>Napoli, Biblioteca Nazionale, MS XIII.B.29. Edizione diplomatica e interpretativa</title>
+      <respStmt>
+         <resp></resp>
+            <name>Omar Khalaf</name>
+        
+      </respStmt> 
+      </titleStmt>
+      <publicationStmt>
+         <p>Progetto non pubblicato</p>
+      </publicationStmt>
+      <sourceDesc>
+         <msDesc>
+            <msIdentifier>
+               <settlement>Napoli</settlement>
+               <repository>Biblioteca Nazionale</repository>
+               <idno>MS XIII.B.29</idno>
+            </msIdentifier>
+            <msContents>
+               <msItem> 
+                  <title xml:lang="enm">Sir Isumbras</title>
+               </msItem>
+               <msItem>
+                  <title xml:lang="it">Costantino</title>
+               </msItem>
+               <msItem><p>Altri testi in prosa e versi</p>
+               </msItem></msContents>
+            <physDesc>
+              <objectDesc><p>Codice pergamenaceo, 146 fogli. Dettagli bibliografici in Guddatt-Figge, G., <hi rend="italic"> Catalogue of Manuscripts containing Middle English Romances</hi>, Munich, 1976.</p>
+                  <p>Una sola mano, stile secretariale. Mani successive visibili nelle note e nei disegni.</p></objectDesc>
+            </physDesc>
+         </msDesc>
+      </sourceDesc>
+   </fileDesc>
+      <encodingDesc>
+        <editorialDecl>
+           <p>Facsimile ed edizione interpretativa, dove si è provveduto alla normalizzazione grafematica, alla correzione degli errori scribali e all'aggiunta della punteggiatura secondo gli standard moderni.</p>
+       <correction><p/>
+       </correction>
+           <normalization><p/>
+           </normalization>
+        </editorialDecl>
+  <charDecl>
+    <glyph xml:id="slong">
+      <glyphName>LONG S</glyphName>
+      <mapping type="codepoint">U+017F</mapping>
+      <mapping type="diplomatic">ſ</mapping>
+      <mapping type="normalized">s</mapping>
+    </glyph> 
+    <glyph xml:id="with"> 
+    <glyphName>ABBREVIATED WITH</glyphName>
+    <mapping type="diplomatic">w&#877;</mapping>
+    <mapping type="normalized">with</mapping>
+    </glyph> 
+    <glyph xml:id="that"> 
+      <glyphName>ABBREVIATED THAT</glyphName>
+      <mapping type="diplomatic">þ&#877;</mapping>
+      <mapping type="normalized">þat</mapping>
+    </glyph> 
+    <glyph xml:id="ther"> 
+      <glyphName>THER SUPERSCRIPT</glyphName>
+      <mapping type="diplomatic">þ&#x036C;</mapping>
+      <mapping type="normalized">er</mapping>
+    </glyph> 
+    <glyph xml:id="this"> 
+      <glyphName>ABBREVIATED THIS</glyphName>
+      <mapping type="diplomatic">þ&#7652;</mapping>
+      <mapping type="normalized">þis</mapping>
+    </glyph> 
+    <glyph xml:id="ihesu"> 
+      <glyphName>ABBREVIATED IHESU</glyphName>
+      <mapping type="diplomatic">i&#x0127;u</mapping>
+      <mapping type="normalized">Ihesu</mapping>
+    </glyph> 
+    <glyph xml:id="hstroke"> 
+      <glyphName>ABBREVIATED HE</glyphName>
+      <mapping type="codepoint">U+0127</mapping>
+      <mapping type="diplomatic">&#x0127;</mapping>
+      <mapping type="normalized">he</mapping>
+    </glyph> 
+    <glyph xml:id="der"> 
+      <glyphName>ABBREVIATED DER</glyphName>
+      <mapping type="codepoint">U+018C</mapping>
+      <mapping type="diplomatic">&#x018C;</mapping>
+      <mapping type="normalized">der</mapping>
+    </glyph> 
+    <glyph xml:id="us"> 
+      <glyphName>ABBREVIATED US</glyphName>
+      <mapping type="codepoint">U+028B</mapping>
+      <mapping type="diplomatic">&#x028B;</mapping>
+      <mapping type="normalized">us</mapping>
+    </glyph> 
+    <glyph xml:id="uer"> 
+      <glyphName>ABBREVIATED UER</glyphName>
+      <mapping type="codepoint">U+028B</mapping>
+      <mapping type="diplomatic">&#x028B;</mapping>
+      <mapping type="normalized">uer</mapping>
+    </glyph> 
+    <glyph xml:id="bethe">
+      <glyphName>BETHE</glyphName> 
+      <mapping type="diplomatic">beþ&#868;</mapping>
+      <mapping type="normalized">bethe</mapping>
+    </glyph>
+    <glyph xml:id="pri">
+      <glyphName>ABBREVIATED PRI</glyphName> 
+      <mapping type="diplomatic">p&#7651;</mapping>
+      <mapping type="normalized">pri</mapping>
+    </glyph>
+    <glyph xml:id="per">
+      <glyphName>ABBREVIATED PER</glyphName> 
+      <mapping type="diplomatic">&#42833;</mapping>
+      <mapping type="normalized">per</mapping>
+    </glyph>
+    <char xml:id="flong">
+      <charName>LONG F</charName>
+      <mapping type="codepoint">U+0192</mapping>
+      <mapping type="diplomatic">&#402;</mapping>
+      <mapping type="normalized">f</mapping>
+    </char>
+    <char xml:id="z">
+      <charName>FRAKTUR Z</charName>
+      <mapping type="codepoint">U+1D59F</mapping>
+      <mapping type="diplomatic">&#120223;</mapping>
+      <mapping type="normalized">z</mapping>
+    </char>
+    <char xml:id="middot">
+      <charName>MIDDLE DOT</charName>
+      <mapping type="codepoint">U+00B7</mapping>
+      <mapping type="diplomatic">·</mapping>
+    </char>
+    <char xml:id="middotfullstop">
+      <charName>MIDDLE DOT FULL STOP</charName>
+      <mapping type="codepoint">U+00B7</mapping>
+      <mapping type="diplomatic"> ·</mapping>
+      <mapping type="normalized">.</mapping>
+    </char>
+    <char xml:id="and">
+      <charName>AND</charName>
+      <mapping type="codepoint">U+0026</mapping>
+      <mapping type="diplomatic">&#38;</mapping>
+      <mapping type="normalized">and</mapping>
+    </char> 
+    <char xml:id="v">
+      <charName>LATIN U</charName>
+      <mapping type="codepoint">U+0076</mapping>
+      <mapping type="diplomatic">v</mapping>
+      <mapping type="normalized">u</mapping>
+    </char>
+    <char xml:id="umacron">
+      <charName>U WITH MACRON</charName>
+      <mapping type="codepoint">U+016B</mapping>
+      <mapping type="diplomatic">&#363;</mapping>
+      <mapping type="normalized">um</mapping>
+    </char>
+    <char xml:id="comma">
+      <charName>COMMA</charName>
+      <mapping type="codepoint">U+002C</mapping>
+      <mapping type="diplomatic"></mapping>
+      <mapping type="normalized">,</mapping>
+    </char>
+    <char xml:id="quote">
+      <charName>QUOTATION MARK</charName>
+      <mapping type="codepoint">U+0022</mapping>
+      <mapping type="diplomatic"></mapping>
+      <mapping type="normalized">"</mapping>
+    </char>
+    <char xml:id="fullstop">
+      <charName>FULL STOP</charName>
+      <mapping type="codepoint">U+002E</mapping>
+      <mapping type="diplomatic"></mapping>
+      <mapping type="normalized">.</mapping>
+    </char>
+    <char xml:id="exclamation">
+      <charName>EXCLAMATION MARK</charName>
+      <mapping type="codepoint">U+0021</mapping>
+      <mapping type="diplomatic"></mapping>
+      <mapping type="normalized">!</mapping>
+    </char>
+    <char xml:id="hyphen">
+      <charName>HYPHEN</charName>
+      <mapping type="codepoint">U+002D</mapping>
+      <mapping type="diplomatic"></mapping>
+      <mapping type="normalized">-</mapping>
+    </char>
+    <char xml:id="colon">
+      <charName>COLON</charName>
+      <mapping type="codepoint">U+003A</mapping>
+      <mapping type="diplomatic"></mapping>
+      <mapping type="normalized">:</mapping>
+    </char>
+    <char xml:id="semicolon">
+      <charName>SEMICOLON</charName>
+      <mapping type="codepoint">U+003B</mapping>
+      <mapping type="diplomatic"></mapping>
+      <mapping type="normalized">;</mapping>
+    </char>
+    <char xml:id="question">
+      <charName>QUESTION MARK</charName>
+      <mapping type="codepoint">U+003F</mapping>
+      <mapping type="diplomatic"></mapping>
+      <mapping type="normalized">?</mapping>
+    </char>
+    <char xml:id="capitala">
+      <charName>CAPITAL A</charName>
+      <mapping type="codepoint">U+0041</mapping>
+      <mapping type="diplomatic">a</mapping>
+      <mapping type="normalized">A</mapping>
+    </char>
+    <char xml:id="capitalb">
+      <charName>CAPITAL B</charName>
+      <mapping type="codepoint">U+0042</mapping>
+      <mapping type="diplomatic">b</mapping>
+      <mapping type="normalized">B</mapping>
+    </char>
+    <char xml:id="capitalc">
+      <charName>CAPITAL C</charName>
+      <mapping type="codepoint">U+0043</mapping>
+      <mapping type="diplomatic">c</mapping>
+      <mapping type="normalized">C</mapping>
+    </char>
+    <char xml:id="capitalf">
+      <charName>CAPITAL C</charName>
+      <mapping type="codepoint">U+0046</mapping>
+      <mapping type="diplomatic">f</mapping>
+      <mapping type="normalized">F</mapping>
+    </char>
+    <char xml:id="capitalg">
+      <charName>CAPITAL G</charName>
+      <mapping type="codepoint">U+0047</mapping>
+      <mapping type="diplomatic">g</mapping>
+      <mapping type="normalized">G</mapping>
+    </char>
+    <char xml:id="capitalh">
+      <charName>CAPITAL H</charName>
+      <mapping type="codepoint">U+0048</mapping>
+      <mapping type="diplomatic">h</mapping>
+      <mapping type="normalized">H</mapping>
+    </char>
+    <char xml:id="capitali">
+      <charName>CAPITAL I</charName>
+      <mapping type="codepoint">U+0049</mapping>
+      <mapping type="diplomatic">i</mapping>
+      <mapping type="normalized">I</mapping>
+    </char>
+    <char xml:id="capitall">
+      <charName>CAPITAL L</charName>
+      <mapping type="codepoint">U+004C</mapping>
+      <mapping type="diplomatic">l</mapping>
+      <mapping type="normalized">L</mapping>
+    </char>
+    <char xml:id="capitalm">
+      <charName>CAPITAL M</charName>
+      <mapping type="codepoint">U+004D</mapping>
+      <mapping type="diplomatic">m</mapping>
+      <mapping type="normalized">M</mapping>
+    </char>
+    <char xml:id="capitaln">
+      <charName>CAPITAL M</charName>
+      <mapping type="codepoint">U+006E</mapping>
+      <mapping type="diplomatic">n</mapping>
+      <mapping type="normalized">N</mapping>
+    </char>
+    <char xml:id="capitalo">
+      <charName>CAPITAL O</charName>
+      <mapping type="codepoint">U+004F</mapping>
+      <mapping type="diplomatic">o</mapping>
+      <mapping type="normalized">O</mapping>
+    </char>
+    <char xml:id="capitalt">
+      <charName>CAPITAL T</charName>
+      <mapping type="codepoint">U+0054</mapping>
+      <mapping type="diplomatic">t</mapping>
+      <mapping type="normalized">T</mapping>
+    </char>
+    <char xml:id="capitalthorn">
+      <charName>CAPITAL THORN</charName>
+      <mapping type="codepoint">U+00DE</mapping>
+      <mapping type="diplomatic">þ</mapping>
+      <mapping type="normalized">Þ</mapping>
+    </char>
+    <char xml:id="capitalw">
+      <charName></charName>
+      <mapping type="codepoint">U+0057</mapping>
+      <mapping type="diplomatic">w</mapping>
+      <mapping type="normalized">W</mapping>
+    </char>
+    <char xml:id="capitaly">
+      <charName></charName>
+      <mapping type="codepoint">U+0059</mapping>
+      <mapping type="diplomatic">y</mapping>
+      <mapping type="normalized">Y</mapping>
+    </char>
+    <char xml:id="smalla">
+      <charName></charName>
+      <mapping type="codepoint">U+0061</mapping>
+      <mapping type="diplomatic">A</mapping>
+      <mapping type="normalized">a</mapping>
+    </char>
+    <char xml:id="smalli">
+      <charName></charName>
+      <mapping type="codepoint">U+0069</mapping>
+      <mapping type="diplomatic">I</mapping>
+      <mapping type="normalized">i</mapping>
+    </char>
+    <char xml:id="smallo">
+      <charName></charName>
+      <mapping type="codepoint">U+006F</mapping>
+      <mapping type="diplomatic">O</mapping>
+      <mapping type="normalized">o</mapping>
+    </char>
+    <char xml:id="smallr">
+      <charName></charName>
+      <mapping type="codepoint">U+0072</mapping>
+      <mapping type="diplomatic">R</mapping>
+      <mapping type="normalized">r</mapping>
+    </char>
+    <char xml:id="smalls">
+      <charName></charName>
+      <mapping type="codepoint">U+0073</mapping>
+      <mapping type="diplomatic">S</mapping>
+      <mapping type="normalized">s</mapping>
+    </char>
+  </charDecl>
+      </encodingDesc> 
+ </teiHeader>
+   
+  <facsimile xml:id="fac_Isumbras">
+      
+    <surface xml:id="IS_surf_114v_cola" corresp="#IS_114v_cola"> 
+        <graphic height="1972px" url="data\images\single\IS_114v_cola.jpg" width="1333px"/>
+         <zone corresp="#IS_lb_114v_01" lrx="612" lry="174" rend="visible" rendition="line" ulx="153" uly="136" xml:id="IS_line_114v_01"/>
+        <zone corresp="#IS_lb_114v_02" lrx="636" lry="210" rend="visible" rendition="line" ulx="258" uly="176" xml:id="IS_line_114v_02"/>
+        <zone corresp="#IS_lb_114v_03" lrx="527" lry="250" rend="visible" rendition="line" ulx="256" uly="217" xml:id="IS_line_114v_03"/>
+        <zone corresp="#IS_lb_114v_04" lrx="506" lry="283" rend="visible" rendition="line" ulx="158" uly="250" xml:id="IS_line_114v_04"/>
+        <zone corresp="#IS_lb_114v_05" lrx="549" lry="315" rend="visible" rendition="line" ulx="164" uly="287" xml:id="IS_line_114v_05"/>
+        <zone corresp="#IS_lb_114v_06" lrx="526" lry="359" rend="visible" rendition="line" ulx="157" uly="319" xml:id="IS_line_114v_06"/>
+        <zone corresp="#IS_lb_114v_07" lrx="515" lry="398" rend="visible" rendition="line" ulx="158" uly="353" xml:id="IS_line_114v_07"/>
+        <zone corresp="#IS_lb_114v_08" lrx="559" lry="433" rend="visible" rendition="line" ulx="159" uly="392" xml:id="IS_line_114v_08"/>
+        <zone corresp="#IS_lb_114v_09" lrx="513" lry="464" rend="visible" rendition="line" ulx="162" uly="428" xml:id="IS_line_114v_09"/>
+        <zone corresp="#IS_lb_114v_10" lrx="580" lry="502" rend="visible" rendition="line" ulx="160" uly="460" xml:id="IS_line_114v_10"/>
+        <zone corresp="#IS_lb_114v_11" lrx="514" lry="542" rend="visible" rendition="line" ulx="160" uly="505" xml:id="IS_line_114v_11"/>
+        <zone corresp="#IS_lb_114v_12" lrx="521" lry="579" rend="visible" rendition="line" ulx="161" uly="538" xml:id="IS_line_114v_12"/>
+        <zone corresp="#IS_lb_114v_13" lrx="505" lry="617" rend="visible" rendition="line" ulx="156" uly="575" xml:id="IS_line_114v_13"/>
+        <zone corresp="#IS_lb_114v_14" lrx="458" lry="657" rend="visible" rendition="line" ulx="152" uly="610" xml:id="IS_line_114v_14"/>
+        <zone corresp="#IS_lb_114v_15" lrx="595" lry="688" rend="visible" rendition="line" ulx="148" uly="648" xml:id="IS_line_114v_15"/>
+        <zone corresp="#IS_lb_114v_16" lrx="550" lry="727" rend="visible" rendition="line" ulx="153" uly="680" xml:id="IS_line_114v_16"/>
+        <zone corresp="#IS_lb_114v_17" lrx="432" lry="763" rend="visible" rendition="line" ulx="155" uly="719" xml:id="IS_line_114v_17"/>
+        <zone corresp="#IS_lb_114v_18" lrx="551" lry="797" rend="visible" rendition="line" ulx="156" uly="758" xml:id="IS_line_114v_18"/>
+        <zone corresp="#IS_lb_114v_19" lrx="620" lry="851" rend="visible" rendition="line" ulx="159" uly="794" xml:id="IS_line_114v_19"/>
+        <zone corresp="#IS_lb_114v_20" lrx="450" lry="888" rend="visible" rendition="line" ulx="159" uly="841" xml:id="IS_line_114v_20"/>
+        <zone corresp="#IS_lb_114v_21" lrx="486" lry="921" rend="visible" rendition="line" ulx="162" uly="880" xml:id="IS_line_114v_21"/>
+        <zone corresp="#IS_lb_114v_22" lrx="559" lry="957" rend="visible" rendition="line" ulx="160" uly="920" xml:id="IS_line_114v_22"/>
+        <zone corresp="#IS_lb_114v_23" lrx="502" lry="997" rend="visible" rendition="line" ulx="161" uly="956" xml:id="IS_line_114v_23"/>
+        <zone corresp="#IS_lb_114v_24" lrx="531" lry="1026" rend="visible" rendition="line" ulx="156" uly="991" xml:id="IS_line_114v_24"/>
+        <zone corresp="#IS_lb_114v_25" lrx="623" lry="1070" rend="visible" rendition="line" ulx="160" uly="1032" xml:id="IS_line_114v_25"/>
+        <zone corresp="#IS_lb_114v_26" lrx="468" lry="1109" rend="visible" rendition="line" ulx="157" uly="1065" xml:id="IS_line_114v_26"/>
+        <zone corresp="#IS_lb_114v_27" lrx="514" lry="1152" rend="visible" rendition="line" ulx="157" uly="1109" xml:id="IS_line_114v_27"/>
+        <zone corresp="#IS_lb_114v_28" lrx="551" lry="1191" rend="visible" rendition="line" ulx="161" uly="1141" xml:id="IS_line_114v_28"/>
+        <zone corresp="#IS_lb_114v_29" lrx="515" lry="1229" rend="visible" rendition="line" ulx="166" uly="1186" xml:id="IS_line_114v_29"/>
+        <zone corresp="#IS_lb_114v_30" lrx="478" lry="1265" rend="visible" rendition="line" ulx="166" uly="1221" xml:id="IS_line_114v_30"/>
+        <zone corresp="#IS_lb_114v_31" lrx="510" lry="1300" rend="visible" rendition="line" ulx="167" uly="1250" xml:id="IS_line_114v_31"/>
+        <zone corresp="#IS_lb_114v_32" lrx="447" lry="1340" rend="visible" rendition="line" ulx="164" uly="1292" xml:id="IS_line_114v_32"/>
+        <zone corresp="#IS_lb_114v_33" lrx="622" lry="1377" rend="visible" rendition="line" ulx="168" uly="1330" xml:id="IS_line_114v_33"/>
+        <zone corresp="#IS_lb_114v_34" lrx="529" lry="1420" rend="visible" rendition="line" ulx="159" uly="1365" xml:id="IS_line_114v_34"/>
+        <zone corresp="#IS_lb_114v_35" lrx="556" lry="1462" rend="visible" rendition="line" ulx="166" uly="1410" xml:id="IS_line_114v_35"/>
+        <zone corresp="#IS_lb_114v_36" lrx="636" lry="1490" rend="visible" rendition="line" ulx="160" uly="1440" xml:id="IS_line_114v_36"/>
+        <zone corresp="#IS_lb_114v_37" lrx="645" lry="1537" rend="visible" rendition="line" ulx="165" uly="1490" xml:id="IS_line_114v_37"/>
+        <zone corresp="#IS_lb_114v_38" lrx="517" lry="1565" rend="visible" rendition="line" ulx="168" uly="1527" xml:id="IS_line_114v_38"/>
+        <zone corresp="#IS_lb_114v_39" lrx="633" lry="1600" rend="visible" rendition="line" ulx="164" uly="1563" xml:id="IS_line_114v_39"/>
+        <zone corresp="#IS_lb_114v_40" lrx="603" lry="1647" rend="visible" rendition="line" ulx="166" uly="1610" xml:id="IS_line_114v_40"/>
+        <zone corresp="#IS_lb_114v_41" lrx="577" lry="1700" rend="visible" rendition="line" ulx="172" uly="1650" xml:id="IS_line_114v_41"/>
+       </surface>
+     
+        <surface xml:id="IS_surf_114v_colb" corresp="#IS_114v_colb">  
+        <graphic height="1972px" url="data\images\single\IS_114v_colb.jpg" width="1333px"/> 
+        <zone corresp="#IS_lb_114v_42" lrx="1094" lry="150" rend="visible" rendition="line" ulx="685" uly="107" xml:id="IS_line_114v_42"/>
+        <zone corresp="#IS_lb_114v_43" lrx="1218" lry="203" rend="visible" rendition="line" ulx="708" uly="158" xml:id="IS_line_114v_43"/>
+        <zone corresp="#IS_lb_114v_44" lrx="968" lry="241" rend="visible" rendition="line" ulx="703" uly="196" xml:id="IS_line_114v_44"/>
+        <zone corresp="#IS_lb_114v_45" lrx="1213" lry="275" rend="visible" rendition="line" ulx="700" uly="233" xml:id="IS_line_114v_45"/>
+        <zone corresp="#IS_lb_114v_46" lrx="1130" lry="320" rend="visible" rendition="line" ulx="700" uly="271" xml:id="IS_line_114v_46"/>
+        <zone corresp="#IS_lb_114v_47" lrx="1040" lry="345" rend="visible" rendition="line" ulx="700" uly="310" xml:id="IS_line_114v_47"/>
+        <zone corresp="#IS_lb_114v_48" lrx="1135" lry="378" rend="visible" rendition="line" ulx="700" uly="341" xml:id="IS_line_114v_48"/>
+        <zone corresp="#IS_lb_114v_49" lrx="1222" lry="421" rend="visible" rendition="line" ulx="700" uly="373" xml:id="IS_line_114v_49"/>
+        <zone corresp="#IS_lb_114v_50" lrx="1078" lry="454" rend="visible" rendition="line" ulx="700" uly="419" xml:id="IS_line_114v_50"/>
+        <zone corresp="#IS_lb_114v_51" lrx="1225" lry="489" rend="visible" rendition="line" ulx="700" uly="442" xml:id="IS_line_114v_51"/>
+        <zone corresp="#IS_lb_114v_52" lrx="1229" lry="524" rend="visible" rendition="line" ulx="700" uly="487" xml:id="IS_line_114v_52"/>
+        <zone corresp="#IS_lb_114v_53" lrx="1252" lry="572" rend="visible" rendition="line" ulx="700" uly="524" xml:id="IS_line_114v_53"/>
+        <zone corresp="#IS_lb_114v_54" lrx="1220" lry="613" rend="visible" rendition="line" ulx="700" uly="569" xml:id="IS_line_114v_54"/>
+        <zone corresp="#IS_lb_114v_55" lrx="1132" lry="645" rend="visible" rendition="line" ulx="700" uly="609" xml:id="IS_line_114v_55"/>
+        <zone corresp="#IS_lb_114v_56" lrx="1123" lry="682" rend="visible" rendition="line" ulx="700" uly="646" xml:id="IS_line_114v_56"/>
+        <zone corresp="#IS_lb_114v_57" lrx="1157" lry="728" rend="visible" rendition="line" ulx="700" uly="684" xml:id="IS_line_114v_57"/>
+        <zone corresp="#IS_lb_114v_58" lrx="1132" lry="763" rend="visible" rendition="line" ulx="700" uly="721" xml:id="IS_line_114v_58"/>
+        <zone corresp="#IS_lb_114v_59" lrx="1097" lry="803" rend="visible" rendition="line" ulx="700" uly="757" xml:id="IS_line_114v_59"/>
+        <zone corresp="#IS_lb_114v_60" lrx="1165" lry="846" rend="visible" rendition="line" ulx="700" uly="809" xml:id="IS_line_114v_60"/>
+        <zone corresp="#IS_lb_114v_61" lrx="1120" lry="888" rend="visible" rendition="line" ulx="700" uly="838" xml:id="IS_line_114v_61"/>
+        <zone corresp="#IS_lb_114v_62" lrx="1100" lry="928" rend="visible" rendition="line" ulx="700" uly="879" xml:id="IS_line_114v_62"/>
+        <zone corresp="#IS_lb_114v_63" lrx="1017" lry="958" rend="visible" rendition="line" ulx="700" uly="919" xml:id="IS_line_114v_63"/>
+        <zone corresp="#IS_lb_114v_64" lrx="1080" lry="995" rend="visible" rendition="line" ulx="700" uly="961" xml:id="IS_line_114v_64"/>
+        <zone corresp="#IS_lb_114v_65" lrx="1121" lry="1035" rend="visible" rendition="line" ulx="700" uly="995" xml:id="IS_line_114v_65"/>
+        <zone corresp="#IS_lb_114v_66" lrx="1214" lry="1083" rend="visible" rendition="line" ulx="700" uly="1037" xml:id="IS_line_114v_66"/>
+        <zone corresp="#IS_lb_114v_67" lrx="1208" lry="1132" rend="visible" rendition="line" ulx="700" uly="1079" xml:id="IS_line_114v_67"/>
+        <zone corresp="#IS_lb_114v_68" lrx="1167" lry="1162" rend="visible" rendition="line" ulx="700" uly="1118" xml:id="IS_line_114v_68"/>
+        <zone corresp="#IS_lb_114v_69" lrx="1250" lry="1204" rend="visible" rendition="line" ulx="700" uly="1160" xml:id="IS_line_114v_69"/>
+        <zone corresp="#IS_lb_114v_70" lrx="1208" lry="1250" rend="visible" rendition="line" ulx="700" uly="1199" xml:id="IS_line_114v_70"/>
+        <zone corresp="#IS_lb_114v_71" lrx="1026" lry="1287" rend="visible" rendition="line" ulx="700" uly="1246" xml:id="IS_line_114v_71"/>
+        <zone corresp="#IS_lb_114v_72" lrx="1230" lry="1319" rend="visible" rendition="line" ulx="700" uly="1283" xml:id="IS_line_114v_72"/>
+        <zone corresp="#IS_lb_114v_73" lrx="1230" lry="1365" rend="visible" rendition="line" ulx="700" uly="1326" xml:id="IS_line_114v_73"/>
+        <zone corresp="#IS_lb_114v_74" lrx="1111" lry="1404" rend="visible" rendition="line" ulx="700" uly="1360" xml:id="IS_line_114v_74"/>
+        <zone corresp="#IS_lb_114v_75" lrx="1275" lry="1442" rend="visible" rendition="line" ulx="700" uly="1400" xml:id="IS_line_114v_75"/>
+        <zone corresp="#IS_lb_114v_76" lrx="1181" lry="1478" rend="visible" rendition="line" ulx="700" uly="1441" xml:id="IS_line_114v_76"/>
+        <zone corresp="#IS_lb_114v_77" lrx="1227" lry="1518" rend="visible" rendition="line" ulx="700" uly="1479" xml:id="IS_line_114v_77"/>
+        <zone corresp="#IS_lb_114v_78" lrx="1220" lry="1563" rend="visible" rendition="line" ulx="700" uly="1519" xml:id="IS_line_114v_78"/>
+        <zone corresp="#IS_lb_114v_79" lrx="1195" lry="1605" rend="visible" rendition="line" ulx="700" uly="1556" xml:id="IS_line_114v_79"/>
+        <zone corresp="#IS_lb_114v_80" lrx="1124" lry="1643" rend="visible" rendition="line" ulx="700" uly="1601" xml:id="IS_line_114v_80"/>
+        <zone corresp="#IS_lb_114v_81" lrx="1226" lry="1681" rend="visible" rendition="line" ulx="734" uly="1637" xml:id="IS_line_114v_81"/>
+        <zone corresp="#IS_lb_114v_82" lrx="1204" lry="1713" rend="visible" rendition="line" ulx="736" uly="1672" xml:id="IS_line_114v_82"/>
+          </surface>
+     
+     <surface xml:id="IS_surf_115r" corresp="IS_115r">  
+       <graphic height="1949px" url="data\images\single\IS_115r.jpg" width="1326px"/> 
+       <zone corresp="#IS_lb_115r_83" lrx="407" lry="177" rend="visible" rendition="line" ulx="106" uly="127" xml:id="IS_line_115r_83"/>
+       <zone corresp="#IS_lb_115r_84" lrx="565" lry="212" rend="visible" rendition="line" ulx="111" uly="172" xml:id="IS_line_115r_84"/>
+       <zone corresp="#IS_lb_115r_85" lrx="589" lry="250" rend="visible" rendition="line" ulx="109" uly="207" xml:id="IS_line_115r_85"/>
+       <zone corresp="#IS_lb_115r_86" lrx="404" lry="289" rend="visible" rendition="line" ulx="107" uly="246" xml:id="IS_line_115r_86"/>
+       <zone corresp="#IS_lb_115r_87" lrx="525" lry="324" rend="visible" rendition="line" ulx="109" uly="286" xml:id="IS_line_115r_87"/>
+       <zone corresp="#IS_lb_115r_88" lrx="522" lry="364" rend="visible" rendition="line" ulx="110" uly="329" xml:id="IS_line_115r_88"/>
+       <zone corresp="#IS_lb_115r_89" lrx="460" lry="398" rend="visible" rendition="line" ulx="111" uly="365" xml:id="IS_line_115r_89"/>
+       <zone corresp="#IS_lb_115r_90" lrx="531" lry="433" rend="visible" rendition="line" ulx="110" uly="403" xml:id="IS_line_115r_90"/>
+       <zone corresp="#IS_lb_115r_91" lrx="487" lry="475" rend="visible" rendition="line" ulx="107" uly="440" xml:id="IS_line_115r_91"/>
+       <zone corresp="#IS_lb_115r_92" lrx="480" lry="509" rend="visible" rendition="line" ulx="110" uly="476" xml:id="IS_line_115r_92"/>
+       <zone corresp="#IS_lb_115r_93" lrx="595" lry="549" rend="visible" rendition="line" ulx="108" uly="515" xml:id="IS_line_115r_93"/>
+       <zone corresp="#IS_lb_115r_94" lrx="553" lry="589" rend="visible" rendition="line" ulx="114" uly="554" xml:id="IS_line_115r_94"/>
+       <zone corresp="#IS_lb_115r_95" lrx="400" lry="626" rend="visible" rendition="line" ulx="109" uly="591" xml:id="IS_line_115r_95"/>
+       <zone corresp="#IS_lb_115r_96" lrx="558" lry="660" rend="visible" rendition="line" ulx="110" uly="631" xml:id="IS_line_115r_96"/>
+       <zone corresp="#IS_lb_115r_97" lrx="576" lry="702" rend="visible" rendition="line" ulx="112" uly="664" xml:id="IS_line_115r_97"/>
+       <zone corresp="#IS_lb_115r_98" lrx="441" lry="736" rend="visible" rendition="line" ulx="107" uly="707" xml:id="IS_line_115r_98"/>
+       <zone corresp="#IS_lb_115r_99" lrx="507" lry="772" rend="visible" rendition="line" ulx="112" uly="734" xml:id="IS_line_115r_99"/>
+       <zone corresp="#IS_lb_115r_100" lrx="560" lry="810" rend="visible" rendition="line" ulx="113" uly="775" xml:id="IS_line_115r_100"/>
+       <zone corresp="#IS_lb_115r_101" lrx="384" lry="850" rend="visible" rendition="line" ulx="114" uly="814" xml:id="IS_line_115r_101"/>
+       <zone corresp="#IS_lb_115r_102" lrx="533" lry="882" rend="visible" rendition="line" ulx="114" uly="854" xml:id="IS_line_115r_102"/>
+       <zone corresp="#IS_lb_115r_103" lrx="563" lry="927" rend="visible" rendition="line" ulx="109" uly="895" xml:id="IS_line_115r_103"/>
+       <zone corresp="#IS_lb_115r_104" lrx="467" lry="967" rend="visible" rendition="line" ulx="115" uly="934" xml:id="IS_line_115r_104"/>
+       <zone corresp="#IS_lb_115r_105" lrx="535" lry="1009" rend="visible" rendition="line" ulx="110" uly="970" xml:id="IS_line_115r_105"/>
+       <zone corresp="#IS_lb_115r_106" lrx="572" lry="1053" rend="visible" rendition="line" ulx="114" uly="1011" xml:id="IS_line_115r_106"/>
+       <zone corresp="#IS_lb_115r_107" lrx="447" lry="1093" rend="visible" rendition="line" ulx="111" uly="1048" xml:id="IS_line_115r_107"/>
+       <zone corresp="#IS_lb_115r_108" lrx="591" lry="1134" rend="visible" rendition="line" ulx="114" uly="1096" xml:id="IS_line_115r_108"/>
+       <zone corresp="#IS_lb_115r_109" lrx="535" lry="1173" rend="visible" rendition="line" ulx="112" uly="1137" xml:id="IS_line_115r_109"/>
+       <zone corresp="#IS_lb_115r_110" lrx="529" lry="1218" rend="visible" rendition="line" ulx="114" uly="1178" xml:id="IS_line_115r_110"/>
+       <zone corresp="#IS_lb_115r_111" lrx="523" lry="1259" rend="visible" rendition="line" ulx="110" uly="1218" xml:id="IS_line_115r_111"/>
+       <zone corresp="#IS_lb_115r_112" lrx="597" lry="1306" rend="visible" rendition="line" ulx="112" uly="1245" xml:id="IS_line_115r_112"/>
+       <zone corresp="#IS_lb_115r_113" lrx="511" lry="1343" rend="visible" rendition="line" ulx="112" uly="1300" xml:id="IS_line_115r_113"/>
+       <zone corresp="#IS_lb_115r_114" lrx="617" lry="1384" rend="visible" rendition="line" ulx="112" uly="1343" xml:id="IS_line_115r_114"/>
+       <zone corresp="#IS_lb_115r_115" lrx="601" lry="1429" rend="visible" rendition="line" ulx="111" uly="1381" xml:id="IS_line_115r_115"/>
+       <zone corresp="#IS_lb_115r_116" lrx="462" lry="1467" rend="visible" rendition="line" ulx="113" uly="1425" xml:id="IS_line_115r_116"/>
+       <zone corresp="#IS_lb_115r_117" lrx="577" lry="1504" rend="visible" rendition="line" ulx="114" uly="1466" xml:id="IS_line_115r_117"/>
+       <zone corresp="#IS_lb_115r_118" lrx="475" lry="1547" rend="visible" rendition="line" ulx="112" uly="1503" xml:id="IS_line_115r_118"/>
+       <zone corresp="#IS_lb_115r_119" lrx="553" lry="1587" rend="visible" rendition="line" ulx="113" uly="1548" xml:id="IS_line_115r_119"/>
+       <zone corresp="#IS_lb_115r_120" lrx="638" lry="1620" rend="visible" rendition="line" ulx="111" uly="1584" xml:id="IS_line_115r_120"/>
+       <zone corresp="#IS_lb_115r_121" lrx="633" lry="1661" rend="visible" rendition="line" ulx="110" uly="1624" xml:id="IS_line_115r_121"/>
+       <zone corresp="#IS_lb_115r_122" lrx="545" lry="1706" rend="visible" rendition="line" ulx="113" uly="1659" xml:id="IS_line_115r_122"/>
+          </surface>
+       
+       </facsimile>
+   <facsimile xml:id="fac_Costantino">
+      <surface xml:id="surf_117r"/>      
+   </facsimile>
+   
+  <text>
+    <group>
+      <text n="Ricettario medico" subtype="edition_text" type="prose" xml:id="Ricettario">
+        <front><head><hi rend="bold">Informazioni sul testo</hi></head>
+          <div><p><hi rend="bold">Prosa</hi> Ricette brevi, 2 o 3 righe, introdotte da un titolo</p></div>
+          <div><p><hi rend="bold">Data</hi> XIV secolo</p></div>
+          <div><p><hi rend="bold">Provenienza</hi> Sconosciuta</p></div>
+          <div><p><hi rend="bold">Il ricettario non è attestato in altri testimoni</hi>
+          </p></div></front>
+     <body>
+       <pb facs="data/images/single/RM_1r.jpg" n="1r" xml:id="RM_1r"/>
+       <div><p><l n="1"><g ref="capitalt"/>o helpe a woman in travel of childe</l></p></div>   
+       <div><l n="2">Take a <choice><orig>da k</orig><corr>dark</corr></choice> <g ref="slong"/>tone and <g ref="slong"/>chave it to powdir <g ref="middot"/> and <choice><orig>ye ve</orig><reg>yeve</reg></choice> it to <choice><orig>to</orig><reg></reg></choice> traveling woman to</l>
+         <l n="3">drinke <g ref="with"/> wyne <g ref="middot"/> and she shalbe deliuerid anon<choice><orig> <g ref="middot"/></orig><corr>.</corr></choice><choice><orig> a</orig><reg> A</reg></choice>lso take the iuse of leke and yeve</l>
+         <l n="4">hir to drinke <g ref="middot"/> or els yeve hir to drinke detany<g ref="middotfullstop"/></l>
+      </div>
+       <lb/>
+      <div><p><l n="5"><g ref="capitalf"/>or the disease aftir hir travaile</l></p></div>
+       <div><l n="6">Take an oynon and sethe it in watir <choice><orig>S</orig><corr>s</corr></choice>oft and malwe rote and yolkis of eggis <g ref="middot"></g></l>
+         <l n="7">harde soden <g ref="middot"></g> and grinde al these to gadir with oyle of olif <g ref="middot"/> and make a plastir <g ref="and"/></l>
+         <l n="8">ley <choice><orig>and ley</orig><corr></corr></choice> it hote <choice><orig>ther to</orig><corr>therto</corr></choice> as þe wymmen wol fynde<g ref="middotfullstop"/></l>
+       </div>
+       <lb/>
+       <div><p><l n="9"><g ref="capitalt"/>o deliuer a woman of childe dede or quike</l></p></div>
+       <div><l n="10">Write and put to hur wombe <g ref="middot"/> <g ref="quote"/><g ref="capitalm"/>aria pe<g ref="per"/>it remedi<g ref="umacron"/> <g ref="middot"/> anna celi <g ref="z"/>abeccam Cecilia</l>
+        <l n="11">remedi<g ref="umacron"/> <g ref="smalls"/>ator arepo tenet o<g ref="per"/>a rotas<g ref="quote"/><g ref="middotfullstop"/> Also yeve hur betany or <g ref="smalli"/>sope <g ref="with"/></l>
+        <l n="12">her owne watir and sethe ham in wyne and yeue hur to drenke<g ref="fullstop"/></l> 
+       </div>
+       <lb/>
+       <div><p><l n="13"><g ref="capitalw"/>oo so hathe the pose</l></p></div>
+       <div><l n="14">Take rewe <g ref="and"/> comyn <g ref="and"/> sethe hem bothe in a panne <g ref="with"/> hony and pepir <g ref="and"/> ete a</l>
+         <l n="15">sponeful at morowe <g ref="middot"/> <choice><orig>a nothir</orig><reg>anothir</reg></choice> at none and anothir at nyȝt<g ref="fullstop"/></l>
+       </div>
+       <lb/>
+       <div><p><l n="16">Anothir medecyne for the same</l></p></div>
+       <div><l n="17">Take rede mynte <g ref="middot"/> <g ref="and"/> rewe of ei<g ref="ther"/> like moche <g ref="and"/> stamp hem <g ref="and"/> wring out the <g ref="smalli"/>use and</l>
+         <l n="18">put therof in his nostrel whan he gothe to bed <g ref="and"/> it schal <choice><orig>a mende</orig><reg>amende</reg></choice> him<g ref="fullstop"/></l>
+       </div>
+     </body>
+  </text>
+ 
+ <!-- ISUMBRAS -->
+      
+      <text n="Isumbras" subtype="edition_text" type="verse" xml:id="Isumbras">
+        <front><head><hi rend="bold">Informazioni sul testo</hi></head>
+          <div><p><hi rend="bold">Metre</hi><hi rend="italic"> Tail-rhyme stanzas</hi> di 12 versi</p></div>
+          <div><p><hi rend="bold">Date</hi> <hi rend="italic">ante</hi> 1320</p></div>
+          <div><p><hi rend="bold">Provenienza</hi> Midlands nord-orientali</p></div>
+          <div><p><hi rend="bold">Trama (in inglese)</hi><lb/>Sir Isumbras is a rich and courteous knight, with a beautiful wife and three sons, who has forgotten that he owes his good fortune to God. One day, a bird sent by Christ reminds him of his sin and offers him a choice between suffering in youth or old age. Isumbras repents, and promises to serve Christ while he is young and strong. He calmly accepts his fate as his horse dies, his hawks and hounds flee and his property burns down. He and his family leave the county and wander where Christ leads them, begging for food.
+          As they are crossing a river, Isumbras’ two eldest sons are carried away by a lion and a leopard. Isumbras urges his wife and youngest son to accept God’s will, and the three continue to the Greek sea, where they find the war ships of a Saracen king. Isumbras refuses to convert in return for food and rejects the king’s offer to purchase his wife. She is forcibly taken from him, and he is left, badly beaten, with a cloth full of gold. Before the ships sail the pair is granted a final meeting, where she gives him half of her ring and tells him to search for her.
+          Distraught, Isumbras continues on his way, until a griffin steals his gold and his youngest son is taken by a unicorn. Left alone, he submits himself to God’s will. He joins a community of ironsmiths and spends seven years carrying ore and learning to make armour. When he hears that the Saracens are waging war against a Christian ruler, Isumbras rides a work horse into battle and defeats them, killing their king.
+          The Christian king thanks the mysterious knight and takes him to a nunnery. As soon as his wounds are healed, however, Isumbras dresses as a pilgrim, and continues to wander. He sails to the Holy Land and spends seven years living in poverty until another angel informs him that his sins are forgiven. He then travels to the court of a charitable queen, but weeps instead of eating the feast that is laid before him. Full of pity, the queen gives him a room in her castle, where he regains his strength and beats her best knights in a tournament.
+          One day Isumbras finds a nest containing his cloth and gold, which he conceals under his bed. When the jealous Saracens discover it, they show it to the queen, who realises that it belonged to her husband. Isumbras tells his story and shows her his ring. She produces her half, and the couple are reunited. Isumbras is crowned and decrees the kingdom Christian, but his men desert him when he is attacked by the Saracens. As he and his wife prepare to fight, they are joined by three knights, riding on a leopard, a lion and a unicorn. The five of them defeat the Saracen host, and the knights reveal that they are Isumbras’ sons, sent back to him by God. The family rejoices, and conquers the lands of another three Saracen kings, crowning Isumbras’ sons and converting their inhabitants. When they die, their souls all go to heaven.</p></div>
+          <div><p><hi rend="bold">Altri testimoni</hi>
+          <lb/>Cambridge, Gonville and Caius College, MS 175, fols. 98r–107r
+          <lb/>Edinburgh, National Library of Scotland, MS Advocates 19.3.1, fols. 48r–56v
+          <lb/>Lincoln Cathedral Library, MS 91 ('Thornton Manuscript'), fols. 109r–114v
+            <lb/>London, British Library, MS Cotton Caligula A.ii, fols. 130r–134r
+            <lb/>London, Gray's Inn, MS 20, fols. 228r228-v
+            <lb/>Oxford, Bodleian Library, MS Ashmole 61, fols. 9r–16r
+            <lb/>Oxford, Bodleian Library, MS Douce 261, fols. 1r–7v
+            <lb/>Oxford, University College, MS 142, fol. 128r
+          </p></div></front>
+        <body>
+          <pb facs="data/images/single/IS_114v_cola.jpg" n="114v Col.1" xml:id="IS_114v_cola"/>
+          <l n="1"><lb facs="#IS_114v_01" n="1" xml:id="IS_lb_114v_01"/><g ref="capitalh"/>e <g ref="that"/> made <g ref="bethe"/> hevyn <g ref="and"/> erthe</l>
+          <l n="2"><lb facs="#IS_114v_02" n="2" xml:id="IS_lb_114v_02"/><g ref="and"/> al <g ref="this"/> worlde in daies seuyn</l>
+          <l n="3"><lb facs="#IS_114v_03" n="3" xml:id="IS_lb_114v_03"/><g ref="dash"/> that is <g ref="flong"/>ul of myȝt <g ref="dash"/></l> 
+          <l n="4"><lb facs="#IS_114v_04" n="4" xml:id="IS_lb_114v_04"/>send <g ref="v"/>s alle his ble<g ref="slong"/><g ref="slong"/>yng</l>
+          <l n="5"><lb facs="#IS_114v_05" n="5" xml:id="IS_lb_114v_05"/>las and more olde and yong</l>
+          <l n="6"><lb facs="#IS_114v_06" n="6" xml:id="IS_lb_114v_06"/>and kepe <g ref="v"/>s day and nyȝt<g ref="fullstop"/></l>
+          <l n="7"><lb facs="#IS_114v_07" n="7" xml:id="IS_lb_114v_07"/><g ref="capitaly"/> wol you telle o<g ref="flong"/> a knyȝt</l>
+          <l n="8"><lb facs="#IS_114v_08" n="8" xml:id="IS_lb_114v_08"/>that was douȝty in ilke a <g ref="flong"/>iȝt</l>
+          <l n="9"><lb facs="#IS_114v_09" n="9" xml:id="IS_lb_114v_09"/>in towne and eke in <g ref="flong"/>ielde<g ref="semicolon"/></l>
+          <l n="10"><lb facs="#IS_114v_10" n="10" xml:id="IS_lb_114v_10"/>ther dur<g ref="slong"/>t no man his dynt<choice> <orig>a bide</orig><corr>abide</corr></choice></l>
+          <l n="11"><lb facs="#IS_114v_11" n="11" xml:id="IS_lb_114v_11"/>with <g ref="slong"/>pere ne with <g ref="slong"/>childe<g ref="fullstop"/></l>
+          <l n="12"><lb facs="#IS_114v_12" n="12" xml:id="IS_lb_114v_12"/><g ref="capitalm"/>an he was cuthe <choice><orig>y nowe</orig><reg>ynowe</reg></choice></l>
+          <l n="13"><lb facs="#IS_114v_13" n="13" xml:id="IS_lb_114v_13"/><g ref="smallo"/>x to drawe in his plowe</l>
+          <l n="14"><lb facs="#IS_114v_14" n="14" xml:id="IS_lb_114v_14"/>and <g ref="slong"/>tedis in his <g ref="slong"/>talle<g ref="semicolon"/></l>
+          <l n="15"><lb facs="#IS_114v_15" n="15" xml:id="IS_lb_114v_15"/>man he was curtey<g ref="slong"/>e and kynde<g ref="comma"/></l>
+          <l n="16"><lb facs="#IS_114v_16" n="16" xml:id="IS_lb_114v_16"/>euery man was his <g ref="flong"/>rende<g ref="semicolon"/></l>
+          <l n="17"><lb facs="#IS_114v_17" n="17" xml:id="IS_lb_114v_17"/>he was lord o<g ref="flong"/> alle<g ref="fullstop"/></l>
+          <l n="18"><lb facs="#IS_114v_18" n="18" xml:id="IS_lb_114v_18"/>Curteis and kynde he was<g ref ="comma"/></l>
+          <l n="19"><lb facs="#IS_114v_19" n="19" xml:id="IS_lb_114v_19"/>his name was clepid <g ref="slong"/>ir I<g ref="slong"/>ombras<choice><orig>e</orig><reg></reg></choice><g ref="fullstop"/></l>
+          <l n="20"><lb facs="#IS_114v_20" n="20" xml:id="IS_lb_114v_20"/><g ref="capitalb"/>othe curteis and <g ref="flong"/>re<g ref="comma"/></l>
+          <l n="21"><lb facs="#IS_114v_21" n="21" xml:id="IS_lb_114v_21"/>the gretti<g ref="slong"/> of his curte<g ref="slong"/>y</l>
+          <l n="22"><lb facs="#IS_114v_22" n="22" xml:id="IS_lb_114v_22"/>ne couthe ther no man di<g ref="slong"/>try<g ref="fullstop"/></l>
+          <l n="23"><lb facs="#IS_114v_23" n="23" xml:id="IS_lb_114v_23"/><g ref="capitala"/> <g ref="flong"/>ulle good man was he<g ref="fullstop"/></l>
+          <l n="24"><lb facs="#IS_114v_24" n="24" xml:id="IS_lb_114v_24"/>Eke men he louid in halle</l>
+          <l n="25"><lb facs="#IS_114v_25" n="25" xml:id="IS_lb_114v_25"/>and ȝaue ham <g ref="smallr"/>obus of riche palle<g ref="comma"/></l>   
+          <l n="26"><lb facs="#IS_114v_26" n="26" xml:id="IS_lb_114v_26"/>bothe golde and eke <g ref="flong"/>e<g ref="fullstop"/></l>
+          <l n="27"><lb facs="#IS_114v_27" n="27" xml:id="IS_lb_114v_27"/><g ref="capitalo"/><g ref="flong"/> curte<g ref="slong"/>ie he was kyng<g ref="semicolon"/></l>
+          <l n="28"><lb facs="#IS_114v_28" n="28" xml:id="IS_lb_114v_28"/>his curte<g ref="flong"/>ie had no endyng<g ref="comma"/></l>
+          <l n="29"><lb facs="#IS_114v_29" n="29" xml:id="IS_lb_114v_29"/><g ref="smalli"/>n worlde is none so <g ref="flong"/>re<g ref="fullstop"/></l>
+          <l n="30"><lb facs="#IS_114v_30" n="30" xml:id="IS_lb_114v_30"/><g ref="capitala"/>s <g ref="flong"/>eire a wi<g ref="flong"/>e had he</l>
+          <l n="30"><lb facs="#IS_114v_31" n="31" xml:id="IS_lb_114v_31"/>as eny in cuthe miȝt be</l>
+          <l n="31"><lb facs="#IS_114v_32" n="32" xml:id="IS_lb_114v_32"/>as <g ref="capitaly"/> telle it ȝowe</l>
+          <l n="32"><lb facs="#IS_114v_33" n="33" xml:id="IS_lb_114v_33"/>and knowe childryn had he thre</l>
+          <l n="33"><lb facs="#IS_114v_34" n="34" xml:id="IS_lb_114v_34"/>as <g ref="flong"/>eire as eny myȝt be<g ref="comma"/></l>
+          <l n="34"><lb facs="#IS_114v_35" n="35" xml:id="IS_lb_114v_35"/>for they were <g ref="flong"/>eire <choice><orig>y nowe</orig><reg>ynowe</reg></choice><g ref="fullstop"/></l>
+          <l n="35"><lb facs="#IS_114v_36" n="36" xml:id="IS_lb_114v_36"/>Into his hert a pride was brouȝt</l>
+          <l n="36"><lb facs="#IS_114v_37" n="37" xml:id="IS_lb_114v_37"/><g ref="that"/> of <choice><orig>god is</orig><corr>Godis</corr></choice> worke he had no rouȝt</l>
+          <l n="38"><lb facs="#IS_114v_38" n="38" xml:id="IS_lb_114v_38"/>his merci <g ref="flong"/>or to nomme<g ref="fullstop"/></l>
+          <l n="39"><lb facs="#IS_114v_39" n="39" xml:id="IS_lb_114v_39"/>So longe he vayned in hiȝe <g ref="pri"/>de</l>
+          <l n="40"><lb facs="#IS_114v_40" n="40" xml:id="IS_lb_114v_40"/>that <g ref="capitalg"/>od uolde no lengue <choice><orig>a bide</orig><reg>abide</reg></choice></l>
+          <l n="41"><lb facs="#IS_114v_41" n="41" xml:id="IS_lb_114v_41"/>but <g ref="slong"/>end to him a <g ref="slong"/>tewyne<g ref="fullstop"/></l>        
+          
+          <pb facs="data/images/single/IS_114v_colb.jpg" n="114v Col.2" xml:id="IS_114v_colb"/>
+          <l n="1"><lb facs="#IS_114v_42" n="42" xml:id="IS_lb_114v_42"/>So hit <choice><orig>bi <g ref="flong"/>ille</orig><corr>bifille</corr> </choice><g ref="v"/>ppon a day</l>
+          <l n="2"><lb facs="#IS_114v_43" n="43" xml:id="IS_lb_114v_43"/>the knyȝt went <g ref="flong"/>urthe him to play<g ref="semicolon"/></l> 
+          <l n="3"><lb facs="#IS_114v_44" n="44" xml:id="IS_lb_114v_44"/> his <g ref="flong"/>orest <g ref="flong"/>or to <g ref="slong"/>e</l>
+          <l n="4"><lb facs="#IS_114v_45" n="45" xml:id="IS_lb_114v_45"/> and as he went in a narowe way</l>
+          <l n="5"><lb facs="#IS_114v_46" n="46" xml:id="IS_lb_114v_46"/> a <g ref="flong"/>owle he hird him to say</l>
+          <l n="6"><lb facs="#IS_114v_47" n="47" xml:id="IS_lb_114v_47"/> that sate <g ref="v"/>ppon a tre</l>
+          <l n="7"><lb facs="#IS_114v_48" n="48" xml:id="IS_lb_114v_48"/> and <g ref="slong"/>aid <g ref="quote"/><g ref="capitalw"/>elcome I<g ref="slong"/>umbras<g ref="exclamation"/></l>
+          <l n="8"><lb facs="#IS_114v_49" n="49" xml:id="IS_lb_114v_49"/> <g ref="capitalt"/>hou ha<g ref="slong"/>t <choice><orig>for ȝete</orig><corr>forȝete</corr></choice> whate thou was</l>
+          <l n="9"><lb facs="#IS_114v_50" n="50" xml:id="IS_lb_114v_50"/> <g ref="flong"/>or pride and golde an <g ref="flong"/>e<g ref="fullstop"/></l>
+          <l n="10"><lb facs="#IS_114v_51" n="51" xml:id="IS_lb_114v_51"/><g ref="capitalt"/>he kynge o<g ref="flong"/> heuyn wel gretith the<g ref="colon"/></l>
+          <l n="11"><lb facs="#IS_114v_52" n="52" xml:id="IS_lb_114v_52"/>in ȝouthe o<g ref="ther"/> elde thou geti<g ref="slong"/>t pouerte<g ref="comma"/></l>
+          <l n="12"><lb facs="#IS_114v_53" n="53" xml:id="IS_lb_114v_53"/><g ref="capitala"/>nd che<g ref="slong"/>e whethir thou haddist le<g ref="uer"/> <choice><orig>tobe</orig><corr> to be</corr></choice><g ref="fullstop"/><g ref="quote"/></l>
+          <l n="13"><lb facs="#IS_114v_54" n="54" xml:id="IS_lb_114v_54"/><g ref="capitalw"/>ith careful hert and sikyng <choice><orig>sere</orig><corr>sore</corr></choice></l>
+          <l n="14"><lb facs="#IS_114v_55" n="55" xml:id="IS_lb_114v_55"/>he fille <g ref="v"/>ppon his kneys there</l> 
+          <l n="15"><lb facs="#IS_114v_56" n="56" xml:id="IS_lb_114v_56"/>and his hondis <g ref="v"/>p he hilde</l>
+          <l n="16"><lb facs="#IS_114v_57" n="57" xml:id="IS_lb_114v_57"/><g ref="quote"/><g ref="capitalw"/>orldis welthe <g ref="capitaly"/> wol <choice><orig>for sake</orig><corr>forsake</corr></choice></l>
+          <l n="17"><lb facs="#IS_114v_58" n="58" xml:id="IS_lb_114v_58"/>and to <g ref="capitalc"/>ristis merci me take<g ref="colon"/></l>
+          <l n="18"><lb facs="#IS_114v_59" n="59" xml:id="IS_lb_114v_59"/>myne hert to hym <g ref="capitaly"/> ȝilde<g ref="fullstop"/></l>
+          <l n="19"><lb facs="#IS_114v_60" n="60" xml:id="IS_lb_114v_60"/><g ref="capitali"/>n yowthe <g ref="capitaly"/> may ride and go<g ref="comma"/></l>
+          <l n="20"><lb facs="#IS_114v_61" n="61" xml:id="IS_lb_114v_61"/>in <g ref="smalli"/>lde <g ref="capitaly"/> may nouȝt do so <g ref="hyphen"/></l>
+          <l n="21"><lb facs="#IS_114v_62" n="62" xml:id="IS_lb_114v_62"/>my bonis wol wax olde<g ref="fullstop"/></l>
+          <l n="22"><lb facs="#IS_114v_63" n="63" xml:id="IS_lb_114v_63"/><g ref="capitall"/>ord<g ref="comma"/> ȝif thi wille be<g ref="comma"/></l>
+          <l n="23"><lb facs="#IS_114v_64" n="64" xml:id="IS_lb_114v_64"/>yn youthe send hit me </l>
+          <l n="24"><lb facs="#IS_114v_65" n="65" xml:id="IS_lb_114v_65"/>and welthe in myne elde<g ref="fullstop"/><g ref="quote"/></l>
+          <l n="25"><lb facs="#IS_114v_66" n="66" xml:id="IS_lb_114v_66"/><g ref="capitala"/>wey the fowle takith his fliȝt</l>
+          <l n="26"><lb facs="#IS_114v_67" n="67" xml:id="IS_lb_114v_67"/>and al <choice><orig>a lone</orig><corr>alone</corr></choice> leuys the knyȝt<g ref="comma"/></l>
+          <l n="27"><lb facs="#IS_114v_68" n="68" xml:id="IS_lb_114v_68"/>ful sone he went his way<g ref="fullstop"/></l>
+          <l n="28"><lb facs="#IS_114v_69" n="69" xml:id="IS_lb_114v_69"/><g ref="capitala"/>nd whan he had the fowle <choice><orig>for lore</orig><reg>forlore</reg></choice></l>
+          <l n="29"><lb facs="#IS_114v_70" n="70" xml:id="IS_lb_114v_70"/>his stede that was so liȝt <choice><orig>bi fore</orig><reg>bifore</reg></choice></l>
+          <l n="30"><lb facs="#IS_114v_71" n="71" xml:id="IS_lb_114v_71"/>undir him gan die<g ref="fullstop"/></l>
+          <l n="31"><lb facs="#IS_114v_72" n="72" xml:id="IS_lb_114v_72"/><g ref="capitalh"/>is houndis and his hawkis bothe</l>
+          <l n="32"><lb facs="#IS_114v_73" n="73" xml:id="IS_lb_114v_73"/>wenten to wode <g ref="hyphen"/> to him were lothe <g ref="hyphen"/></l>
+          <l n="33"><lb facs="#IS_114v_74" n="74" xml:id="IS_lb_114v_74"/>ilke one to dyuers way<g ref="fullstop"/></l>
+          <l n="34"><lb facs="#IS_114v_75" n="75" xml:id="IS_lb_114v_75"/><g ref="capitalw"/>hat wondir was þan þei he were wo<g ref="question"/></l> 
+          <l n="35"><lb facs="#IS_114v_76" n="76" xml:id="IS_lb_114v_76"/><g ref="capitalo"/>n fote him heuith for to go</l>
+          <l n="36"><lb facs="#IS_114v_77" n="77" xml:id="IS_lb_114v_77"/>to payne turnyth alle his play<g ref="fullstop"/></l>
+          <l n="37"><lb facs="#IS_114v_78" n="78" xml:id="IS_lb_114v_78"/><g ref="capitala"/>nd also by the wode he went</l>
+          <l n="38"><lb facs="#IS_114v_79" n="79" xml:id="IS_lb_114v_79"/>a litil knaue was to him sent</l>
+          <l n="39"><lb facs="#IS_114v_80" n="80" xml:id="IS_lb_114v_80"/>that come hym <choice><orig>a ȝayne</orig><corr>aȝayne</corr></choice><g ref="semicolon"/></l>
+          <l n="40"><lb facs="#IS_114v_81" n="81" xml:id="IS_lb_114v_81"/>he come to tal him a won<g ref="der"/> tithing<g ref="comma"/></l>
+          <l n="41"><lb facs="#IS_114v_82" n="82" xml:id="IS_lb_114v_82"/>that brende <choice><orig>wal</orig><corr>was</corr></choice> al his thing</l>
+          
+          <pb facs="data/images/single/IS_115r.jpg" n="115r" xml:id="IS_115r"/>
+          <l n="1"><lb facs="#IS_114v_83" n="83" xml:id="IS_lb_115r_83"/>and his bestis slayne<g ref="fullstop"/></l>
+          <l n="2"><lb facs="#IS_114v_84" n="84" xml:id="IS_lb_115r_84"/><g ref="quote"/><g ref="capitall"/>ord<g ref="comma"/> ther nys nouȝt left on lyue</l>
+          <l n="3"><lb facs="#IS_114v_85" n="85" xml:id="IS_lb_115r_85"/>but ȝowre childryn and ȝoure wyue<g ref="fullstop"/><g ref="quote"/></l>
+          <l n="4"><lb facs="#IS_114v_86" n="86" xml:id="IS_lb_115r_86"/><g ref="quote"/><g ref="capitalb"/>i <g ref="ihesu"/> that me bouȝt<g ref="comma"/><g ref="quote"/></l>
+          <l n="5"><lb facs="#IS_114v_87" n="87" xml:id="IS_lb_115r_87"/>he seid<g ref="comma"/> <g ref="quote"/>ȝif thei may on lyue be<g ref="comma"/></l>
+          <l n="6"><lb facs="#IS_114v_88" n="88" xml:id="IS_lb_115r_88"/>mi wife and my childryn <choice><orig>iij</orig><reg>three</reg></choice><g ref="comma"/></l>
+          <l n="7"><lb facs="#IS_114v_89" n="89" xml:id="IS_lb_115r_89"/>alle drede me riȝt nouȝt<g ref="exclamation"/><g ref="quote"/></l>
+          <l n="8"><lb facs="#IS_114v_90" n="90" xml:id="IS_lb_115r_90"/><g ref="capitala"/>nd alle he went silue alone<g ref="comma"/></l>
+          <l n="9"><lb facs="#IS_114v_91" n="91" xml:id="IS_lb_115r_91"/>his hurde men he <choice><orig></orig><corr>met</corr></choice> ilke one<g ref="semicolon"/></l>
+          <l n="10"><lb facs="#IS_114v_92" n="92" xml:id="IS_lb_115r_92"/>he seid<g ref="comma"/><g ref="quote"/><g ref="capitalw"/>hate eylith yowe<g ref="question"/><g ref="quote"/></l>
+          <l n="11"><lb facs="#IS_114v_93" n="93" xml:id="IS_lb_115r_93"/><g ref="capitalthorn"/>ey seid fee was from hem revid<g ref="fullstop"/></l>
+          <l n="12"><lb facs="#IS_114v_94" n="94" xml:id="IS_lb_115r_94"/><g ref="quote"/><g ref="capitall"/>ord<g ref="comma"/> <choice><orig>no thing</orig><reg>nothing</reg></choice> is yowe <choice><orig>bi leuyd</orig><reg>bileuyd</reg></choice><g ref="comma"/></l>
+          <l n="13"><lb facs="#IS_114v_95" n="95" xml:id="IS_lb_115r_95"/>an ox to youre plowe<g ref="fullstop"/><g ref="quote"/></l>
+          <l n="14"><lb facs="#IS_114v_96" n="96" xml:id="IS_lb_115r_96"/><g ref="capitalt"/>hey wept alle and did hem ille<g ref="comma"/></l>
+          <l n="15"><lb facs="#IS_114v_97" n="97" xml:id="IS_lb_115r_97"/>the knyȝt bade ham alle be stille<g ref="fullstop"/></l>
+          <l n="16"><lb facs="#IS_114v_98" n="98" xml:id="IS_lb_115r_98"/><g ref="quote"/><g ref="capitali"/> ne wite yow this wo<g ref="comma"/></l>
+          <l n="17"><lb facs="#IS_114v_99" n="99" xml:id="IS_lb_115r_99"/><g ref="capitalg"/>od ȝewith <g ref="v"/>s and <g ref="capitalg"/>od take</l>
+          <l n="18"><lb facs="#IS_114v_100" n="100" xml:id="IS_lb_115r_100"/>and at <g ref="capitalh"/>is wille riche <g ref="capitalh"/>e make</l>
+          <l n="19"><lb facs="#IS_114v_101" n="101" xml:id="IS_lb_115r_101"/>and pore men also<g ref="fullstop"/><g ref="quote"/></l>
+          <l n="20"><lb facs="#IS_114v_102" n="102" xml:id="IS_lb_115r_102"/><g ref="capitala"/> deleful siȝt he gan ther se<g ref="clon"/></l>
+          <l n="21"><lb facs="#IS_114v_103" n="103" xml:id="IS_lb_115r_103"/>his wife and his children thre</l>
+          <l n="22"><lb facs="#IS_114v_104" n="104" xml:id="IS_lb_115r_104"/>out of the fyre were fled<g ref="semicolon"/></l>
+          <l n="23"><lb facs="#IS_114v_105" n="105" xml:id="IS_lb_115r_105"/>as nakid as they as thei were borne</l>
+          <l n="23"><lb facs="#IS_114v_106" n="106" xml:id="IS_lb_115r_106"/>they sittith stille <g ref="v"/>ndur a thorne</l>
+          <l n="24"><lb facs="#IS_114v_107" n="107" xml:id="IS_lb_115r_107"/>brent out of hare bed<g ref="fullstop"/></l>
+          <l n="25"><lb facs="#IS_114v_108" n="108" xml:id="IS_lb_115r_108"/><g ref="capitaln"/>e chaungid he <choice><orig>no thing</orig><reg>nothing</reg></choice> of his ble</l>
+          <l n="26"><lb facs="#IS_114v_109" n="109" xml:id="IS_lb_115r_109"/>tille he sawe ham nakid be</l>
+          <l n="27"><lb facs="#IS_114v_110" n="110" xml:id="IS_lb_115r_110"/>that ere were comely clad<g ref="fullstop"/></l>
+          <l n="28"><lb facs="#IS_114v_111" n="111" xml:id="IS_lb_115r_111"/><g ref="capitalt"/>he lady bade ham be blithe<g ref="comma"/></l>
+          <l n="29"><lb facs="#IS_114v_112" n="112" xml:id="IS_lb_115r_112"/><g ref="quote"/><g ref="capitaly"/> <g ref="and"/> your fadre come ful swithe</l>
+          <l n="30"><lb facs="#IS_114v_113" n="113" xml:id="IS_lb_115r_113"/>for no thinge be ye <choice><orig>a drad</orig><corr>adrad</corr></choice><g ref="fullstop"/><g ref="quote"/></l>
+          <l n="31"><lb facs="#IS_114v_114" n="114" xml:id="IS_lb_115r_114"/><g ref="capitalt"/>hey wepte alle and made gret care<g ref="semicolon"/></l>
+          <l n="32"><lb facs="#IS_114v_115" n="115" xml:id="IS_lb_115r_115"/>the knyȝt bade ham leue har fare</l>
+          <l n="33"><lb facs="#IS_114v_116" n="116" xml:id="IS_lb_115r_116"/>and wepe not so sore<g ref="fullstop"/></l>
+          <l n="34"><lb facs="#IS_114v_117" n="117" xml:id="IS_lb_115r_117"/><g ref="quote"/><g ref="capitala"/>lle that care that we be yn</l>
+          <l n="35"><lb facs="#IS_114v_118" n="118" xml:id="IS_lb_115r_118"/>it is for our wikke syn<g ref="fullstop"/></l>
+          <l n="36"><lb facs="#IS_114v_119" n="119" xml:id="IS_lb_115r_119"/><g ref="capitalw"/>orthe we were wel more</l>
+          <l n="37"><lb facs="#IS_114v_120" n="120" xml:id="IS_lb_115r_120"/>and we al come no work wirch</l>
+          <l n="38"><lb facs="#IS_114v_121" n="121" xml:id="IS_lb_115r_121"/>our frend of <choice><orig>v</orig><corr>u</corr></choice>s schulle be <g ref="smalli"/></l>
+          <l n="39"><lb facs="#IS_114v_122" n="122" xml:id="IS_lb_115r_122"/>ouer londe <g ref="capitaly"/> rede we fare<g ref="fullstop"/><g ref="quote"/></l>
+        </body>
+      </text>
+
+      <!-- COSTANTINO -->
+      <text n="Costantino" type="verse" xml:id="Costantino">
+        <front><head><hi rend="bold">Informazioni sul testo</hi></head>
+          <div><p><hi rend="bold">Metre</hi> breve poema a rima alternata</p></div>
+          <div><p><hi rend="bold">Data di composizione</hi> sconosciuta</p></div>
+          <div><p><hi rend="bold">Provenienza</hi> sconosciuta</p></div>
+          <div><p>Breve poema in italiano sull'imperatore Costantino e sua madre, Sant'Elena, la scopritrice della Vera Croce.</p></div>
+        </front>
+        <body>
+          <pb facs="data/images/single/CO_117r.jpg" n="117r" xml:id="CO_117r"/>
+          <lg>
+            <head><hi rend="bold">Costantino</hi></head>
+            <l n="1"><lb n="1"/><choice>
+                <orig>Sonquello</orig>
+                <reg>Son quello</reg>
+              </choice>
+              <choice>
+                <orig>Im peratore</orig>
+                <reg>imperatore</reg>
+              </choice>
+              <choice>
+                <orig>cōſtantjno</orig>
+                <reg>Constantino</reg>
+              </choice>
+            </l>
+            
+            <l><lb n="2"/><g ref="hstroke"/> con mia matre Elena <choice>
+                <orig>In</orig>
+                <reg>in</reg>
+              </choice>
+              <choice>
+                <orig>meſtauoce</orig>
+                <reg>mesta uoce</reg>
+              </choice></l>
+            
+            <l><lb n="3"/><choice>
+                <orig>tro way</orig>
+                <reg>troway</reg>
+              </choice> del mio factore <choice>
+                <orig>quellacroce</orig>
+                <reg>quella croce</reg>
+              </choice>
+            </l>
+            
+            <l><lb n="4"/>qual tene tucto el mundo <choice>
+                <orig>Jnsuo</orig>
+                <reg>in suo</reg>
+              </choice> domino</l>
+            
+          </lg>
+        </body>
+      </text>
+    </group>
+  </text>
+</TEI>
