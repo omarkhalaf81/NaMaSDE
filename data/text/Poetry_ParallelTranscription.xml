@@ -500,7 +500,7 @@
 
  <facsimile xml:id="fac_MS_retrocop">
       <surface xml:id="MS_surf_retrocop" corresp="#MS_retrocop">
-    <graphic height="1973px" url="data\images\single\MS_retrocop.jpg" width="1325px"/> 
+    <graphic height="1973px" url="data/images/single/MS_retrocop.jpg" width="1325px"/> 
     </surface>
   </facsimile>
 
