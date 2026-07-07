@@ -49,232 +49,280 @@
         </editorialDecl>
   <charDecl>
     <glyph xml:id="slong">
+      <glyphName>LONG S</glyphName>
       <mapping type="codepoint">U+017F</mapping>
       <mapping type="diplomatic">ſ</mapping>
       <mapping type="normalized">s</mapping>
     </glyph> 
     <glyph xml:id="with"> 
+    <glyphName>ABBREVIATED WITH</glyphName>
     <mapping type="diplomatic">w&#877;</mapping>
     <mapping type="normalized">with</mapping>
     </glyph> 
     <glyph xml:id="that"> 
+      <glyphName>ABBREVIATED THAT</glyphName>
       <mapping type="diplomatic">þ&#877;</mapping>
       <mapping type="normalized">þat</mapping>
     </glyph> 
     <glyph xml:id="ther"> 
+      <glyphName>THER SUPERSCRIPT</glyphName>
       <mapping type="diplomatic">þ&#x036C;</mapping>
       <mapping type="normalized">er</mapping>
     </glyph> 
     <glyph xml:id="this"> 
+      <glyphName>ABBREVIATED THIS</glyphName>
       <mapping type="diplomatic">þ&#7652;</mapping>
       <mapping type="normalized">þis</mapping>
     </glyph> 
     <glyph xml:id="ihesu"> 
+      <glyphName>ABBREVIATED IHESU</glyphName>
       <mapping type="diplomatic">i&#x0127;u</mapping>
       <mapping type="normalized">Ihesu</mapping>
     </glyph> 
     <glyph xml:id="hstroke"> 
+      <glyphName>ABBREVIATED HE</glyphName>
       <mapping type="codepoint">U+0127</mapping>
       <mapping type="diplomatic">&#x0127;</mapping>
       <mapping type="normalized">he</mapping>
     </glyph> 
     <glyph xml:id="der"> 
+      <glyphName>ABBREVIATED DER</glyphName>
       <mapping type="codepoint">U+018C</mapping>
       <mapping type="diplomatic">&#x018C;</mapping>
       <mapping type="normalized">der</mapping>
     </glyph> 
     <glyph xml:id="us"> 
+      <glyphName>ABBREVIATED US</glyphName>
       <mapping type="codepoint">U+028B</mapping>
       <mapping type="diplomatic">&#x028B;</mapping>
       <mapping type="normalized">us</mapping>
     </glyph> 
     <glyph xml:id="uer"> 
+      <glyphName>ABBREVIATED UER</glyphName>
       <mapping type="codepoint">U+028B</mapping>
       <mapping type="diplomatic">&#x028B;</mapping>
       <mapping type="normalized">uer</mapping>
     </glyph> 
     <glyph xml:id="bethe">
+      <glyphName>BETHE</glyphName> 
       <mapping type="diplomatic">beþ&#868;</mapping>
       <mapping type="normalized">bethe</mapping>
     </glyph>
     <glyph xml:id="pri">
+      <glyphName>ABBREVIATED PRI</glyphName> 
       <mapping type="diplomatic">p&#7651;</mapping>
       <mapping type="normalized">pri</mapping>
     </glyph>
     <glyph xml:id="per">
+      <glyphName>ABBREVIATED PER</glyphName> 
       <mapping type="diplomatic">&#42833;</mapping>
       <mapping type="normalized">per</mapping>
     </glyph>
     <char xml:id="flong">
+      <charName>LONG F</charName>
       <mapping type="codepoint">U+0192</mapping>
       <mapping type="diplomatic">&#402;</mapping>
       <mapping type="normalized">f</mapping>
     </char>
     <char xml:id="z">
+      <charName>FRAKTUR Z</charName>
       <mapping type="codepoint">U+1D59F</mapping>
       <mapping type="diplomatic">&#120223;</mapping>
       <mapping type="normalized">z</mapping>
     </char>
     <char xml:id="middot">
+      <charName>MIDDLE DOT</charName>
       <mapping type="codepoint">U+00B7</mapping>
       <mapping type="diplomatic">·</mapping>
     </char>
     <char xml:id="middotfullstop">
+      <charName>MIDDLE DOT FULL STOP</charName>
       <mapping type="codepoint">U+00B7</mapping>
       <mapping type="diplomatic"> ·</mapping>
       <mapping type="normalized">.</mapping>
     </char>
     <char xml:id="and">
+      <charName>AND</charName>
       <mapping type="codepoint">U+0026</mapping>
       <mapping type="diplomatic">&#38;</mapping>
       <mapping type="normalized">and</mapping>
     </char> 
     <char xml:id="v">
+      <charName>LATIN U</charName>
       <mapping type="codepoint">U+0076</mapping>
       <mapping type="diplomatic">v</mapping>
       <mapping type="normalized">u</mapping>
     </char>
     <char xml:id="umacron">
+      <charName>U WITH MACRON</charName>
       <mapping type="codepoint">U+016B</mapping>
       <mapping type="diplomatic">&#363;</mapping>
       <mapping type="normalized">um</mapping>
     </char>
     <char xml:id="comma">
+      <charName>COMMA</charName>
       <mapping type="codepoint">U+002C</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">,</mapping>
     </char>
     <char xml:id="quote">
+      <charName>QUOTATION MARK</charName>
       <mapping type="codepoint">U+0022</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">"</mapping>
     </char>
     <char xml:id="fullstop">
+      <charName>FULL STOP</charName>
       <mapping type="codepoint">U+002E</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">.</mapping>
     </char>
     <char xml:id="exclamation">
+      <charName>EXCLAMATION MARK</charName>
       <mapping type="codepoint">U+0021</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">!</mapping>
     </char>
     <char xml:id="hyphen">
+      <charName>HYPHEN</charName>
       <mapping type="codepoint">U+002D</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">-</mapping>
     </char>
     <char xml:id="colon">
+      <charName>COLON</charName>
       <mapping type="codepoint">U+003A</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">:</mapping>
     </char>
     <char xml:id="semicolon">
+      <charName>SEMICOLON</charName>
       <mapping type="codepoint">U+003B</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">;</mapping>
     </char>
     <char xml:id="question">
+      <charName>QUESTION MARK</charName>
       <mapping type="codepoint">U+003F</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">?</mapping>
     </char>
     <char xml:id="capitala">
+      <charName>CAPITAL A</charName>
       <mapping type="codepoint">U+0041</mapping>
       <mapping type="diplomatic">a</mapping>
       <mapping type="normalized">A</mapping>
     </char>
     <char xml:id="capitalb">
+      <charName>CAPITAL B</charName>
       <mapping type="codepoint">U+0042</mapping>
       <mapping type="diplomatic">b</mapping>
       <mapping type="normalized">B</mapping>
     </char>
     <char xml:id="capitalc">
+      <charName>CAPITAL C</charName>
       <mapping type="codepoint">U+0043</mapping>
       <mapping type="diplomatic">c</mapping>
       <mapping type="normalized">C</mapping>
     </char>
     <char xml:id="capitalf">
+      <charName>CAPITAL C</charName>
       <mapping type="codepoint">U+0046</mapping>
       <mapping type="diplomatic">f</mapping>
       <mapping type="normalized">F</mapping>
     </char>
     <char xml:id="capitalg">
+      <charName>CAPITAL G</charName>
       <mapping type="codepoint">U+0047</mapping>
       <mapping type="diplomatic">g</mapping>
       <mapping type="normalized">G</mapping>
     </char>
     <char xml:id="capitalh">
+      <charName>CAPITAL H</charName>
       <mapping type="codepoint">U+0048</mapping>
       <mapping type="diplomatic">h</mapping>
       <mapping type="normalized">H</mapping>
     </char>
     <char xml:id="capitali">
+      <charName>CAPITAL I</charName>
       <mapping type="codepoint">U+0049</mapping>
       <mapping type="diplomatic">i</mapping>
       <mapping type="normalized">I</mapping>
     </char>
     <char xml:id="capitall">
+      <charName>CAPITAL L</charName>
       <mapping type="codepoint">U+004C</mapping>
       <mapping type="diplomatic">l</mapping>
       <mapping type="normalized">L</mapping>
     </char>
     <char xml:id="capitalm">
+      <charName>CAPITAL M</charName>
       <mapping type="codepoint">U+004D</mapping>
       <mapping type="diplomatic">m</mapping>
       <mapping type="normalized">M</mapping>
     </char>
     <char xml:id="capitaln">
+      <charName>CAPITAL M</charName>
       <mapping type="codepoint">U+006E</mapping>
       <mapping type="diplomatic">n</mapping>
       <mapping type="normalized">N</mapping>
     </char>
     <char xml:id="capitalo">
+      <charName>CAPITAL O</charName>
       <mapping type="codepoint">U+004F</mapping>
       <mapping type="diplomatic">o</mapping>
       <mapping type="normalized">O</mapping>
     </char>
     <char xml:id="capitalt">
+      <charName>CAPITAL T</charName>
       <mapping type="codepoint">U+0054</mapping>
       <mapping type="diplomatic">t</mapping>
       <mapping type="normalized">T</mapping>
     </char>
     <char xml:id="capitalthorn">
+      <charName>CAPITAL THORN</charName>
       <mapping type="codepoint">U+00DE</mapping>
       <mapping type="diplomatic">þ</mapping>
       <mapping type="normalized">Þ</mapping>
     </char>
     <char xml:id="capitalw">
+      <charName></charName>
       <mapping type="codepoint">U+0057</mapping>
       <mapping type="diplomatic">w</mapping>
       <mapping type="normalized">W</mapping>
     </char>
     <char xml:id="capitaly">
+      <charName></charName>
       <mapping type="codepoint">U+0059</mapping>
       <mapping type="diplomatic">y</mapping>
       <mapping type="normalized">Y</mapping>
     </char>
     <char xml:id="smalla">
+      <charName></charName>
       <mapping type="codepoint">U+0061</mapping>
       <mapping type="diplomatic">A</mapping>
       <mapping type="normalized">a</mapping>
     </char>
     <char xml:id="smalli">
+      <charName></charName>
       <mapping type="codepoint">U+0069</mapping>
       <mapping type="diplomatic">I</mapping>
       <mapping type="normalized">i</mapping>
     </char>
     <char xml:id="smallo">
+      <charName></charName>
       <mapping type="codepoint">U+006F</mapping>
       <mapping type="diplomatic">O</mapping>
       <mapping type="normalized">o</mapping>
     </char>
     <char xml:id="smallr">
+      <charName></charName>
       <mapping type="codepoint">U+0072</mapping>
       <mapping type="diplomatic">R</mapping>
       <mapping type="normalized">r</mapping>
     </char>
     <char xml:id="smalls">
+      <charName></charName>
       <mapping type="codepoint">U+0073</mapping>
       <mapping type="diplomatic">S</mapping>
       <mapping type="normalized">s</mapping>
@@ -529,7 +577,7 @@
           <l n="38"><lb facs="#IS_114v_38" n="38" xml:id="IS_lb_114v_38"/>his merci <g ref="flong"/>or to nomme<g ref="fullstop"/></l>
           <l n="39"><lb facs="#IS_114v_39" n="39" xml:id="IS_lb_114v_39"/>So longe he vayned in hiȝe <g ref="pri"/>de</l>
           <l n="40"><lb facs="#IS_114v_40" n="40" xml:id="IS_lb_114v_40"/>that <g ref="capitalg"/>od uolde no lengue <choice><orig>a bide</orig><reg>abide</reg></choice></l>
-          <l n="41"><lb facs="#IS_114v_41" n="41" xml:id="IS_lb_114v_41"/>but <g ref="slong"/>end to him a <g ref="slong"/>tewyne<g ref="fullstop"/></l> 
+          <l n="41"><lb facs="#IS_114v_41" n="41" xml:id="IS_lb_114v_41"/>but <g ref="slong"/>end to him a <g ref="slong"/>tewyne<g ref="fullstop"/></l>        
           
           <pb facs="data/images/single/IS_114v_colb.jpg" n="114v Col.2" xml:id="IS_114v_colb"/>
           <l n="1"><lb facs="#IS_114v_42" n="42" xml:id="IS_lb_114v_42"/>So hit <choice><orig>bi <g ref="flong"/>ille</orig><corr>bifille</corr> </choice><g ref="v"/>ppon a day</l>

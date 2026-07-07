@@ -49,7 +49,6 @@
         </editorialDecl>
   <charDecl>
     <glyph xml:id="slong">
-      <glyphName>LONG S</glyphName>
       <mapping type="codepoint">U+017F</mapping>
       <mapping type="diplomatic">ſ</mapping>
       <mapping type="normalized">s</mapping>

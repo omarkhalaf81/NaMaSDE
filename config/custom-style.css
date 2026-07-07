@@ -19,6 +19,13 @@
 /*                                                                   */
 
 /* ***************************************************************** */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 3fr 1fr; /* Adjust the width of the columns */
+	gap: 10px; /* Optional: space between columns */
+  }
+
 .term {
 	background-color: coral;
 }
@@ -30,9 +37,10 @@
 	padding: 5px 5px 5px 8px;
 	margin-bottom: 3%;
 	text-align: justify;
-	font-size: 95%;
+	font-size: 100%;
 	font-style: italic;
 }
+
 
 span.analogue span.analogue__text span.quote {
 	font-style: italic;

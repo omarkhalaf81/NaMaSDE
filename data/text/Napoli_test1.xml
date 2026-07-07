@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+   <fileDesc>
+      <titleStmt>
+         <title>Napoli, Biblioteca Nazionale, MS XIII.B.29. Edizione diplomatica e interpretativa</title>
+      <respStmt>
+         <resp></resp>
+            <name>Omar Khalaf</name>
+        
+      </respStmt> 
+      </titleStmt>
+      <publicationStmt>
+         <p>Progetto non pubblicato</p>
+      </publicationStmt>
+      <sourceDesc>
+         <msDesc>
+            <msIdentifier>
+               <settlement>Napoli</settlement>
+               <repository>Biblioteca Nazionale</repository>
+               <idno>MS XIII.B.29</idno>
+            </msIdentifier>
+            <msContents>
+              <msItem><title>Ricette mediche</title>
+              </msItem>
+              <msItem>
+                <title xml:lang="enm">Sir Bevis of Hamptoun</title>
+              </msItem>
+               <msItem> 
+                  <title xml:lang="enm">Sir Isumbras</title>
+               </msItem>
+               <msItem>
+                  <title xml:lang="it">Costantino</title>
+               </msItem>
+               </msContents>
+            <physDesc>
+              <objectDesc><p>Codice pergamenaceo, 146 fogli. Dettagli bibliografici in Guddatt-Figge, G., <hi rend="italic"> Catalogue of Manuscripts containing Middle English Romances</hi>, Munich, 1976.</p>
+                  <p>Una sola mano, stile secretariale. Mani successive visibili nelle note e nei disegni.</p></objectDesc>
+            </physDesc>
+         </msDesc>
+        <listBibl>
+          <bibl>O. Khalaf, R. Cioffi, "Un progetto di trascrizione ed edizione digitale delcodice Napoli, Biblioteca Nazionale, MS XIII.B.29", <hi rend="italic">Umanistica Digitale</hi> 2 (2018), 139-159. Url: https://umanisticadigitale.unibo.it/article/view/7262</bibl>
+        </listBibl>
+      </sourceDesc>
+   </fileDesc>
+      <encodingDesc>
+        <editorialDecl>
+           <p>Facsimile ed edizione interpretativa, dove si è provveduto alla normalizzazione grafematica, alla correzione degli errori scribali e all'aggiunta della punteggiatura secondo gli standard moderni.</p>
+        </editorialDecl>
+  <charDecl>
+    <glyph xml:id="yogh">
+      <localProp value="LATIN SMALL LETTER YOGH" name="name"/>
+      <mapping type="diplomatic">&#541;</mapping>
+      <mapping type="normalized">gh</mapping>
+    </glyph> 
+    <glyph xml:id="slong">
+      <localProp value="LATIN SMALL LETTER LONG S" name="name"/>
+      <mapping type="diplomatic">&#383;</mapping>
+      <mapping type="normalized">s</mapping>
+    </glyph> 
+    <glyph xml:id="rlong">
+      <mapping type="codepoint">U+027C</mapping>
+      <mapping type="diplomatic">&#636;</mapping>
+      <mapping type="normalized">r</mapping>
+    </glyph> 
+    <glyph xml:id="thorn"> 
+      <localProp value="LATIN SMALL LETTER THORN" name="name"/>
+      <mapping type="diplomatic">&#254;</mapping>
+      <mapping type="normalized">th</mapping>
+    </glyph> 
+    <glyph xml:id="nflour">
+      <localProp value="LATIN SMALL LETTER N WITH FLOURISH" name="name"/>
+    <mapping type="codepoint">U+0273</mapping>
+      <mapping type="diplomatic">&#61850;</mapping>
+    <mapping type="normalized">n</mapping>
+    </glyph> 
+    <glyph xml:id="thorntsup">
+      <localProp value="LATIN SMALL LETTER THORN WITH SMALL LETTER T ABOVE" name="name"/>
+      <mapping type="diplomatic">&#61582;</mapping>
+      <mapping type="normalized">that</mapping>
+    </glyph> 
+    <glyph xml:id="thornesup">
+      <localProp value="LATIN SMALL LETTER THORN WITH LATIN SMALL LETTER E ABOVE" name="name"/>
+      <mapping type="diplomatic">&#61574;</mapping>
+      <mapping type="normalized">the</mapping>
+    </glyph> 
+  </charDecl>
+      </encodingDesc> 
+ </teiHeader>
+  
+  
+<!-- BEVIS -->
+  
+  <text n="Bevis of Hampton" subtype="edition_text" type="verse" xml:id="Text_Bevis">
+   <front><head><hi rend="bold">Informazioni sul testo</hi></head>
+     <div><p><hi rend="bold">Metro</hi><hi rend="italic"> Tail-rhyme stanzas</hi> di 6 versi dal v. 1 al 474. Il resto del poema è costruito in rima baciata</p></div>
+     <div><p><hi rend="bold">Data</hi> circa 1300 </p></div>
+     <div><p><hi rend="bold">Provenienza</hi> Southampton o aree limitrofe </p></div>
+     <div><p><hi rend="bold">Trama (in inglese)</hi><lb/>The elderly Earl of Southampton and his young wife have a son, Bevis. When he is seven, Bevis’ mother has the Earl murdered by her lover, the Emperor of Almayn. Bevis’ uncle Saber protects him, but after he beats his stepfather his mother sells him to Saracen merchants. The child is taken to King Ermin of Armenia, who encourages him to renounce Christianity. He refuses, but trains as a knight until, at the age of fifteen, his companions insult his faith and he kills them all. Ermin’s daughter Josian calms her father’s rage and heals Bevis’ wounds. Her love for him grows as he slays a monstrous boar and fights off an ambush by Ermin’s jealous steward.
+       King Brademond demands to marry Josian, threatening war if he is refused. Ermin knights Bevis and Josian gives him a war-horse called Arundel. He defeats Brademond, but releases him after he agrees to pay tribute. During the celebrations, Josian declares her love for Bevis, but is rejected until she promises to become Christian. A treacherous chamberlain tells Ermin, and the King sends Bevis to Brademond with a letter demanding his own death. He is thrown into a dungeon and Ermin marries his daughter to King Yvor of Mombraunt. Josian, however, uses a magic ring to protect her chastity.
+       After seven years, Bevis escapes from prison. He travels to Mombraunt and, disguised as a pilgrim, rescues Arundel and Josian, who assures him that she is still a virgin. As they escape, he makes Ascopart, King Yvor’s giant, his page. They sail to Cologne, where Josian is baptised and Ascopart rejects Christianity. Bevis then saves the city from a poisonous dragon before travelling to England, where he insults his stepfather and is reunited with Saber.
+       While he is away, Josian is forced to marry another Earl, but murders him on their wedding night. Bevis arrives just in time to save her from being burnt, and they return to England, where Saber and the Emperor of Almayn are preparing for battle. Bevis leads his troops to victory, and Ascopart captures the Emperor, who is killed in a cauldron of pitch. Bevis’ mother dies and he is recognised as Lord of Hampshire. He marries Josian and travels to London, where King Edgar makes him his marshal. When the king’s son is killed trying to steal Arundel, however, Bevis and his pregnant wife leave England, taking Saber's son Terri as their page.
+       The rejected Ascopart betrays Bevis by offering to return Josian to Yvor. He kidnaps her just after she has given birth to twin sons, Miles and Guy, but she keeps herself pure by pretending to be leprous. Bevis and Terri leave the children with foster parents and ride on to Aumbeforce, where Bevis wins a tournament and the heart of the princess, though she agrees to marry Terri if Josian returns. Meanwhile Saber dreams of Bevis’ troubles and sets out to find him. He slays Ascopart and rescues Josian, who supports their search by working as a minstrel. After seven years, they reach Aumbeforce, where the couple and their children are reunited, and Terri marries the princess. They all travel to Armenia and find Yvor besieging King Ermin. Bevis captures Yvor, but releases him when he agrees to pay ransom. Ermin dies, leaving Guy his heir, and he and Bevis convert their subjects to Christianity. Yvor returns and steals Arundel, vowing revenge against Bevis, but Saber retrieves the horse and rides to Armenia, followed by Yvor’s troops. Yvor challenges Bevis to single combat and fights bravely, but Bevis is victorious. The rest of the Saracens are defeated, and Bevis is crowned king of Mombraunt.
+       Saber hears that King Edgar has seized his lands, and they all sail to England. Bevis appeals to the king, but his steward accuses the knight of treachery and raises the citizens of London against him. Battle rages in the city’s streets until the steward is dead and the Thames runs red. Edgar offers his daughter and kingdom to Miles, then Bevis gives Hampshire to Saber and returns to Mombrant with Josian and Arundel, leaving Gui in Armenia and Terri in Aumberforce. After twenty years Josian dies, swiftly followed by Arundel and Bevis. They are buried in a lavish tomb, and their sons found an abbey to pray for their souls.</p></div>
+     <div><p><hi rend="bold">Altri testimoni</hi>
+       <lb/>Cambridge, University Library, MS Ff.2.38, fol. 102v-134r
+       <lb/>Cambridge, Gonville and Caius College, MS 175/96, pag. 131-156
+       <lb/>Cambridge, Trinity College Library, MS O.2.13, fol. 149r-152r
+       <lb/>Edinburgh, National Library f Scotland, MS Advocates 19.2.1 (Auchinleck Manuscript), fol. 176r-201r
+       <lb/>London, British Library, MS Egerton 2862, fol. 45r-96v
+       <lb/>Manchester, Chetham's Library, MS 8009, fol. 122r-190v
+       <lb/>Oxford, Bodleian Library, MS Douce Fragm. E.13
+       <lb/>Oxford, Bodleian Library, MS Eng. Poet. D.208, fol. 49r-50v
+     </p></div></front>
+    <body>
+      <div n="Bevis" subtype="edition_text" type="verse" xml:id="Bevis"> 
+        <fw place="top-middle" type="cw">sir beuys of hampto<g ref="ntilde"/></fw>
+        <l n="1">l&#8195;ordlingis ly<g ref="slong"/>stenith to my tale</l> 
+        <l n="2"><lb facs="#BE_line_23r_02" n="2" xml:id="BE_lb_23r_02"/><choice><orig>&#10240;&#10240;</orig><reg></reg></choice><g ref="that"/> is merious <g ref="th"/>an 
+                                                                         <g ref="the"/> ny<g ref="yogh"/>tingale<g ref="fullstop"/></l>
+        <l n="3"><lb facs="#BE_line_23r_03" n="3" xml:id="BE_lb_23r_03"/>That I wolle yow synge<g ref="middot"/><g ref="comma"/></l>
+        <l n="4"><lb facs="#BE_line_23r_04" n="4" xml:id="BE_lb_23r_04"/><g ref="smallo"/>f a knyght<g ref="comma"/> sir Beno<g ref="ntilde"/><g ref="comma"/></l> 
+        <l n="5"><lb facs="#BE_line_23r_05" n="5" xml:id="BE_lb_23r_05"/><g ref="smallt"/>hat was bore in Southampton</l>
+        <l n="6"><lb facs="#BE_line_23r_06" n="6" xml:id="BE_lb_23r_06"/><choice><orig>with outen</orig><reg>withouten</reg></choice> lesyng<g ref="middotfullstop"/></l>
+        <l n="7"><lb facs="#BE_line_23r_07" n="7" xml:id="BE_lb_23r_07"/><g ref="capitalh"/>e was a <g ref="slong"/>alworthe man</l>
+        <l n="8"><lb facs="#BE_line_23r_08" n="8" xml:id="BE_lb_23r_08"/><g ref="smalla"/>nd many kingdomes wan</l>
+        <l n="9"><lb facs="#BE_line_23r_09" n="9" xml:id="BE_lb_23r_09"/><g ref="smallt"/>o <choice><orig>god is</orig><reg>Godis</reg></choice> lawis<g ref="middotfullstop"/></l>  
+        <l n="10"><lb facs="#BE_line_23r_10" n="10" xml:id="BE_lb_23r_10"/><g ref="capitalh"/>e was <g ref="the"/> best <g ref="that"/> come in feld</l>
+        <l n="11"><lb facs="#BE_line_23r_11" n="11" xml:id="BE_lb_23r_11"/><g ref="smalla"/>nd mo<g ref="slong"/>t wan with <g ref="slang"/>pere <g ref="and"/> shild</l>      
+        <l n="12"><lb facs="#BE_line_23r_12" n="12" xml:id="BE_lb_23r_12"/><g ref="smallb"/>i his lyfe daies<g ref="fullstop"/></l>
+        <l n="13"><lb facs="#BE_line_23r_13" n="13" xml:id="BE_lb_23r_13"/>I woll yowe telle <choice><orig>al to gadir</orig><reg>altogadir</reg></choice></l>
+        <l n="14"><lb facs="#BE_line_23r_14" n="14" xml:id="BE_lb_23r_14"/><g ref="smallo"/>f th kny<g ref="yogh"/>t and of his fadir</l>
+        <l n="15"><lb facs="#BE_line_23r_15" n="15" xml:id="BE_lb_23r_15"/><g ref="smallt"/>he good Erle sir Gy<g ref="middotfullstop"/></l>
+        <l n="16"><lb facs="#BE_line_23r_16" n="16" xml:id="BE_lb_23r_16"/><g ref="smallo"/>f <g ref="capitalh"/>ampton he was lord <g ref="and"/> <g ref="slong"/>ire</l>
+        <l n="17"><lb facs="#BE_line_23r_17" n="17" xml:id="BE_lb_23r_17"/><g ref="smalla"/>nd of alle that ilke shire</l>
+        <l n="18"><lb facs="#BE_line_23r_18" n="18" xml:id="BE_lb_23r_18"/>him to wardy<g ref="middotfullstop"/></l>
+        <l n="19"><lb facs="#BE_line_23r_19" n="19" xml:id="BE_lb_23r_19"/><choice><orig>Lordling<g ref="es"/></orig><corr>Lordinges</corr></choice><g ref="comma"/> <g ref="the"/> Erle <g ref="that"/> I of telle</l>
+        <l n="20"><lb facs="#BE_line_23r_20" n="20" xml:id="BE_lb_23r_20"/><g ref="smalli"/>n his tyme man of fle<g ref="slong"/>he ne felle</l>
+        <l n="21"><lb facs="#BE_line_23r_21" n="21" xml:id="BE_lb_23r_21"/>was none so stronge<g ref="middot"/></l> 
+        <l n="22"><lb facs="#BE_line_23r_22" n="22" xml:id="BE_lb_23r_22"/><g ref="smalla"/>nd euer he lyvid <g ref="with"/>out wife</l>
+        <l n="23"><lb facs="#BE_line_23r_23" n="23" xml:id="BE_lb_23r_23"/><g ref="smalla"/>s he was in eche <g ref="slang"/>trife<g ref="comma"/></l>
+        <l n="24"><lb facs="#BE_line_23r_24" n="24" xml:id="BE_lb_23r_24"/><g ref="smallt"/>ille late and long<g ref="fullstop"/></l>
+        <l n="25"><lb facs="#BE_line_23r_25" n="25" xml:id="BE_lb_23r_25"/>Tho he was fallen in elde</l>
+        <l n="26"><lb facs="#BE_line_23r_26" n="26" xml:id="BE_lb_23r_26"/><g ref="smallt"/>hathe ne my<g ref="yogh"/>t <choice><orig>him silfe</orig><reg>himsilfe</reg></choice> welde<g ref="semicolon"/></l>
+        <l n="27"><lb facs="#BE_line_23r_26" n="27" xml:id="BE_lb_23r_27"/>he wolde a wife take</l>
+        <l n="28"><lb facs="#BE_line_23r_28" n="28" xml:id="BE_lb_23r_28"/><g ref="smalla"/>nd sone <choice><orig><g ref="ther"/> aftir</orig><reg>theraftir</reg></choice> I <g ref="v"/>ndurstond</l>
+        <l n="29"><lb facs="#BE_line_23r_29" n="29" xml:id="BE_lb_23r_29"/>him had ben le<g ref="uer"/> <g ref="th"/>an all <g ref="this"/> lond</l>  
+        <l n="30"><lb facs="#BE_line_23r_30" n="30" xml:id="BE_lb_23r_30"/>had he hur for<g ref="slong"/>ake.</l>
+        <l n="31"><lb facs="#BE_line_23r_31" n="31" xml:id="BE_lb_23r_31"/>A wife in elde he toke an hond<g ref="comma"/></l>
+        <l n="32"><lb facs="#BE_line_23r_32" n="32" xml:id="BE_lb_23r_32"/><g ref="smallt"/>he kyngis doghte<g ref="rlong"/> of Skotlond<g ref="comma"/></l>
+        <l n="33"><lb facs="#BE_line_23r_33" n="33" xml:id="BE_lb_23r_33"/><g ref="smalls"/>o feire and bright<g ref="semicolon"></g></l>
+        <l n="34"><lb facs="#BE_line_23r_34" n="34" xml:id="BE_lb_23r_34"/><g ref="smalla"/>las that he hu<g ref="rlong"/> e<g ref="uer"/> chese<g ref="exclamation"/></l>
+        <l n="35"><lb facs="#BE_line_23r_35" n="35" xml:id="BE_lb_23r_35"/><g ref="capitalh"/>is owne life for hur he lese</l>
+        <l n="36"><lb facs="#BE_line_23r_36" n="36" xml:id="BE_lb_23r_36"/>with mochell <g ref="v"/>nright<g ref="fullstop"/></l> 
+        
+        <pb facs="data/images/single/BE_23r_colb.jpg" n="23r Col.2" xml:id="BE_23r_colb"/> 
+        <l n="37"><lb facs="#BE_line_23r_37" n="37" xml:id="BE_lb_23r_37"/>This maide <g ref="that"/> I haue of tolde</l>      
+        <l n="38"><lb facs="#BE_line_23r_38" n="38" xml:id="BE_lb_23r_38"/><g ref="smalla"/> faire woman <choice><orig>sho</orig><reg>she</reg></choice> was and bolde</l>
+        <l n="39"><lb facs="#BE_line_23r_39" n="39" xml:id="BE_lb_23r_39"/><g ref="smalla"/>nd free <choice><orig>I bore</orig><reg>ibore</reg></choice><g ref="fullstop"/></l>
+        <l n="40"><lb facs="#BE_line_23r_40" n="40" xml:id="BE_lb_23r_40"/>Of Almayne the <g ref="smalle"/>m<g ref="per"/>ou<g ref="rlong"/></l>
+        <l n="41"><lb facs="#BE_line_23r_41" n="41" xml:id="BE_lb_23r_41"/>hur louyd <g ref="par"/>amour</l>
+        <l n="42"><lb facs="#BE_line_23r_42" n="42" xml:id="BE_lb_23r_42"/>welle longe ther <choice><orig>bi fore</orig><reg>bifore</reg></choice><g ref="fullstop"/></l>
+        <l n="43"><lb facs="#BE_line_23r_43" n="43" xml:id="BE_lb_23r_43"/>Oft to hur fadir he sent</l>
+        <l n="44"><lb facs="#BE_line_23r_44" n="44" xml:id="BE_lb_23r_44"/><g ref="smalla"/>nd <choice><orig>hym silfe</orig><reg>hymsilfe</reg></choice>thedir went</l>
+        <l n="45"><lb facs="#BE_line_23r_45" n="45" xml:id="BE_lb_23r_45"/>for hur sake<g ref="semicolon"/></l> 
+        <l n="46"><lb facs="#BE_line_23r_46" n="46" xml:id="BE_lb_23r_46"/>moche he desirid hur to wyue<g ref="fullstop"/></l>
+        <l n="47"><lb facs="#BE_line_23r_47" n="47" xml:id="BE_lb_23r_47"/>The kyng fo<g ref="rlong"/> no thing on lyue</l>
+        <l n="48"><lb facs="#BE_line_23r_48" n="48" xml:id="BE_lb_23r_48"/>wolde hur him take</l> 
+        <l n="49"><lb facs="#BE_line_23r_49" n="49" xml:id="BE_lb_23r_49"/>And sithen he yaue hur to sir Gy</l>
+        <l n="50"><lb facs="#BE_line_23r_50" n="50" xml:id="BE_lb_23r_50"/><choice><orig>Astaleworth</orig><reg>a staleworth</reg></choice> man and an hardy</l>
+        <l n="51"><lb facs="#BE_line_23r_51" n="51" xml:id="BE_lb_23r_51"/><g ref="smallo"/>f Southampto<g ref="un"/><g ref="fullstop"/></l>
+        <l n="52"><lb facs="#BE_line_23r_52" n="52" xml:id="BE_lb_23r_52"/>But whan he fille <choice><orig>in to</orig><reg>into</reg></choice> elde</l>
+        <l n="53"><lb facs="#BE_line_23r_53" n="53" xml:id="BE_lb_23r_53"/><g ref="ff"/>ebill and waxen <choice><orig>vn welde</orig><reg>unwelde</reg></choice></l>
+        <l n="54"><lb facs="#BE_line_23r_54" n="54" xml:id="BE_lb_23r_54"/><g ref="smallb"/>i right resoun<g ref="fullstop"/></l>      
+        <l n="55"><lb facs="#BE_line_23r_55" n="55" xml:id="BE_lb_23r_55"/>So long thei yede <choice><orig>to gadir</orig><reg>togadir</reg></choice> to bedde<g ref="comma"/></l>
+        <l n="56"><lb facs="#BE_line_23r_56" n="56" xml:id="BE_lb_23r_56"/><g ref="smalla"/> man childe <choice><orig>to gadir</orig><reg>togadir</reg></choice> thei hedde</l>
+        <l n="57"><lb facs="#BE_line_23r_57" n="57" xml:id="BE_lb_23r_57"/><g ref="smallt"/>hat <g ref="middot"/> Beuys <g ref="middot"/> hate<g ref="fullstop"/></l> 
+        <l n="58"><lb facs="#BE_line_23r_58" n="58" xml:id="BE_lb_23r_58"/>A faire childe he was and bolde<g ref="fullstop"/></l>
+        <l n="59"><lb facs="#BE_line_23r_59" n="59" xml:id="BE_lb_23r_59"/><g ref="capitalh"/>e was but <choice><orig><g ref="middot"/>vij<g ref="middot"/></orig><reg>seuen</reg></choice> yere olde</l>
+        <l n="60"><lb facs="#BE_line_23r_60" n="60" xml:id="BE_lb_23r_60"/><g ref="smallt"/>ho his fadir him lete<g ref="comma"/></l>
+        <l n="61"><lb facs="#BE_line_23r_61" n="61" xml:id="BE_lb_23r_61"/><g ref="smallt"/>he lady al <choice><orig>a mys</orig><reg>amys</reg></choice> hu<g ref="rlong"/> though</l>
+        <l n="62"><lb facs="#BE_line_23r_62" n="62" xml:id="BE_lb_23r_62"/><g ref="smalla"/>nd moche <choice><orig>a  yen</orig><reg>ayen</reg></choice> right <g ref="slong"/>ho wrought</l>
+        <l n="63"><lb facs="#BE_line_23r_63" n="63" xml:id="BE_lb_23r_63"/><g ref="smalli"/>n hir tolkre<g ref="colon"/></l>
+        <l n="64"><lb facs="#BE_line_23r_64" n="64" xml:id="BE_lb_23r_64"/><g ref="quote"/><g ref="capitalm"/>y lorde is olde and may not wirch<g ref="comma"/></l>
+        <l n="65"><lb facs="#BE_line_23r_65" n="65" xml:id="BE_lb_23r_65"/><g ref="smalla"/>l day him is leuer to be at chirch</l>
+        <l n="66"><lb facs="#BE_line_23r_66" n="66" xml:id="BE_lb_23r_66"/><g ref="smallt"/>hen in my bowre<g ref="fullstop"/></l>
+        <l n="67"><lb facs="#BE_line_23r_67" n="67" xml:id="BE_lb_23r_67"/><g ref="capitalh"/>ad I take a yong knyght</l>  
+        <l n="68"><lb facs="#BE_line_23r_68" n="68" xml:id="BE_lb_23r_68"/><g ref="smallt"/>hat had ne<g ref="uer"/> be bru<g ref="slong"/>id in fyght</l>
+        <l n="69"><lb facs="#BE_line_23r_69" n="69" xml:id="BE_lb_23r_69"/><g ref="hyphen"/> <g ref="smalla"/>s he nowe is <g ref="hyphen"/></l>
+        <l n="70"><lb facs="#BE_line_23r_70" n="70" xml:id="BE_lb_23r_70"/>he wolde me loue with all his my<g ref="yogh"/>t<g ref="comma"/></l>
+        <l n="71"><lb facs="#BE_line_23r_71" n="71" xml:id="BE_lb_23r_71"/><g ref="smallc"/>lip and kys bothe day and ny<g ref="yogh"/>t</l>
+        <l n="72"><lb facs="#BE_line_23r_72" n="72" xml:id="BE_lb_23r_72"/><g ref="smalla"/>nd make me blys<g ref="middotfullstop"/></l>  
+        
+        <pb facs="data/images/single/BE_23v_cola.jpg" n="23v Col.1" xml:id="BE_23v_cola"/>
+        <l n="73"><lb facs="#BE_line_23v_73" n="73" xml:id="BE_lb_23v_73"/>I nelle lette for no thinge</l>
+        <l n="74"><lb facs="#BE_line_23v_74" n="74" xml:id="BE_lb_23v_74"/><g ref="smallt"/>hat I nelle to dethe him bryng</l>
+        <l n="75"><lb facs="#BE_line_23v_75" n="75" xml:id="BE_lb_23v_75"/><g ref="smallw"/>ith sum braide<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="76"><lb facs="#BE_line_23v_76" n="76" xml:id="BE_lb_23v_76"/>Anone right that lady fre</l>
+        <l n="77"><lb facs="#BE_line_23v_77" n="77" xml:id="BE_lb_23v_77"/><g ref="smallc"/>lepid to coun<g ref="slong"/>el hur me<g ref="slong"/>yngere</l>
+        <l n="78"><lb facs="#BE_line_23v_78" n="78" xml:id="BE_lb_23v_78"/><g ref="smalla"/>nd to him saide<g ref="comma"/></l>
+        <l n="79"><lb facs="#BE_line_23v_79" n="79" xml:id="BE_lb_23v_79"/><g ref="quote"/><g ref="capitalm"/>e<g ref="slong"/>ingere<g ref="comma"/> do me sewerte</l>
+        <l n="80"><lb facs="#BE_line_23v_80" n="80" xml:id="BE_lb_23v_80"/><g ref="smallt"/>hat thou <g ref="slong"/>alt not di<g ref="slong"/>couery me</l>
+        <l n="81"><lb facs="#BE_line_23v_81" n="81" xml:id="BE_lb_23v_81"/>neuer to noo wight<g ref="semicolon"/></l>
+        <l n="82"><lb facs="#BE_line_23v_82" n="82" xml:id="BE_lb_23v_82"/><g ref="smalla"/>nd yef thow wolt that hit so bee</l>
+        <l n="83"><lb facs="#BE_line_23v_83" n="83" xml:id="BE_lb_23v_83"/>I wolde the yeue bothe golde and fee</l>
+        <l n="84"><lb facs="#BE_line_23v_84" n="84" xml:id="BE_lb_23v_84"/><g ref="smalla"/>nd make the knyght<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="85"><lb facs="#BE_line_23v_85" n="85" xml:id="BE_lb_23v_85"/>Than answerid the mesynger<g ref="comma"/></l>
+        <l n="86"><lb facs="#BE_line_23v_86" n="86" xml:id="BE_lb_23v_86"/>ffals he was and pautener</l>
+        <l n="87"><lb facs="#BE_line_23v_87" n="87" xml:id="BE_lb_23v_87"/><g ref="smalla"/>nd well prowte<g ref="comma"/></l>
+        <l n="88"><lb facs="#BE_line_23v_88" n="88" xml:id="BE_lb_23v_88"/><g ref="quote"/><g ref="capitalm"/>adame<g ref="comma"/> but I do well thi nede<g ref="fullstop"/></l>
+        <l n="89"><lb facs="#BE_line_23v_89" n="89" xml:id="BE_lb_23v_89"/>I wolle that thowe me <choice><orig>for bede</orig><reg>forbede</reg></choice></l>
+        <l n="90"><lb facs="#BE_line_23v_90" n="90" xml:id="BE_lb_23v_90"/><g ref="smallt"/>hi londe throwout<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="91"><lb facs="#BE_line_23v_91" n="91" xml:id="BE_lb_23v_91"/>The ladi <choice><orig>ther of</orig><reg>therof</reg></choice> was fulle fayne<g ref="comma"/></l>
+        <l n="93"><lb facs="#BE_line_23v_92" n="92" xml:id="BE_lb_23v_92"/><g ref="quote"/><g ref="capitalw"/>ynde<g ref="quote"/> sho seide <g ref="quote"/>to Almayne</l>
+        <l n="94"><lb facs="#BE_line_23v_93" n="93" xml:id="BE_lb_23v_93"/><g ref="smallo"/>ut of the towre<g ref="eclamation"/></l>
+        <l n="95"><lb facs="#BE_line_23v_94" n="94" xml:id="BE_lb_23v_94"/><g ref="capitalm"/>esynger<g ref="comma"/> be queynt and snelle</l>
+        <l n="96"><lb facs="#BE_line_23v_95" n="95" xml:id="BE_lb_23v_95"/><g ref="smalla"/>nd on my halfe grete him welle</l> 
+        <l n="97"><lb facs="#BE_line_23v_96" n="96" xml:id="BE_lb_23v_96"/><g ref="smallt"/>hat <g ref="smalle"/>m<g ref="per"/>our<g ref="comma"/></l>
+        <l n="98"><lb facs="#BE_line_23v_97" n="97" xml:id="BE_lb_23v_97"/><g ref="smalla"/>nd bid him that in the first day</l>
+        <l n="99"><lb facs="#BE_line_23v_98" n="98" xml:id="BE_lb_23v_98"/><g ref="smallt"/>hat comyth in the monthe of <g ref="capitalm"/>ay</l>
+        <l n="100"><lb facs="#BE_line_23v_99" n="99" xml:id="BE_lb_23v_99"/>ffor the loue of mee</l>
+        <l n="101"><lb facs="#BE_line_23v_100" n="100" xml:id="BE_lb_23v_100"/><g ref="smallt"/>hat he be with his men prest</l>
+        <l n="102"><lb facs="#BE_line_23v_101" n="101" xml:id="BE_lb_23v_101"/>ffor to fyght in one forest</l>
+        <l n="103"><lb facs="#BE_line_23v_102" n="102" xml:id="BE_lb_23v_102"/><g ref="smallv"/>ppon the <g ref="smalls"/>ee<g ref="fullstop"/></l>
+        <l n="104"><lb facs="#BE_line_23v_103" n="103" xml:id="BE_lb_23v_103"/><g ref="capitalm"/>y lord<g ref="comma"/> I wol thedir sende</l>
+        <l n="105"><lb facs="#BE_line_23v_104" n="104" xml:id="BE_lb_23v_104"/>ffor thi loue to shende<g ref="fullstop"/></l>
+        <l n="106"><lb facs="#BE_line_23v_105" n="105" xml:id="BE_lb_23v_105"/>With fewe mayne</l>
+        <l n="107"><lb facs="#BE_line_23v_106" n="106" xml:id="BE_lb_23v_106"/><g ref="smallb"/>id him that it nought be leued</l>
+        <l n="108"><lb facs="#BE_line_23v_107" n="107" xml:id="BE_lb_23v_107"/><g ref="smallt"/>hat he smyte ofe my <choice><orig>lorde is</orig><reg>lordis</reg></choice> hed</l>
+        <l n="109"><lb facs="#BE_line_23v_108" n="108" xml:id="BE_lb_23v_108"/><g ref="smalla"/>nd sende hyt <choice><orig>vn to</orig><reg>unto</reg></choice> me<g ref="exclamation"/></l>
+      
+        <pb facs="data/images/single/BE_23v_colb.jpg" n="23v Col.2" xml:id="BE_23v_colb"/>
+        <l n="110"><lb facs="#BE_line_23v_109" n="109" xml:id="BE_lb_23v_109"/>And whan he hat <g ref="slong"/>o <choice><orig>y done</orig><reg>ydone</reg></choice></l>
+        <l n="111"><lb facs="#BE_line_23v_110" n="110" xml:id="BE_lb_23v_110"/>my loue he wynnyth to come <g ref="and"/> gone</l>
+        <l n="112"><lb facs="#BE_line_23v_111" n="111" xml:id="BE_lb_23v_111"/>withoute delay<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="113"><lb facs="#BE_line_23v_112" n="112" xml:id="BE_lb_23v_112"/>Then seid the mesynger<g ref="comma"/></l>
+        <l n="114"><lb facs="#BE_line_23v_113" n="113" xml:id="BE_lb_23v_113"/><g ref="quote"/><g ref="capitalm"/>adam<g ref="comma"/> <g ref="capitaly"/> wol welle <g ref="slong"/>one be there<g ref="fullstop"/></l>
+        <l n="115"><lb facs="#BE_line_23v_114" n="114" xml:id="BE_lb_23v_114"/><g ref="capitaln"/>owe haue good day<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="116"><lb facs="#BE_line_23v_115" n="115" xml:id="BE_lb_23v_115"/><g ref="capitalf"/>forthe the mesinger he goth<g ref="semicolon"/></l> 
+        <l n="117"><lb facs="#BE_line_23v_116" n="116" xml:id="BE_lb_23v_116"/><g ref="ihesu"/> <g ref="capitalc"/>rist make him wroth</l>
+        <l n="118"><lb facs="#BE_line_23v_117" n="117" xml:id="BE_lb_23v_117"/><g ref="smallt"/>hat him wrought<g ref="fullstop"/></l>
+        <l n="119"><lb facs="#BE_line_23v_118" n="118" xml:id="BE_lb_23v_118"/><g ref="smallt"/>o ship the me<g ref="slong"/>inger yode<g ref="fullstop"/></l>
+        <l n="120"><lb facs="#BE_line_23v_119" n="119" xml:id="BE_lb_23v_119"/>Alas<g ref="comma"/> the wynde was to good</l>
+        <l n="121"><lb facs="#BE_line_23v_120" n="120" xml:id="BE_lb_23v_120"/><g ref="smalla"/>nd him ouer broght<g ref="fullstop"/></l>
+        <l n="122"><lb facs="#BE_line_23v_121" n="121" xml:id="BE_lb_23v_121"/>Whan he come <choice><orig>in to</orig><reg>into</reg></choice> Almayne</l>
+        <l n="123"><lb facs="#BE_line_23v_122" n="122" xml:id="BE_lb_23v_122"/><g ref="smallt"/>ho he mette with a <g ref="smalls"/>wayne</l>
+        <l n="124"><lb facs="#BE_line_23v_123" n="123" xml:id="BE_lb_23v_123"/><g ref="smalla"/>nd <choice><orig>dir</orig><corr></corr></choice> grete him welle<g ref="comma"/></l>
+        <l n="125"><lb facs="#BE_line_23v_124" n="124" xml:id="BE_lb_23v_124"/><g ref="quote"/>Sir<g ref="comma"/><g ref="quote"/> he seid<g ref="comma"/> <g ref="quote"/><g ref="par"/>amour<g ref="comma"/></l>
+        <l n="126"><lb facs="#BE_line_23v_125" n="125" xml:id="BE_lb_23v_125"/><g ref="smallw"/>hare <g ref="slong"/>hall I fynd <g ref="the"/> em<g ref="per"/>our<g ref="question"/></l>
+        <l n="127"><lb facs="#BE_line_23v_126" n="126" xml:id="BE_lb_23v_126"/>Thou me telle<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="128"><lb facs="#BE_line_23v_127" n="127" xml:id="BE_lb_23v_127"/><g ref="quote"/>I wol the telle <choice><orig>a none</orig><reg>anone</reg></choice> right<g ref="colon"/></l>
+        <l n="129"><lb facs="#BE_line_23v_128" n="128" xml:id="BE_lb_23v_128"/><g ref="smalla"/>t Rapain he lay <choice><orig>to nyght</orig><reg>tonyght</reg></choice></l>
+        <l n="130"><lb facs="#BE_line_23v_129" n="129" xml:id="BE_lb_23v_129"/><g ref="smallb"/>i my swere<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="131"><lb facs="#BE_line_23v_130" n="130" xml:id="BE_lb_23v_130"/>The mesynger him thonkid <choice><orig>a non</orig><reg>anon</reg></choice></l>
+        <l n="132"><lb facs="#BE_line_23v_131" n="131" xml:id="BE_lb_23v_131"/><g ref="smalla"/>nd to Rapayn he gan gon</l>
+        <l n="133"><lb facs="#BE_line_23v_132" n="132" xml:id="BE_lb_23v_132"/><choice><orig>With out</orig><reg>without</reg></choice> dynere<g ref="fullstop"/></l>
+        <l n="134"><lb facs="#BE_line_23v_133" n="133" xml:id="BE_lb_23v_133"/>The em<g ref="per"/>our ther he found</l>
+        <l n="135"><lb facs="#BE_line_23v_134" n="134" xml:id="BE_lb_23v_134"/><g ref="smalla"/>nd downe he knelid on <g ref="the"/> ground<g ref="comma"/></l>
+        <l n="136"><lb facs="#BE_line_23v_135" n="135" xml:id="BE_lb_23v_135"/><g ref="smalla"/>s hit was right<g ref="fullstop"/></l>
+        <l n="137"><lb facs="#BE_line_23v_136" n="136" xml:id="BE_lb_23v_136"/><g ref="quote"/>Sir<g ref="comma"/> the lady of <choice><orig>south hampton/></orig><reg>Southamptoun</reg></choice></l>
+        <l n="138"><lb facs="#BE_line_23v_137" n="137" xml:id="BE_lb_23v_137"/><g ref="smallt"/>he grettith well bi <choice><orig>mary</orig><corr>Mary's</corr></choice> son</l>
+        <l n="139"><lb facs="#BE_line_23v_138" n="138" xml:id="BE_lb_23v_138"/><g ref="smallt"/>hat is so bright</l>
+        <l n="140"><lb facs="#BE_line_23v_139" n="139" xml:id="BE_lb_23v_139"/><g ref="smalla"/>nd biddith yow in the first day</l>
+        <l n="141"><lb facs="#BE_line_23v_140" n="140" xml:id="BE_lb_23v_140"/><g ref="smallt"/>hat comyth in the monthe of <g ref="capitalm"/>ay<g ref="comma"/></l>
+        <l n="142"><lb facs="#BE_line_23v_141" n="141" xml:id="BE_lb_23v_141"/>howe so it be<g ref="comma"/></l>
+        <l n="143"><lb facs="#BE_line_23v_142" n="142" xml:id="BE_lb_23v_142"/><g ref="smallt"/>hat ye be with your men <g ref="pre"/><g ref="slong"/>t</l>
+        <l n="144"><lb facs="#BE_line_23v_143" n="143" xml:id="BE_lb_23v_143"/>for to fight in hur forest</l>
+       
+        <pb facs="data/images/single/BE_24r_cola.jpg" n="24r Col.1" xml:id="BE_24r_cola"/> 
+        <l n="145"><lb facs="#BE_line_24r_144" n="144" xml:id="BE_lb_24r_144"/><choice><orig>Bi sidist</orig><reg>Bisidist</reg></choice> the see<g ref="fullstop"/></l>
+        <l n="146"><lb facs="#BE_line_24r_145" n="145" xml:id="BE_lb_24r_145"/><g ref="capitalh"/>ur lord sho woll thedir <g ref="slong"/>ynd</l>
+        <l n="147"><lb facs="#BE_line_24r_146" n="146" xml:id="BE_lb_24r_146"/>ffor your loue for to shynd</l>
+        <l n="148"><lb facs="#BE_line_24r_147" n="147" xml:id="BE_lb_24r_147"/><g ref="smallw"/>itw fewe maynee<g ref="semicolon"/></l> 
+        <l n="149"><lb facs="#BE_line_24r_148" n="148" xml:id="BE_lb_24r_148"/><g ref="smalla"/>nd <choice><orig>ther a bout</orig><reg>therabout</reg></choice> <g ref="slong"/>ho <g ref="slong"/>hal be be<g ref="slong"/>y</l>
+        <l n="150"><lb facs="#BE_line_24r_149" n="149" xml:id="BE_lb_24r_149"/><g ref="smalla"/>nd ye hur <g ref="slong"/>halt wed <g ref="and"/> <g ref="slong"/>pow<g ref="slong"/>y</l>
+        <l n="151"><lb facs="#BE_line_24r_150" n="150" xml:id="BE_lb_24r_150"/><g ref="smallt"/>o your <g ref="smalla"/>mee<g ref="fullstop"/></l>
+        <l n="152"><lb facs="#BE_line_24r_151" n="151" xml:id="BE_lb_24r_151"/><g ref="quote"/>So sey thy lady that hur hest<g ref="semicolon"/></l>
+        <l n="153"><lb facs="#BE_line_24r_152" n="152" xml:id="BE_lb_24r_152"/>yef that my life may le<g ref="slong"/>t<g ref="comma"/></l>
+        <l n="154"><lb facs="#BE_line_24r_153" n="153" xml:id="BE_lb_24r_153"/>hit <g ref="slong"/>halle be doo<g ref="fullstop"/></l>
+        <l n="155"><lb facs="#BE_line_24r_154" n="154" xml:id="BE_lb_24r_154"/>I am gladdir<g ref="comma"/> I the say<g ref="comma"/></l>
+        <l n="156"><lb facs="#BE_line_24r_155" n="155" xml:id="BE_lb_24r_155"/><g ref="smallt"/>han eny tong tel may</l>
+        <l n="157"><lb facs="#BE_line_24r_156" n="156" xml:id="BE_lb_24r_156"/>And sey hur soo<g ref="semicolon"/></l>
+        <l n="158"><lb facs="#BE_line_24r_157" n="157" xml:id="BE_lb_24r_157"/>ffor thou woldist hur erand lede</l>
+        <l n="159"><lb facs="#BE_line_24r_158" n="158" xml:id="BE_lb_24r_158"/><g ref="smalla"/>n hors chargid with gold rede</l>
+        <l n="160"><lb facs="#BE_line_24r_159" n="159" xml:id="BE_lb_24r_159"/>I woll the yeue<g ref="fullstop"/></l>
+        <l n="161"><lb facs="#BE_line_24r_160" n="160" xml:id="BE_lb_24r_160"/>And <choice><orig>with in</orig><reg>within</reg></choice> this furtenyght</l>
+        <l n="162"><lb facs="#BE_line_24r_161" n="161" xml:id="BE_lb_24r_161"/><choice><orig>my silfe</orig><reg>mysilfe</reg></choice> I wolle dubbe <g ref="the"/> knyght</l>
+        <l n="163"><lb facs="#BE_line_24r_162" n="162" xml:id="BE_lb_24r_162"/>yef that I leue<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="164"><lb facs="#BE_line_24r_163" n="163" xml:id="BE_lb_24r_163"/>The me<g ref="slong"/>ynger him <g ref="th"/>onkind yorne<g ref="semicolon"/></l>
+        <l n="165"><lb facs="#BE_line_24r_164" n="164" xml:id="BE_lb_24r_164"/>home <choice><orig>a gayne</orig><reg>agayne</reg></choice> he gan turne</l>
+        <l n="166"><lb facs="#BE_line_24r_165" n="165" xml:id="BE_lb_24r_165"/><g ref="smallt"/>o <choice><orig>South hampton</orig><reg>Southampton</reg></choice><g ref="fullstop"/></l>
+        <l n="167"><lb facs="#BE_line_24r_166" n="166" xml:id="BE_lb_24r_166"/>The lady lay on hur tour</l>
+        <l n="168"><lb facs="#BE_line_24r_167" n="167" xml:id="BE_lb_24r_167"/><g ref="smalla"/>nd aftir him sent to hur bour</l>
+        <l n="169"><lb facs="#BE_line_24r_168" n="168" xml:id="BE_lb_24r_168"/><g ref="smalla"/>nd gan to <g ref="rlong"/>owne<g ref="colon"/></l>
+        <l n="170"><lb facs="#BE_line_24r_169" n="169" xml:id="BE_lb_24r_169"/><g ref="quote"/><g ref="capitalm"/>addam<g ref="comma"/><g ref="quote"/> he seid<g ref ="comma"/> <g ref="quote"/>I the telle</l>
+        <l n="171"><lb facs="#BE_line_24r_170" n="170" xml:id="BE_lb_24r_170"/><g ref="smallt"/>he <g ref="smalle"/>m<g ref="per"/>our the gretith welle</l>
+        <l n="172"><lb facs="#BE_line_24r_171" n="171" xml:id="BE_lb_24r_171"/><g ref="smallw"/>ith loue me<g ref="slong"/>t<g ref="fullstop"/></l>
+        <l n="173"><lb facs="#BE_line_24r_172" n="172" xml:id="BE_lb_24r_172"/>Glad he was of that tithing</l>
+        <l n="174"><lb facs="#BE_line_24r_173" n="173" xml:id="BE_lb_24r_173"/><g ref="smalla"/>nd wol be pre<g ref="slong"/>t at <g ref="that"/> fi<g ref="yogh"/>tyng</l>
+        <l n="175"><lb facs="#BE_line_24r_174" n="174" xml:id="BE_lb_24r_174"/><g ref="smalli"/>n that fore<g ref="slong"/>t<g ref="fullstop"/></l>
+        <l n="176"><lb facs="#BE_line_24r_175" n="175" xml:id="BE_lb_24r_175"/><g ref="capitaly"/>ef thou art glad my lord to sle</l>
+        <l n="177"><lb facs="#BE_line_24r_176" n="176" xml:id="BE_lb_24r_176"/><g ref="smallg"/>laddir he is for <g ref="the"/> loue of the</l>
+        <l n="178"><lb facs="#BE_line_24r_177" n="177" xml:id="BE_lb_24r_177"/><g ref="smallw"/>elle fele sithe<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="179"><lb facs="#BE_line_24r_178" n="178" xml:id="BE_lb_24r_178"/>The me<g ref="slong"/>inger that this <g ref="slong"/>eid<g ref="semicolon"/></l>      
+      
+        <pb facs="data/images/single/BE_24r_colb.jpg" n="24r Col.2" xml:id="BE_24r_colb"/>
+        <l n="179"><lb facs="#BE_line_24r_179" n="179" xml:id="BE_lb_24r_179"/><g ref="smallt"/>he lady with him was wel <choice><orig>a paide</orig><reg>apaide</reg></choice></l>  
+        <l n="180"><lb facs="#BE_line_24r_180" n="180" xml:id="BE_lb_24r_180"/><g ref="smalla"/>nd made hym blythe<g ref="fullstop"/></l>
+        <l n="181"><lb facs="#BE_line_24r_181" n="181" xml:id="BE_lb_24r_181"/>In the ferst day of <g ref="capitalm"/>ay</l>
+        <l n="182"><lb facs="#BE_line_24r_182" n="182" xml:id="BE_lb_24r_182"/><g ref="smallt"/>he lady in hur tour <hi rend="superscript">a bed</hi> lay</l>
+        <l n="183"><lb facs="#BE_line_24r_183" n="183" xml:id="BE_lb_24r_183"/><g ref="smalla"/>s hit were nede<g ref="fullstop"/></l>
+        <l n="184"><lb facs="#BE_line_24r_184" n="184" xml:id="BE_lb_24r_184"/>The erle sho clepid out of the hall</l>
+        <l n="185"><lb facs="#BE_line_24r_185" n="185" xml:id="BE_lb_24r_185"/><g ref="smalla"/>nd seid an evill on hur was fall</l>
+        <l n="186"><lb facs="#BE_line_24r_186" n="186" xml:id="BE_lb_24r_186"/><g ref="smalla"/>nd wende to be dede<g ref="fullstop"/></l>
+        <l n="187"><lb facs="#BE_line_24r_187" n="187" xml:id="BE_lb_24r_187"/>The <g ref="smalle"/>rle for hur <g ref="slong"/>orow cought</l>
+        <l n="188"><lb facs="#BE_line_24r_188" n="188" xml:id="BE_lb_24r_188"/><g ref="smalla"/>nd askid hur yef sho de<g ref="slong"/>irid ought</l>
+        <l n="189"><lb facs="#BE_line_24r_189" n="189" xml:id="BE_lb_24r_189"/><g ref="smallt"/>hat myght hur keuer<g ref="fullstop"/></l>
+        <l n="190"><lb facs="#BE_line_24r_190" n="190" xml:id="BE_lb_24r_190"/><g ref="quote"/>Sir<g ref="comma"/><g ref="quote"/> sho seid<g ref="comma"/> <g ref="quote"/>of a wilde bore</l>
+        <l n="191"><lb facs="#BE_line_24r_191" n="191" xml:id="BE_lb_24r_191"/>I wene my bote woll be thore</l>
+        <l n="192"><lb facs="#BE_line_24r_192" n="192" xml:id="BE_lb_24r_192"/><g ref="smallo"/>f this feuer<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="193"><lb facs="#BE_line_24r_193" n="193" xml:id="BE_lb_24r_193"/><g ref="quote"/>Dame<g ref="comma"/><g ref="quote"/> he seid<g ref="comma"/> <g ref="quote"/>for loue myne</l>
+        <l n="194"><lb facs="#BE_line_24r_194" n="194" xml:id="BE_lb_24r_194"/><g ref="smallw"/>her myght I fynde <g ref="that"/> wild <g ref="slang"/>wyne<g ref="question"/></l> 
+        <l n="195"><lb facs="#BE_line_24r_195" n="195" xml:id="BE_lb_24r_195"/>I wolde thowe him had<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="196"><lb facs="#BE_line_24r_196" n="196" xml:id="BE_lb_24r_196"/>The lady seid with treson mest</l>
+        <l n="197"><lb facs="#BE_line_24r_197" n="197" xml:id="BE_lb_24r_197"/><choice><orig>Be <g ref="slang"/>ide</orig><reg>beside</reg></choice>the see in one forest<g ref="comma"/></l>
+        <l n="198"><lb facs="#BE_line_24r_198" n="198" xml:id="BE_lb_24r_198"/>ffor ther he bred<g ref="fullstop"/></l>
+        <l n="199"><lb facs="#BE_line_24r_199" n="199" xml:id="BE_lb_24r_199"/>The <g ref="smalle"/>rle seid<g ref="comma"/> <g ref="quote"/><g ref="capitalb"/>i <choice><orig>god is</orig><reg>Godis</reg></choice> grace<g ref="comma"/></l>
+        <l n="200"><lb facs="#BE_line_24r_200" n="200" xml:id="BE_lb_24r_200"/><g ref="smalli"/>n that fore<g ref="slong"/> I wol go chace</l>
+        <l n="201"><lb facs="#BE_line_24r_201" n="201" xml:id="BE_lb_24r_201"/><g ref="smallt"/>he bore to take<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="202"><lb facs="#BE_line_24r_202" n="202" xml:id="BE_lb_24r_202"/>And sho seid with treson then<g ref="comma"/></l>
+        <l n="203"><lb facs="#BE_line_24r_203" n="203" xml:id="BE_lb_24r_203"/><g ref="quote"/>Ble<g ref="slong"/><g ref="slong"/>id be thou of al men</l>
+        <l n="204"><lb facs="#BE_line_24r_204" n="204" xml:id="BE_lb_24r_204"/>ffor my sake<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="205"><lb facs="#BE_line_24r_205" n="205" xml:id="BE_lb_24r_205"/>The <g ref="smalle"/>rle his hors bigan to <g ref="slong"/>tride<g ref="comma"/></l>
+        <l n="206"><lb facs="#BE_line_24r_206" n="206" xml:id="BE_lb_24r_206"/>his <g ref="slong"/>hilde he hinge on his side</l>
+        <l n="207"><lb facs="#BE_line_24r_207" n="207" xml:id="BE_lb_24r_207"/><g ref="smalla"/>nd gurd him with his sworde<g ref="semicolon"/></l>
+        <l n="208"><lb facs="#BE_line_24r_208" n="208" xml:id="BE_lb_24r_208"/>ne myght none <g ref="smalla"/>rmour on hym come<g ref="comma"/></l>
+        <l n="209"><lb facs="#BE_line_24r_209" n="209" xml:id="BE_lb_24r_209"/>him <g ref="slong"/>ilfe was but the fourthe gome<g ref="comma"/></l>
+        <l n="210"><lb facs="#BE_line_24r_210" n="210" xml:id="BE_lb_24r_210"/><g ref="smallt"/>oward the forest thei ferd<g ref="fullstop"/></l>
+        <l n="211"><lb facs="#BE_line_24r_211" n="211" xml:id="BE_lb_24r_211"/>Alas that he ne had be ware</l>
+        <l n="212"><lb facs="#BE_line_24r_212" n="212" xml:id="BE_lb_24r_212"/><g ref="smallo"/>f his fomen that were thare</l>
+        <l n="213"><lb facs="#BE_line_24r_213" n="213" xml:id="BE_lb_24r_213"/>him to <g ref="slong"/>hende<g ref="fullstop"/></l>
+      
+        <pb facs="data/images/single/BE_24v_cola.jpg" n="24v Col.1" xml:id="BE_24v_cola"/>
+        <l n="214"><lb facs="#BE_line_24v_214" n="214" xml:id="BE_lb_24v_214"/><choice><orig>I wis</orig><reg>Iwis</reg></choice> thei had bene <g ref="slong"/>lawe</l>
+        <l n="215"><lb facs="#BE_line_24v_215" n="215" xml:id="BE_lb_24v_215"/><g ref="smalla"/>nd <choice><orig>I broght</orig><reg>ibroght</reg></choice> of lyfe dawe</l>
+        <l n="216"><lb facs="#BE_line_24v_216" n="216" xml:id="BE_lb_24v_216"/>or thei home wende<g ref="exclamation"/></l>
+        <l n="217"><lb facs="#BE_line_24v_217" n="217" xml:id="BE_lb_24v_217"/>Whan he come <choice><orig>in to</orig><reg>into</reg></choice> the forest</l>
+        <l n="218"><lb facs="#BE_line_24v_218" n="218" xml:id="BE_lb_24v_218"/><g ref="smallt"/>he <g ref="smalle"/>m<g ref="per"/>oure he founde al pre<g ref="slong"/>t<g ref="semicolon"/></l>
+        <l n="219"><lb facs="#BE_line_24v_219" n="219" xml:id="BE_lb_24v_219"/><g ref="smallw"/>ith envye</l>
+        <l n="220"><lb facs="#BE_line_24v_220" n="220" xml:id="BE_lb_24v_220"/>he prekid out <choice><orig>bi fore</orig><reg>bifore</reg></choice> his o<g ref="slong"/>t</l>
+        <l n="221"><lb facs="#BE_line_24v_221" n="221" xml:id="BE_lb_24v_221"/>ffor pride and for to make bost</l>
+        <l n="222"><lb facs="#BE_line_24v_222" n="222" xml:id="BE_lb_24v_222"/><g ref="smalla"/>nd gan to cry<g ref="middotcolon"/></l>
+        <l n="223"><lb facs="#BE_line_24v_223" n="223" xml:id="BE_lb_24v_223"/><g ref="quote"/><choice><orig>A yelde</orig><reg>Ayelde</reg></choice> the traitour<g ref="comma"/> <g ref="thou"/> olde dote<g ref="exclamation"/></l>
+        <l n="224"><lb facs="#BE_line_24v_224" n="224" xml:id="BE_lb_24v_224"/>Thou shalt honge bi the throte<g ref="comma"/></l>
+        <l n="225"><lb facs="#BE_line_24v_225" n="225" xml:id="BE_lb_24v_225"/><g ref="smallt"/>hine hed thou <g ref="slong"/>halt le<g ref="slong"/><g ref="fullstop"/></l>
+        <l n="226"><lb facs="#BE_line_24v_226" n="226" xml:id="BE_lb_24v_226"/>Thi sonne Beuys <g ref="slong"/>hal anhongid be</l>
+        <l n="227"><lb facs="#BE_line_24v_227" n="227" xml:id="BE_lb_24v_227"/><g ref="smalla"/>nd thi wife that is so fre</l>
+        <l n="228"><lb facs="#BE_line_24v_228" n="228" xml:id="BE_lb_24v_228"/><g ref="smallt"/>o lemman I hur chese<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="229"><lb facs="#BE_line_24v_229" n="229" xml:id="BE_lb_24v_229"/>The <g ref="smalle"/>rle an<g ref="slong"/>werid at that <g ref="slong"/>awe<g ref="comma"/></l>
+        <l n="230"><lb facs="#BE_line_24v_230" n="230" xml:id="BE_lb_24v_230"/><g ref="capitalm"/>e thinketh <g ref="thou"/> <g ref="slong"/>peki<g ref="slong"/>t <choice><orig>a yenst</orig><reg>ayenst</reg></choice> <g ref="the"/> lawe<g ref="comma"/></l>
+        <l n="231"><lb facs="#BE_line_24v_231" n="231" xml:id="BE_lb_24v_231"/>So <g ref="capitalg"/>od me amende<g ref="exclamation"/></l>
+        <l n="232"><lb facs="#BE_line_24v_232" n="232" xml:id="BE_lb_24v_232"/><g ref="capitalm"/>y wife and my childe so fre<g ref="comma"/></l>
+        <l n="233"><lb facs="#BE_line_24v_233" n="233" xml:id="BE_lb_24v_233"/>yef thou thinki<g ref="slong"/>t <choice><orig>bi nem</orig><reg>binem</reg></choice> hem me<g ref="comma"/></l>
+        <l n="234"><lb facs="#BE_line_24v_234" n="234" xml:id="BE_lb_24v_234"/>here I ham defende<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="235"><lb facs="#BE_line_24v_234" n="235" xml:id="BE_lb_24v_235"/>Than prekid his <g ref="slong"/>tede sir Gy<g ref="comma"/></l>
+        <l n="236"><lb facs="#BE_line_24v_236" n="236" xml:id="BE_lb_24v_236"/><g ref="smalla"/> <g ref="slong"/>talworth knyght and hardy</l>
+        <l n="237"><lb facs="#BE_line_24v_237" n="237" xml:id="BE_lb_24v_237"/><g ref="smallw"/>hile he wa<g ref="slong"/>ounde<g ref="fullstop"/></l>
+        <l n="238"><lb facs="#BE_line_24v_238" n="238" xml:id="BE_lb_24v_238"/>The <g ref="smalle"/>m<g ref="per"/>our he smote <g ref="with"/> his <g ref="slong"/>pere<g ref="comma"/></l>
+        <l n="239"><lb facs="#BE_line_24v_239" n="239" xml:id="BE_lb_24v_239"/><g ref="smallo"/>ut of his sadill he him bere</l>
+        <l n="240"><lb facs="#BE_line_24v_240" n="240" xml:id="BE_lb_24v_240"/><g ref="smalld"/>owne to the grounde<g ref="fullstop"/></l>
+        <l n="241"><lb facs="#BE_line_24v_241" n="241" xml:id="BE_lb_24v_241"/><g ref="quote"/>Traitour<g ref="exclamation"/><g ref="quote"/> he <g ref="slong"/>eid<g ref="comma"/> <g ref="quote"/><g ref="capitalt"/>hou art to bolde<g ref="exclamation"/></l>
+        <l n="242"><lb facs="#BE_line_24v_242" n="242" xml:id="BE_lb_24v_242"/>Weny<g ref="slong"/>t thou thei I be olde</l>
+        <l n="243"><lb facs="#BE_line_24v_243" n="243" xml:id="BE_lb_24v_243"/><g ref="smallo"/>f the to bene <choice><orig>a ferde</orig><reg>aferde</reg></choice><g ref="question"/></l>
+        <l n="244"><lb facs="#BE_line_24v_244" n="244" xml:id="BE_lb_24v_244"/>That thou ha<g ref="slong"/> no right to my wife<g ref="comma"/></l>
+        <l n="245"><lb facs="#BE_line_24v_245" n="245" xml:id="BE_lb_24v_245"/>I wol the kithe bi my lyfe<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="246"><lb facs="#BE_line_24v_246" n="246" xml:id="BE_lb_24v_246"/><g ref="smalla"/>nd drowe his <g ref="slong"/>werde<g ref="fullstop"/></l>
+        <l n="247"><lb facs="#BE_line_24v_247" n="247" xml:id="BE_lb_24v_247"/>The <g ref="smalle"/>rle helde his <g ref="slong"/>werd <choice><orig>I drawe</orig><reg>idrawe</reg></choice><g ref="comma"/></l>
+
+        <pb facs="data/images/single/BE_24v_colb.jpg" n="24v Col.2" xml:id="BE_24v_colb"/>
+        <l n="248"><lb facs="#BE_line_24v_248" n="248" xml:id="BE_lb_24v_248"/><g ref="smallt"/>he <g ref="smalle"/>m<g ref="per"/>our <choice><orig>ther w&#877;</orig><reg>therwith</reg></choice> to haue <g ref="slong"/>lawe<g ref="comma"/></l>
+        <l n="249"><lb facs="#BE_line_24v_249" n="249" xml:id="BE_lb_24v_249"/>ne had bene socours<g ref="semicolon">/</g></l>
+        <l n="250"><lb facs="#BE_line_24v_250" n="250" xml:id="BE_lb_24v_250"/><g ref="smallt"/>her come knyght<g ref="es"/> many <g ref="and"/> fale<g ref="comma"/></l>
+        <l n="251"><lb facs="#BE_line_24v_251" n="251" xml:id="BE_lb_24v_251"/><g ref="smallw"/>el two hundrid tolde bi tale<g ref="comma"/></l>
+        <l n="252"><lb facs="#BE_line_24v_252" n="252" xml:id="BE_lb_24v_252"/><g ref="smallt"/>o the <g ref="smalle"/>m<g ref="per"/>our<g ref="fullstop"/></l>
+        <l n="253"><lb facs="#BE_line_24v_253" n="253" xml:id="BE_lb_24v_253"/>Tho <g ref="slong"/>ir Gy gan him defende<g ref="comma"/></l>
+        <l n="254"><lb facs="#BE_line_24v_254" n="254" xml:id="BE_lb_24v_254"/>furty hedis of he swengde</l>
+        <l n="255"><lb facs="#BE_line_24v_255" n="255" xml:id="BE_lb_24v_255"/><g ref="smallw"/>ith his bronde<g ref="semicolon"/></l>
+        <l n="256"><lb facs="#BE_line_24v_256" n="256" xml:id="BE_lb_24v_256"/>had he bene armyd wel<g ref="comma"/><choice><orig>I wis</orig><reg>iwis</reg></choice><g ref="comma"/></l>
+        <l n="257"><lb facs="#BE_line_24v_257" n="257" xml:id="BE_lb_24v_257"/><g ref="smalla"/>lle the mastry had ben his<g ref="comma"/></l>
+        <l n="258"><lb facs="#BE_line_24v_258" n="258" xml:id="BE_lb_24v_258"/>I <g ref="v"/>ndirstonde<g ref="fullstop"/></l>
+        <l n="259"><lb facs="#BE_line_24v_259" n="259" xml:id="BE_lb_24v_259"/><choice><orig>iij</orig><reg>Three</reg></choice> men were <g ref="slong"/>lawe <g ref="that"/> he <g ref="ther"/> had<g ref="comma"/></l>
+        <l n="260"><lb facs="#BE_line_24v_260" n="260" xml:id="BE_lb_24v_260"/><g ref="smallt"/>hat he with him out lad</l>
+        <l n="261"><lb facs="#BE_line_24v_261" n="261" xml:id="BE_lb_24v_261"/><g ref="smalla"/>t his mo<g ref="slong"/>t nede<g ref="fullstop"/></l>
+        <l n="262"><lb facs="#BE_line_24v_262" n="262" xml:id="BE_lb_24v_262"/>To haue mercy was his hope<g ref="comma"/></l>
+        <l n="263"><lb facs="#BE_line_24v_263" n="263" xml:id="BE_lb_24v_263"/><g ref="smallt"/>he <g ref="smalle"/>m<g ref="per"/>o<g ref="ur"/> to hard was lope</l>
+        <l n="264"><lb facs="#BE_line_24v_264" n="264" xml:id="BE_lb_24v_264"/><g ref="smalla"/>nd <g ref="slong"/>lowe his <g ref="slong"/>tede<g ref="semicolon"/></l>
+        <l n="265"><lb facs="#BE_line_24v_265" n="265" xml:id="BE_lb_24v_265"/>The <g ref="smalle"/>rle knelid to the <g ref="smalle"/>m<g ref="per"/>our<g ref="comma"/></l>
+        <l n="266"><lb facs="#BE_line_24v_266" n="266" xml:id="BE_lb_24v_266"/>merci he bade him and <g ref="slong"/>ocour</l>
+        <l n="267"><lb facs="#BE_line_24v_267" n="267" xml:id="BE_lb_24v_267"/><g ref="smalla"/>nd his lyfe<g ref="colon"/></l>
+        <l n="268"><lb facs="#BE_line_24v_268" n="268" xml:id="BE_lb_24v_268"/><g ref="quote"/><g ref="capitalm"/>erci<g ref="quote"/> he <g ref="slong"/>eid<g ref="comma"/> <g ref="quote"/>as thou art fre<g ref="comma"/></l>
+        <l n="269"><lb facs="#BE_line_24v_269" n="269" xml:id="BE_lb_24v_269"/><g ref="smalla"/>ll that is myn I geue the</l>
+        <l n="270"><lb facs="#BE_line_24v_270" n="270" xml:id="BE_lb_24v_270"/>Saue my wife<g ref="exclamation"/></l>
+        <l n="271"><lb facs="#BE_line_24v_271" n="271" xml:id="BE_lb_24v_271"/><g ref="capitalf"/>for thi men that I haue <g ref="slong"/>lawe</l>
+        <l n="272"><lb facs="#BE_line_24v_272" n="272" xml:id="BE_lb_24v_272"/>haue <choice><orig>haue</orig><corr></corr></choice> my swerde <choice><orig>I drawe</orig><reg>idrawe</reg></choice></l>
+        <l n="273"><lb facs="#BE_line_24v_273" n="273" xml:id="BE_lb_24v_273"/><g ref="smalla"/>nd alle my fee<g ref="semicolon"/></l>
+        <l n="274"><lb facs="#BE_line_24v_274" n="274" xml:id="BE_lb_24v_274"/><g ref="smallb"/>ut my yong <g ref="slong"/>on Be<g ref="slong"/>e</l>
+        <l n="275"><lb facs="#BE_line_24v_275" n="275" xml:id="BE_lb_24v_275"/><g ref="smalla"/>nd my wife <g ref="that"/> is me lefe<g ref="comma"/></l>
+        <l n="276"><lb facs="#BE_line_24v_276" n="276" xml:id="BE_lb_24v_276"/>hem leue ye me<g ref="fullstop"/></l>
+        <l n="277"><lb facs="#BE_line_24v_277" n="277" xml:id="BE_lb_24v_277"/>The <g ref="smalle"/>m<g ref="per"/>our <g ref="th"/>o to him gan tel<g ref="comma"/></l>
+        <l n="278"><lb facs="#BE_line_24v_278" n="278" xml:id="BE_lb_24v_278"/><g ref="capitalf"/>for <g ref="capitalg"/>od<g ref="quote"/> he seid<g ref="comma"/> <g ref="quote"/>that do I nel<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="279"><lb facs="#BE_line_24v_279" n="279" xml:id="BE_lb_24v_279"/><g ref="smalla"/>nd was <choice><orig>a greuid</orig><reg>agreuid</reg></choice><g ref="fullstop"/></l>
+        <l n="280"><lb facs="#BE_line_24v_280" n="280" xml:id="BE_lb_24v_280"/>Anone his <g ref="slong"/>werde he <g ref="ther"/> drowe<g ref="comma"/></l>
+      
+        <pb facs="data/images/single/BE_25r_cola.jpg" n="25r Col.1" xml:id="BE_25r_cola"/>
+        <l n="281"><lb facs="#BE_line_25r_281" n="281" xml:id="BE_lb_25r_281"/><g ref="smallt"/>hat good erle ther he <g ref="slong"/>owe</l>
+        <l n="282"><lb facs="#BE_line_25r_282" n="282" xml:id="BE_lb_25r_282"/><g ref="smalla"/>nd <g ref="slong"/>mote of his hed<g ref="fullstop"/></l>
+        <l n="283"><lb facs="#BE_line_25r_283" n="283" xml:id="BE_lb_25r_283"/>A knyght ho toke the hed an hond<g ref="semicolon"/></l>
+        <l n="284"><lb facs="#BE_line_25r_284" n="284" xml:id="BE_lb_25r_284"/><g ref="quote"/>Go<g ref="quote"/> he seid<g ref="comma"/> <g ref="quote"/>and bere this sond<g ref="comma"/></l>
+        <l n="285"><lb facs="#BE_line_25r_285" n="285" xml:id="BE_lb_25r_285"/>me lefe <g ref="slong"/>wete<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="286"><lb facs="#BE_line_25r_286" n="286" xml:id="BE_lb_25r_286"/>The knyght to <g ref="capitalh"/>ampton gan gon<g ref="comma"/></l>
+        <l n="287"><lb facs="#BE_line_25r_287" n="287" xml:id="BE_lb_25r_287"/><g ref="smallt"/>he lady he found <choice><orig>a non</orig><reg>anon</reg></choice></l>
+        <l n="288"><lb facs="#BE_line_25r_288" n="288" xml:id="BE_lb_25r_288"/><g ref="smalla"/>nd hur gan grete<g ref="colon"/></l> 
+        <l n="289"><lb facs="#BE_line_25r_289" n="289" xml:id="BE_lb_25r_289"/><g ref="quote"/><g ref="capitalm"/>addam<g ref="quote"/> he seid<g ref="comma"/> <g ref="quote"/>to me entende</l>
+        <l n="290"><lb facs="#BE_line_25r_290" n="290" xml:id="BE_lb_25r_290"/><g ref="smallt"/>he <g ref="smalle"/>m<g ref="per"/>our me hedir <g ref="slong"/>ende</l>
+        <l n="291"><lb facs="#BE_line_25r_291" n="291" xml:id="BE_lb_25r_291"/><g ref="smallw"/>ith this pray<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="292"><lb facs="#BE_line_25r_292" n="292" xml:id="BE_lb_25r_292"/>So <choice><orig></orig><corr>sho</corr></choice> seid<g ref="comma"/> <g ref="quote"/><choice><orig>I blessid</orig><reg>Iblessid</reg></choice> mote he be<g ref="exclamation"/></l>
+        <l n="293"><lb facs="#BE_line_25r_293" n="293" xml:id="BE_lb_25r_293"/>To wife <g ref="slong"/>halle he wed me</l>
+        <l n="294"><lb facs="#BE_line_25r_294" n="294" xml:id="BE_lb_25r_294"/><choice><orig>To morowe</orig><reg>tomorowe</reg></choice> day</l>
+        <l n="295"><lb facs="#BE_line_25r_295" n="295" xml:id="BE_lb_25r_295"/><g ref="smalla"/>nd bidde him<g ref="comma"/> my <g ref="slong"/>wete wi<g ref="yogh"/>t<g ref="comma"/></l>
+        <l n="296"><lb facs="#BE_line_25r_296" n="296" xml:id="BE_lb_25r_296"/><g ref="smallt"/>hat he come this ilke ni<g ref="yogh"/>t</l>
+        <l n="297"><lb facs="#BE_line_25r_297" n="297" xml:id="BE_lb_25r_297"/><choice><orig>Vn to</orig><reg>unto</reg></choice> my bowre<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="298"><lb facs="#BE_line_25r_298" n="298" xml:id="BE_lb_25r_298"/>The me<g ref="slong"/>inger forthe gan wynd</l>
+        <l n="299"><lb facs="#BE_line_25r_299" n="299" xml:id="BE_lb_25r_299"/><g ref="smalla"/>nd hit tolde bothe worth <g ref="and"/> ynd</l>
+        <l n="300"><lb facs="#BE_line_25r_300" n="300" xml:id="BE_lb_25r_300"/><g ref="smallt"/>o the <g ref="smalle"/>m<g ref="per"/>ou<g ref="rlong"/></l>
+        <l n="301"><lb facs="#BE_line_25r_301" n="301" xml:id="BE_lb_25r_301"/><g ref="capitaln"/>ow wol we of him moue</l>
+        <l n="302"><lb facs="#BE_line_25r_302" n="302" xml:id="BE_lb_25r_302"/><g ref="smalla"/>nd tel of Beuys his yong <g ref="slong"/>one<g ref="comma"/></l>
+        <l n="303"><lb facs="#BE_line_25r_303" n="303" xml:id="BE_lb_25r_303"/>howe wo he was<g ref="semicolon"/></l>
+        <l n="304"><lb facs="#BE_line_25r_304" n="304" xml:id="BE_lb_25r_304"/>ffa<g ref="slong"/>t he wepte and hondis wrong</l>
+        <l n="305"><lb facs="#BE_line_25r_305" n="305" xml:id="BE_lb_25r_305"/><g ref="smalla"/>nd for his fadir he <g ref="slong"/>eid among<g ref="colon"/></l>
+        <l n="306"><lb facs="#BE_line_25r_306" n="306" xml:id="BE_lb_25r_306"/><g ref="quote"/>Allas<g ref="exclamation"/> Allas<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="307"><lb facs="#BE_line_25r_307" n="307" xml:id="BE_lb_25r_307"/><g ref="capitalh"/>e clepid his modir <g ref="and"/> <g ref="slong"/>eid <g ref="this"/> <g ref="slong"/>awe<g ref="colon"/></l>
+        <l n="308"><lb facs="#BE_line_25r_308" n="308" xml:id="BE_lb_25r_308"/><g ref="quote"/><g ref="capitalf"/>foule hore<g ref="comma"/> <g ref="thou"/> were wor<g ref="the"/> to draw</l>
+        <l n="309"><lb facs="#BE_line_25r_309" n="309" xml:id="BE_lb_25r_309"/><g ref="smalla"/>nd al to twight<g ref="exclamation"/></l>
+        <l n="310"><lb facs="#BE_line_25r_310" n="310" xml:id="BE_lb_25r_310"/><g ref="capitalm"/>e thinkith <choice><orig>ther of</orig><reg>therof</reg></choice> I were fawe<g ref="comma"/></l>
+        <l n="311"><lb facs="#BE_line_25r_311" n="311" xml:id="BE_lb_25r_311"/>ffor thou ha<g ref="slong"/>t my fadir <g ref="slong"/>lawe</l>
+        <l n="312"><lb facs="#BE_line_25r_312" n="312" xml:id="BE_lb_25r_312"/><g ref="smallw"/>ith moche <g ref="v"/>nright<g ref="fullstop"/></l>
+        <l n="313"><lb facs="#BE_line_25r_313" n="313" xml:id="BE_lb_25r_313"/>Alas modir<g ref="comma"/> thi feire ble<g ref="exclamation"/></l>
+        <l n="314"><lb facs="#BE_line_25r_314" n="314" xml:id="BE_lb_25r_314"/>Evil bicomi<g ref="the"/> <g ref="the"/> an hore to be<g ref="comma"/></l>
+        <l n="315"><lb facs="#BE_line_25r_315" n="315" xml:id="BE_lb_25r_315"/><g ref="smallt"/>o holde bordell<g ref="comma"/></l>
+        
+        <pb facs="data/images/single/BE_25r_colb.jpg" n="25r Col.2" xml:id="BE_25r_colb"/>
+        <l n="316"><lb facs="#BE_line_25r_316" n="316" xml:id="BE_lb_25r_316"/><g ref="smalla"/>lle horis for thi sake<g ref="comma"/></l>
+        <l n="317"><lb facs="#BE_line_25r_317" n="317" xml:id="BE_lb_25r_317"/><g ref="smallt"/>he devil of hell I hem <choice><orig>bi take</orig><reg>bitake</reg></choice><g ref="comma"/></l>
+        <l n="318"><lb facs="#BE_line_25r_318" n="318" xml:id="BE_lb_25r_318"/><g ref="smallb"/>othe fle<g ref="slong"/>he and felle<g ref="exclamation"/></l>
+        <l n="319"><lb facs="#BE_line_25r_319" n="319" xml:id="BE_lb_25r_319"/>Bot<g ref="comma"/> modir<g ref="comma"/> o thing I the <g ref="slong"/>were<g ref="colon"/></l>
+        <l n="320"><lb facs="#BE_line_25r_320" n="320" xml:id="BE_lb_25r_320"/>mowe I euer <choice><orig>armno</orig><reg>arm no</reg></choice> bere</l>
+        <l n="321"><lb facs="#BE_line_25r_321" n="321" xml:id="BE_lb_25r_321"/><g ref="smalla"/>nd be of olde<g ref="comma"/></l>
+        <l n="322"><lb facs="#BE_line_25r_322" n="315" xml:id="BE_lb_25r_322"/><g ref="smalla"/>ll that haue my fadir <g ref="slong"/>awe</l>
+        <l n="323"><lb facs="#BE_line_25r_323" n="323" xml:id="BE_lb_25r_323"/><g ref="smalla"/>nd <choice><orig>I broght</orig><reg>ibrought</reg></choice> him of life dawe</l>
+        <l n="324"><lb facs="#BE_line_25r_324" n="324" xml:id="BE_lb_25r_324"/>I <g ref="slong"/>halle hem yelde<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="325"><lb facs="#BE_line_25r_325" n="325" xml:id="BE_lb_25r_325"/><g ref="capitalh"/>is modir hard that wondir stound<g ref="comma"/></l>
+        <l n="326"><lb facs="#BE_line_25r_326" n="326" xml:id="BE_lb_25r_326"/><g ref="smallt"/>he child sho <g ref="slong"/>mote <g ref="with"/> hir hond</l>
+        <l n="327"><lb facs="#BE_line_25r_327" n="327" xml:id="BE_lb_25r_327"/><g ref="smallv"/>ndir the ere<g ref="fullstop"/></l>
+        <l n="328"><lb facs="#BE_line_25r_328" n="328" xml:id="BE_lb_25r_328"/>To ground he fille <g ref="and"/> <g ref="that"/> was <g ref="slong"/>kathe<g ref="comma"/></l>
+        <l n="329"><lb facs="#BE_line_25r_329" n="329" xml:id="BE_lb_25r_329"/>his maist<g ref="er"/> toke him <g ref="v"/>p ful rathe<g ref="comma"/></l>
+        <l n="330"><lb facs="#BE_line_25r_330" n="330" xml:id="BE_lb_25r_330"/><g ref="smallt"/>hat hete Saber<g ref="fullstop"/></l>
+        <l n="331"><lb facs="#BE_line_25r_331" n="331" xml:id="BE_lb_25r_331"/>The kny<g ref="yogh"/>t was trawe of his kynd<g ref="comma"/></l>
+        <l n="332"><lb facs="#BE_line_25r_332" n="332" xml:id="BE_lb_25r_332"/><g ref="smalla"/> streng<g ref="er"/> man my<g ref="yogh"/>t no man fynde</l>
+        <l n="333"><lb facs="#BE_line_25r_333" n="333" xml:id="BE_lb_25r_333"/><g ref="smallt"/>o ride ne to go<g ref="middotfullstop"/></l>
+        <l n="334"><lb facs="#BE_line_25r_334" n="334" xml:id="BE_lb_25r_334"/>Oft for the childis sake</l>
+        <l n="335"><lb facs="#BE_line_25r_335" n="335" xml:id="BE_lb_25r_335"/>he was bro<g ref="yogh"/>t in tene and wrake</l>
+        <l n="336"><lb facs="#BE_line_25r_336" n="336" xml:id="BE_lb_25r_336"/><g ref="smalla"/>s wel as tho<g ref="fullstop"/></l>
+        <l n="337"><lb facs="#BE_line_25r_337" n="337" xml:id="BE_lb_25r_337"/>The childe he toke <g ref="v"/>p by the arme</l>
+        <l n="338"><lb facs="#BE_line_25r_338" n="338" xml:id="BE_lb_25r_338"/><g ref="smallw"/>rothe he was for that harme</l>
+        <l n="339"><lb facs="#BE_line_25r_339" n="339" xml:id="BE_lb_25r_339"/><g ref="smallt"/>hat he ther had<g ref="fullstop"/></l>
+        <l n="340"><lb facs="#BE_line_25r_340" n="340" xml:id="BE_lb_25r_340"/>Toward his hond he went anone<g ref="semicolon"/></l>
+        <l n="341"><lb facs="#BE_line_25r_341" n="341" xml:id="BE_lb_25r_341"/><g ref="smallt"/>he lady aftir Saber <g ref="slong"/>ent <g ref="slong"/>one</l>
+        <l n="342"><lb facs="#BE_line_25r_342" n="342" xml:id="BE_lb_25r_342"/><g ref="smalla"/>nd to him gradde<g ref="fullstop"/></l>
+        <l n="343"><lb facs="#BE_line_25r_343" n="343" xml:id="BE_lb_25r_343"/><g ref="quote"/>Saber<g ref="quote"/> sho seid<g ref="comma"/> <g ref="quote"/>thou art me lefe<g ref="comma"/></l>
+        <l n="344"><lb facs="#BE_line_25r_344" n="344" xml:id="BE_lb_25r_344"/>lete sle my young <g ref="slong"/>on Befe<g ref="comma"/></l>
+        <l n="345"><lb facs="#BE_line_25r_345" n="345" xml:id="BE_lb_25r_345"/><g ref="smallt"/>hat is so bolde<g ref="fullstop"/></l>
+        <l n="346"><lb facs="#BE_line_25r_346" n="346" xml:id="BE_lb_25r_346"/>So him honge <g ref="slong"/>withe hie<g ref="comma"/></l>
+        <l n="347"><lb facs="#BE_line_25r_347" n="347" xml:id="BE_lb_25r_347"/>I ne reke whate dethe he dye</l>
+        <l n="348"><lb facs="#BE_line_25r_348" n="348" xml:id="BE_lb_25r_348"/><g ref="smallb"/>ut that he be colde<g ref="middotfullstop"/></l>
+        
+        <pb facs="data/images/single/BE_25v_cola.jpg" n="25v Col.1" xml:id="BE_25v_cola"/>
+        <l n="349"><lb facs="#BE_line_25v_349" n="349" xml:id="BE_lb_25v_349"/>Tho was Saber swithe wo<g ref="comma"></g></l>
+        <l n="350"><lb facs="#BE_line_25v_350" n="350" xml:id="BE_lb_25v_350"/>natheles he seid he wolde do so</l>
+        <l n="351"><lb facs="#BE_line_25v_351" n="351" xml:id="BE_lb_25v_351"/><g ref="smalla"/>ftir his sawe<g ref="middotfullstop"/></l>
+        <l n="352"><lb facs="#BE_line_25v_352" n="352" xml:id="BE_lb_25v_352"/>The childe with him home he <choice><orig>m</orig><reg>n</reg></choice>ame<g ref="comma"/></l>
+        <l n="353"><lb facs="#BE_line_25v_353" n="353" xml:id="BE_lb_25v_353"/><g ref="smalla"/> <g ref="slong"/>wyne he toke whan he home came</l>
+        <l n="354"><lb facs="#BE_line_25v_354" n="354" xml:id="BE_lb_25v_354"/><g ref="smalla"/>nd did hit out of dawe<g ref="fullstop"/></l>
+        <l n="355"><lb facs="#BE_line_25v_355" n="355" xml:id="BE_lb_25v_355"/>The childis clo<g ref="the"/> <g ref="that"/> were good</l>
+        <l n="356"><lb facs="#BE_line_25v_356" n="356" xml:id="BE_lb_25v_356"/>he sprenghte hem <g ref="with"/> the blood</l>
+        <l n="357"><lb facs="#BE_line_25v_357" n="357" xml:id="BE_lb_25v_357"/><g ref="smalli"/>n many a stede</l>
+        <l n="358"><lb facs="#BE_line_25v_358" n="358" xml:id="BE_lb_25v_358"/><g ref="smalla"/>s he were alle to helle</l>
+        <l n="359"><lb facs="#BE_line_25v_359" n="359" xml:id="BE_lb_25v_359"/><g ref="smalla"/>nd so he dede<g ref="fullstop"/></l>
+        <l n="360"><lb facs="#BE_line_25v_360" n="360" xml:id="BE_lb_25v_3560"/>But at the last Saber for drede</l>
+        <l n="361"><lb facs="#BE_line_25v_361" n="361" xml:id="BE_lb_25v_361"/><g ref="smallt"/>he childe lete <choice><orig>clothi</orig><reg>clothen</reg></choice> in pore wede</l>
+        <l n="362"><lb facs="#BE_line_25v_362" n="362" xml:id="BE_lb_25v_362"/><g ref="smallt"/>hat hende wight</l>
+        <l n="363"><lb facs="#BE_line_25v_363" n="363" xml:id="BE_lb_25v_363"/><g ref="smalla"/>nd seid <g ref="quote"/><g ref="slong"/>on<g ref="comma"/> thou mus<g ref="slong"/>t kepe</l>
+        <l n="364"><lb facs="#BE_line_25v_364" n="364" xml:id="BE_lb_25v_364"/><g ref="smallo"/>n the felde my shepe</l>
+        <l n="365"><lb facs="#BE_line_25v_365" n="365" xml:id="BE_lb_25v_365"/><g ref="smallt"/>his furtenyght<g ref="fullstop"/></l>
+        <l n="366"><lb facs="#BE_line_25v_366" n="366" xml:id="BE_lb_25v_366"/>Whan <g ref="the"/> furteny<g ref="yogh"/>t is come to ende</l> 
+        <l n="367"><lb facs="#BE_line_25v_367" n="367" xml:id="BE_lb_25v_367"/>g ref="smallt"/>o ano>g ref="ther"/> lond I shall the send<g ref="comma"/></l>
+        <l n="368"><lb facs="#BE_line_25v_368" n="368" xml:id="BE_lb_25v_368"/>ffer bi sowthe<g ref="comma"/></l>
+        <l n="369"><lb facs="#BE_line_25v_369" n="369" xml:id="BE_lb_25v_369"/><g ref="smallt"/>o an Erle <g ref="that"/> shall the eye</l>
+        <l n="370"><lb facs="#BE_line_25v_370" n="370" xml:id="BE_lb_25v_370"/><g ref="smalla"/>nd teche the of curteisye</l>
+        <l n="371"><lb facs="#BE_line_25v_371" n="371" xml:id="BE_lb_25v_371"/><g ref="smalli"/>n thi youthe<g ref="fullstop"/></l>
+        <l n="372"><lb facs="#BE_line_25v_372" n="372" xml:id="BE_lb_25v_372"/>Whan <g ref="thou"/> art comen to elde</l>
+        <l n="373"><lb facs="#BE_line_25v_373" n="373" xml:id="BE_lb_25v_373"/><g ref="smallt"/>hat thou may armiys wilde</l>
+        <l n="374"><lb facs="#BE_line_25v_356" n="374" xml:id="BE_lb_25v_374"/><g ref="smalla"/>nd art of age<g ref="comma"/></l>
+        <l n="375"><lb facs="#BE_line_25v_356" n="375" xml:id="BE_lb_25v_375"/><g ref="smallt"/>han shalt <g ref="thou"/> come <choice><orig>in to</orig><reg>into</reg></choice> Englond</l>
+        <l n="376"><lb facs="#BE_line_25v_376" n="376" xml:id="BE_lb_25v_376"/>with wer to wyn <choice><orig>in to</orig><reg>into</reg></choice> thi hond</l>
+        <l n="377"><lb facs="#BE_line_25v_377" n="377" xml:id="BE_lb_25v_377"/><g ref="smallt"/>hyne <g ref="smalle"/>ritage</l>
+        <l n="378"><lb facs="#BE_line_25v_378" n="378" xml:id="BE_lb_25v_378"/>I wol the help <g ref="with"/> al my my<g ref="yogh"/>t<g ref="comma"/></l>
+        <l n="379"><lb facs="#BE_line_25v_379" n="379" xml:id="BE_lb_25v_379"/>with dynt od swerd to grete <g ref="th"/>i ri<g ref="yogh"/>t<g ref="comma"/></l>
+        <l n="380"><lb facs="#BE_line_25v_380" n="380" xml:id="BE_lb_25v_380"/><g ref="smallb"/>e thow of elde<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="381"><lb facs="#BE_line_25v_381" n="381" xml:id="BE_lb_25v_381"/>the childe him pouke <g ref="and"/> <g ref="slong"/>ore wept<g ref="comma"/></l>
+        
+        <pb facs="data/images/single/BE_25v_colb.jpg" n="25v Col.2" xml:id="BE_25v_colb"/>
+        <l n="382"><lb facs="#BE_line_25v_382" n="382" xml:id="BE_lb_25v_382"/><g ref="ff"/>orthe he went <g ref="with"/> his <g ref="slong"/>chepe</l>
+        <l n="383"><lb facs="#BE_line_25v_383" n="383" xml:id="BE_lb_25v_383"/><g ref="smalli"/>n<choice><orig> to</orig><reg>to</reg></choice> the felde<g ref="fullstop"/></l>
+        <l n="384"><lb facs="#BE_line_25v_384" n="384" xml:id="BE_lb_25v_384"/>As Beuys was her <g ref="v"/>ppon <g ref="the"/> downe</l>
+        <l n="385"><lb facs="#BE_line_25v_385" n="385" xml:id="BE_lb_25v_385"/>he loke home toward <g ref="capitalh"/>ampt<g ref="omacron"/>n</l>
+        <l n="386"><lb facs="#BE_line_25v_386" n="386" xml:id="BE_lb_25v_386"/><g ref="smallt"/>hat <g ref="slong"/>chulde be his<g ref="semicolon"/></l>
+        <l n="387"><lb facs="#BE_line_25v_387" n="387" xml:id="BE_lb_25v_387"/>he biholde toward <g ref="the"/> towre<g ref="comma"/></l>
+        <l n="388"><lb facs="#BE_line_25v_385" n="388" xml:id="BE_lb_25v_388"/><g ref="smallt"/>rompis he herd <g ref="and"/> taboure</l>
+        <l n="389"><lb facs="#BE_line_25v_389" n="385" xml:id="BE_lb_25v_389"/><g ref="smalla"/>nd moche blys<g ref="fullstop"/></l>
+        <l n="390"><lb facs="#BE_line_25v_390" n="390" xml:id="BE_lb_25v_390"/><g ref="quote"/><g ref="capitall"/>ord<g ref="comma"/><g ref="quote"/> he <g ref="slong"/>eid<g ref="comma"/> <g ref="quote"/>on me thou mone<g ref="exclamation"/></l>
+        <l n="391"><lb facs="#BE_line_25v_391" n="391" xml:id="BE_lb_25v_391"/>Am <choice><orig>inought</orig><reg>I nought</reg></choice> an <g ref="smalle"/>rlis <g ref="slong"/>one</l>
+        <l n="392"><lb facs="#BE_line_25v_392" n="392" xml:id="BE_lb_25v_392"/><g ref="smalla"/>nd nowe am herd<g ref="question"/></l>
+        <l n="393"><lb facs="#BE_line_25v_393" n="393" xml:id="BE_lb_25v_393"/><g ref="capitalm"/>yght <choice><orig>Ie&#x028B;</orig><reg>I euer</reg></choice> <g ref="with"/> the Em<g ref="per"/><g ref="our"/> <g ref="slong"/>peke</l>
+        <l n="394"><lb facs="#BE_line_25v_394" n="394" xml:id="BE_lb_25v_394"/><g ref="smalla"/><g ref="smallo"/>f him I wolde bene <g ref="smalla"/>wreke</l>
+        <l n="395"><lb facs="#BE_line_25v_395" n="395" xml:id="BE_lb_25v_395"/><g ref="ff"/>or alle his ferde<g ref="exclamation"/></l>
+        <l n="396"><lb facs="#BE_line_25v_396" n="396" xml:id="BE_lb_25v_396"/><g ref="capitalh"/>e toke his bat and furth gothe</l>
+        <l n="397"><lb facs="#BE_line_25v_397" n="397" xml:id="BE_lb_25v_397"/><g ref="smalls"/>withe sory and ful wrothe</l>
+        <l n="398"><lb facs="#BE_line_25v_398" n="398" xml:id="BE_lb_25v_398"/><g ref="smallt"/>oward the tou<g ref="rlong"/><g ref="fullstop"/></l>
+        <l n="399"><lb facs="#BE_line_25v_399" n="399" xml:id="BE_lb_25v_399"/><g ref="quote"/><g ref="capitalp"/>ort<g ref="er"/><g ref="comma"/><g ref="quote"/> he <g ref="slong"/>eid <g ref="quote"/>lete me in reke<g ref="exclamation"/></l>
+        <l n="400"><lb facs="#BE_line_25v_400" n="400" xml:id="BE_lb_25v_400"/><choice><orig>Alitil</orig><reg>A litil</reg></choice> thing I haue to <g ref="slong"/>peke</l>
+        <l n="401"><lb facs="#BE_line_25v_401" n="401" xml:id="BE_lb_25v_401"/>with the Em<g ref="per"/>ou<g ref="rlong"/><g ref="fullstop"/><g ref="quote"/></l>
+        <l n="402"><lb facs="#BE_line_25v_402" n="402" xml:id="BE_lb_25v_402"/><g ref="quote"/><g ref="capitalg"/>o hens traitour<g ref="comma"/><g ref="quote"/> <g ref="the"/> port<g ref="er"/> <g ref="slong"/>aid<g ref="comma"/></l> 
+        <l n="403"><lb facs="#BE_line_25v_403" n="403" xml:id="BE_lb_25v_403"/><g ref="quote"/>Thi prowde wordis nie hole nor paid</l>
+        <l n="404"><lb facs="#BE_line_25v_404" n="404" xml:id="BE_lb_25v_404"/><g ref="smallg"/>o forthe on the gate<g ref="comma"/></l>
+        <l n="405"><lb facs="#BE_line_25v_405" n="405" xml:id="BE_lb_25v_405"/><g ref="smallb"/>ut thou go hens blyne</l>
+        <l n="406"><lb facs="#BE_line_25v_406" n="406" xml:id="BE_lb_25v_406"/>thou schalt hit a <g ref="th"/>ink so mot I <g ref="th"/>ryve</l>
+        <l n="407"><lb facs="#BE_line_25v_407" n="407" xml:id="BE_lb_25v_407"/><g ref="smalla"/>nd thou come ther ate<g ref="exclamation"/></l>
+        <l n="408"><lb facs="#BE_line_25v_408" n="408" xml:id="BE_lb_25v_408"/>Seist <g ref="thou"/> <g ref="this"/> horson<g ref="comma"/> <g ref="that"/> is <g ref="slong"/>o lite<g ref="semicolon"/></l>
+        <l n="409"><lb facs="#BE_line_25v_409" n="409" xml:id="BE_lb_25v_409"/>lokith as he wolde me <g ref="slong"/>myte</l>
+        <l n="410"><lb facs="#BE_line_25v_410" n="410" xml:id="BE_lb_25v_410"/>with his batte<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="411"><lb facs="#BE_line_25v_411" n="411" xml:id="BE_lb_25v_411"/>Beuys was sore <choice><orig>a <g ref="slong"/>schamyd</orig><reg>aschamid</reg></choice></l>
+        <l n="412"><lb facs="#BE_line_25v_412" n="412" xml:id="BE_lb_25v_412"/><g ref="smalla"/>nd of his wordis agramyd</l>
+        <l n="413"><lb facs="#BE_line_25v_413" n="413" xml:id="BE_lb_25v_413"/><g ref="smallt"/>hat he <g ref="slong"/>pak<g ref="comma"/></l>
+        <l n="414"><lb facs="#BE_line_25v_414" n="414" xml:id="BE_lb_25v_414"/>he ny<g ref="slong"/>t ne<g ref="uer"/> whate he do my<g ref="yogh"/>t<g ref="fullstop"/></l>
+        
+        <pb facs="data/images/single/BE_26r_cola.jpg" n="26r Col.1" xml:id="BE_26r_cola"/>
+        <l n="415"><lb facs="#BE_line_26r_415" n="415" xml:id="BE_lb_26r_415"/>To the port<g ref="er"/> he gan him dyght</l>
+        <l n="416"><lb facs="#BE_line_26r_416" n="416" xml:id="BE_lb_26r_416"/><g ref="smalla"/>nd his hed brak<g ref="fullstop"/></l>
+        <l n="417"><lb facs="#BE_line_26r_417" n="417" xml:id="BE_lb_26r_417"/><g ref="quote"/><choice><orig>ff</orig><reg>F</reg></choice>or <choice><orig>g</orig><reg>G</reg></choice>od<g ref="comma"/><g ref="quote"/> <g ref="quod"/> Bevys netheles<g ref="comma"/></l>
+        <l n="418"><lb facs="#BE_line_26r_418" n="418" xml:id="BE_lb_26r_418"/><g ref="quote"/><g ref="ff"/>or <g ref="slong"/>othe an horis <g ref="slong"/>on I was<g ref="comma"/></l>
+        <l n="419"><lb facs="#BE_line_26r_419" n="419" xml:id="BE_lb_26r_419"/><g ref="ff"/>ull wel I wote<g ref="exclamation"/></l>
+        <l n="420"><lb facs="#BE_line_26r_420" n="420" xml:id="BE_lb_26r_420"/>I am no t<g ref="rlong"/>ewant <choice><orig>bigoddis</orig><reg>bi Goddis</reg></choice> grace<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="421"><lb facs="#BE_line_26r_416" n="421" xml:id="BE_lb_26r_421"/><g ref="capitalw"/>ith that word he lyfte his mace</l>
+        <l n="422"><lb facs="#BE_line_26r_422" n="422" xml:id="BE_lb_26r_422"/><g ref="smalla"/>none fote hote<g ref="fullstop"/></l>
+        <l n="423"><lb facs="#BE_line_26r_423" n="423" xml:id="BE_lb_26r_423"/><g ref="smalla"/>All hit bi fille and grace <g ref="slong"/>tood<g ref="comma"/></l>
+        <l n="425"><lb facs="#BE_line_26r_425" n="425" xml:id="BE_lb_26r_425"/>he <g ref="slong"/>mote the port<g ref="er"/> on the hede</l>
+        <l n="426"><lb facs="#BE_line_26r_426" n="426" xml:id="BE_lb_26r_426"/><g ref="smallt"/>hat he gan falle<g ref="semicolon"/></l>
+        <l n="427"><lb facs="#BE_line_26r_427" n="427" xml:id="BE_lb_26r_427"/><g ref="smalla"/>lle his hed he gan to clyve<g ref="comma"/></l>
+        <l n="428"><lb facs="#BE_line_26r_428" n="428" xml:id="BE_lb_26r_428"/><g ref="smalla"/>went him furth <g ref="with"/>out lyve<g ref="fullstop"/></l>
+        <l n="429"><lb facs="#BE_line_26r_429" n="429" xml:id="BE_lb_26r_429"/>In the halle </l>
+        <l n="430"><lb facs="#BE_line_26r_430" n="430" xml:id="BE_lb_26r_430"/><g ref="smallvu"/>p and downe he gan <choice><orig>bi holde</orig><reg>biholde</reg></choice></l>
+        <l n="431"><lb facs="#BE_line_26r_431" n="431" xml:id="BE_lb_26r_431"/><g ref="smallw"/>ith moche grame<g ref="fullstop"/></l>
+        <l n="432"><lb facs="#BE_line_26r_432" n="432" xml:id="BE_lb_26r_432"/><g ref="quote"/>Sir<g ref="comma"/><g ref="quote"/> he seid <g ref="quote"/>whate dost <g ref="thou"/> here<g ref="question"/></l>
+        <l n="433"><lb facs="#BE_line_26r_433" n="433" xml:id="BE_lb_26r_433"/>Thou about thi swere</l>
+        <l n="434"><lb facs="#BE_line_26r_434" n="434" xml:id="BE_lb_26r_434"/><g ref="smallt"/>hat ilke dame<g ref="fullstop"/></l>
+        <l n="435"><lb facs="#BE_line_26r_435" n="435" xml:id="BE_lb_26r_435"/><g ref="capitalm"/>y modir hit is <g ref="that"/> <g ref="thou"/> holdi<g ref="slong"/>t on hond<g ref="semicolon"/></l>
+        <l n="436"><lb facs="#BE_line_26r_436" n="436" xml:id="BE_lb_26r_436"/><g ref="smallw"/>hate do<g ref="slong"/>t <g ref="thou"/> here apon my lond</l>
+        <l n="437"><lb facs="#BE_line_26r_437" n="437" xml:id="BE_lb_26r_437"/><choice><orig>With out</orig><reg>without</reg></choice> leve<g ref="question"/></l>
+        <l n="438"><lb facs="#BE_line_26r_438" n="438" xml:id="BE_lb_26r_438"/><g ref="capitaly"/>ef thou my lond and my fe</l>
+        <l n="439"><lb facs="#BE_line_26r_439" n="439" xml:id="BE_lb_26r_439"/><g ref="smalla"/>nd but thou hens fa<g ref="slong"/>t fle</l>
+        <l n="440"><lb facs="#BE_line_26r_440" n="440" xml:id="BE_lb_26r_440"/>I schalle the greve<g ref="exclamation"/></l>
+        <l n="441"><lb facs="#BE_line_26r_441" n="441" xml:id="BE_lb_26r_441"/>Whye ha<g ref="slong"/>t <g ref="thou"/> my fadir <g ref="slong"/>lawe<g ref="question"/></l>
+        <l n="442"><lb facs="#BE_line_26r_442" n="442" xml:id="BE_lb_26r_442"/>Thou <g ref="slong"/>chuldi<g ref="slong"/>t be hongid <g ref="and"/> to drawe</l>
+        <l n="423"><lb facs="#BE_line_26r_443" n="443" xml:id="BE_lb_26r_443"/><g ref="smallb"/>i <choice><orig>god is</orig><reg>Godis</reg></choice> wille<g ref="exclamation"/></l>
+        <l n="444"><lb facs="#BE_line_26r_444" n="444" xml:id="BE_lb_26r_444"/><g ref="capitaly"/>eve me my lond<g ref="comma"/> I the rede<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="445"><lb facs="#BE_line_26r_445" n="445" xml:id="BE_lb_26r_445"/>The <g ref="smalle"/>m<g ref="per"/>o<g ref="ur"/> tho to him <g ref="slong"/>ede<g ref="comma"></g></l>
+        <l n="446"><lb facs="#BE_line_26r_446" n="446" xml:id="BE_lb_26r_446"/><g ref="quote"/>Thou fole<g ref="comma"/> be <g ref="slong"/>tille<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="447"><lb facs="#BE_line_26r_447" n="447" xml:id="BE_lb_26r_447"/>Whan he callid h<g ref="imacron"/> fole bi name<g ref="comma"/></l>
+        <l n="448"><lb facs="#BE_line_26r_448" n="448" xml:id="BE_lb_26r_448"/><choice><orig>B.</orig><reg>Beuys</reg></choice> was ny wode for grame</l>
+        <l n="449"><lb facs="#BE_line_26r_449" n="449" xml:id="BE_lb_26r_449"/><g ref="smalla"/>nd to him wonde<g ref="middotfullstop"/></l>
+        
+        <pb facs="data/images/single/BE_26r_colb.jpg" n="26r Col.2" xml:id="BE_26r_colb"/>
+        <l n="450"><lb facs="#BE_line_26r_450" n="450" xml:id="BE_lb_26r_450"/><g ref="FF"/>or alle that were in the place</l>
+        <l n="451"><lb facs="#BE_line_26r_451" n="451" xml:id="BE_lb_26r_451"/><g ref="smallt"/>ries he <g ref="slong"/>mote him <g ref="with"/> the mace</l>
+        <l n="452"><lb facs="#BE_line_26r_452" n="452" xml:id="BE_lb_26r_452"/><g ref="smallt"/>hat was in his honde<g ref="semicolon"/></l>
+        <l n="453"><lb facs="#BE_line_26r_453" n="453" xml:id="BE_lb_26r_453"/><g ref="smallt"/>ries he <g ref="slong"/>note him on the crowne<g ref="fullstop"/></l>
+        <l n="454"><lb facs="#BE_line_26r_454" n="454" xml:id="BE_lb_26r_454"/>The <g ref="smalle"/>m<g ref="per"/>our fille <g ref="slong"/>owne<g ref="comma"/></l>
+        <l n="455"><lb facs="#BE_line_26r_455" n="455" xml:id="BE_lb_26r_455"/><g ref="smallt"/>her he <g ref="slong"/>ate<g ref="fullstop"/></l>
+        <l n="456"><lb facs="#BE_line_26r_456" n="456" xml:id="BE_lb_26r_456"/>The lady gan anon to grede<g ref="semicolon"/></l>
+        <l n="457"><lb facs="#BE_line_26r_457" n="457" xml:id="BE_lb_26r_457"/><g ref="quote"/>Nym the traitou<g ref="rlong"/><g ref="exclamation"/><g ref="quote"/> <g ref="slong"/>cho <g ref="th"/>an <g ref="slong"/>eide</l>
+        <l n="458"><lb facs="#BE_line_26r_458" n="458" xml:id="BE_lb_26r_458"/><g ref="smalla"/>nd swithe spake<g ref="fullstop"/></l>
+        <l n="459"><lb facs="#BE_line_26r_459" n="459" xml:id="BE_lb_26r_459"/>Tho he ne dur<g ref="slong"/>t no lengur <choice><orig>a bide</orig><reg>abide</reg></choice><g ref="semicolon"/></l>
+        <l n="460"><lb facs="#BE_line_26r_460" n="460" xml:id="BE_lb_26r_460"/>knyghtis ro<g ref="slong"/> <g ref="v"/>p on eche <g ref="slong"/>ide<g ref="comma"/></l>
+        <l n="461"><lb facs="#BE_line_26r_461" n="461" xml:id="BE_lb_26r_461"/>more and las<g ref="semicolon"/></l>
+        <l n="462"><lb facs="#BE_line_26r_462" n="462" xml:id="BE_lb_26r_462"/>wo hem was for the childis sake<g ref="comma"/></l>
+        <l n="463"><lb facs="#BE_line_26r_463" n="463" xml:id="BE_lb_26r_463"/>none of hem wolde him take</l>
+        <l n="464"><lb facs="#BE_line_26r_464" n="464" xml:id="BE_lb_26r_464"/><g ref="smallb"/>ut lete him pas<g ref="fullstop"/></l>
+        <l n="465"><lb facs="#BE_line_26r_465" n="465" xml:id="BE_lb_26r_465"/><g ref="capitalh"/>e ranne home fa<g ref="slong"/>t as he may<g ref="comma"/></l>
+        <l n="466"><lb facs="#BE_line_26r_466" n="466" xml:id="BE_lb_26r_466"/>his ma<g ref="slong"/>t<g ref="er"/> met him on the way</l>
+        <l n="467"><lb facs="#BE_line_26r_467" n="467" xml:id="BE_lb_26r_467"/><g ref="smallt"/>hat hete Saber<g ref="fullstop"/></l>
+        <l n="468"><lb facs="#BE_line_26r_468" n="468" xml:id="BE_lb_26r_468"/><g ref="capitalh"/>e a<g ref="slong"/>ke him with mylde mode<g ref="comma"/></l>
+        <l n="469"><lb facs="#BE_line_26r_469" n="469" xml:id="BE_lb_26r_469"/><g ref="quote"/><choice><orig>B.</orig><reg>Beuys</reg></choice><g ref="comma"/><g ref="quote"/> he seid <g ref="quote"/>for the rode<g ref="comma"/></l>
+        <l n="470"><lb facs="#BE_line_26r_470" n="470" xml:id="BE_lb_26r_470"/><g ref="smallw"/>hate do<g ref="slong"/>t thou here<g ref="question"/><g ref="quote"/></l>
+        <l n="471"><lb facs="#BE_line_26r_471" n="471" xml:id="BE_lb_26r_471"/><g ref="quote"/> I <g ref="slong"/>chall the tell al <choice><orig>to gader</orig><reg>togader</reg></choice><g ref="comma"/></l>
+        <l n="472"><lb facs="#BE_line_26r_472" n="472" xml:id="BE_lb_26r_472"/>I haue <choice><orig>I bete</orig><reg>ibete</reg></choice> my <g ref="slong"/>tepfadir</l>
+        <l n="473"><lb facs="#BE_line_26r_473" n="473" xml:id="BE_lb_26r_473"/>with my mace<g ref="fullstop"/></l>
+        <l n="474"><lb facs="#BE_line_26r_474" n="474" xml:id="BE_lb_26r_474"/>Tries I <g ref="slong"/>et him on the hede</l>
+        <l n="475"><lb facs="#BE_line_26r_475" n="475" xml:id="BE_lb_26r_475"/><g ref="smalla"/>nd <g ref="smalla"/>ll for dede I him leuyde</l>
+        <l n="476"><lb facs="#BE_line_26r_476" n="476" xml:id="BE_lb_26r_476"/><g ref="smalli"/>n that place<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="477"><lb facs="#BE_line_26r_477" n="477" xml:id="BE_lb_26r_477"/><g ref="quote"/><choice><orig>B.</orig><reg>Beuys</reg></choice><g ref="comma"/><g ref="quote"/> he <g ref="slong"/>eid <g ref="quote"/>thou art to blame<g ref="exclamation"/></l>
+        <l n="478"><lb facs="#BE_line_26r_457" n="478" xml:id="BE_lb_26r_478"/>The lady wol nowe do me <g ref="slong"/>chame</l>
+        <l n="479"><lb facs="#BE_line_26r_479" n="479" xml:id="BE_lb_26r_479"/><g ref="ff"/>or thi sake<g ref="semicolon"/></l>
+        <l n="480"><lb facs="#BE_line_26r_480" n="480" xml:id="BE_lb_26r_480"/><g ref="smalla"/>nd but thou bi my con<g ref="slong"/>ell do<g ref="comma"/></l>
+        <l n="481"><lb facs="#BE_line_26r_481" n="481" xml:id="BE_lb_26r_481"/><g ref="smallt"/>hou may bring <g ref="v"/>s bothe two</l>
+        <l n="482"><lb facs="#BE_line_26r_482" n="482" xml:id="BE_lb_26r_482"/><g ref="smalli"/>n moche wrake<g ref="exclamation"/><g ref="quote"/></l>
+        
+        <pb facs="data/images/single/BE_26v_cola.jpg" n="26v Col.1" xml:id="BE_26v_cola"/>
+        <l n="483"><lb facs="#BE_line_26v_483" n="483" xml:id="BE_la_26v_483"/>Saber <choice><orig>in to</orig><reg>into</reg></choice> a chambu<g ref="rlong"/> him lad<g ref="comma"/></l>
+        <l n="484"><lb facs="#BE_line_26v_484" n="484" xml:id="BE_la_26v_484"/><g ref="smallt"/>he lady fulle sore sho drad<g ref="fullstop"/></l>
+        <l n="485"><lb facs="#BE_line_26v_485" n="485" xml:id="BE_la_26v_485"/>That ilke day</l>
+        <l n="486"><lb facs="#BE_line_26v_486" n="486" xml:id="BE_la_26v_486"/><g ref="smallt"/>he lady out of hur tou<g ref="rlong"/> came<g ref="comma"/></l>
+        <l n="487"><lb facs="#BE_line_26v_487" n="487" xml:id="BE_la_26v_487"/><g ref="smallt"/>o Saber the wey sho name</l>
+        <l n="488"><lb facs="#BE_line_26v_488" n="488" xml:id="BE_la_26v_488"/><g ref="smalla"/>nd gan to say<g ref="comma"/></l>
+        <l n="489"><lb facs="#BE_line_26v_489" n="489" xml:id="BE_la_26v_489"/><g ref="quote"/>Saber<g ref="comma"/><g ref="quote"/> <g ref="slong"/>cho <g ref="slong"/>eid<g ref="comma"/> <g ref="quote"/>where is Befe<g ref="comma"/></l>
+        <l n="490"><lb facs="#BE_line_26v_490" n="490" xml:id="BE_la_26v_490"/><g ref="smallt"/>he wikke traitou<g ref="rlong"/><g ref="comma"/> <g ref="that"/> fals thefe</l> 
+        <l n="491"><lb facs="#BE_line_26v_491" n="491" xml:id="BE_la_26v_491"/><g ref="smallt"/>hat is so felle<g ref="question"/><g ref="quote"/></l>
+        <l n="492"><lb facs="#BE_line_26v_492" n="492" xml:id="BE_la_26v_492"/><g ref="quote"/>Madame<g ref="comma"/> I did him out of dawe</l>
+        <l n="493"><lb facs="#BE_line_26v_493" n="493" xml:id="BE_la_26v_493"/><g ref="smallb"/>i thi rede and bi thi sawe<g ref="fullstop"/></l>
+        <l n="494"><lb facs="#BE_line_26v_494" n="494" xml:id="BE_la_26v_494"/>Thou <choice><orig>wst</orig><corr>wist</corr></choice> full well<g ref="comma"/></l>
+        <l n="495"><lb facs="#BE_line_26v_495" n="495" xml:id="BE_la_26v_495"/><g ref="smallt"/>his ben his clo<g ref="the"/> <g ref="that"/> thow <g ref="slong"/>ixt<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="496"><lb facs="#BE_line_26v_496" n="496" xml:id="BE_la_26v_496"/><g ref="quote"/>Bi <g ref="capitalg"/>od<g ref="comma"/> Saber<g ref="quote"/> <g ref="slong"/>cho <g ref="slong"/>eid<g ref="comma"/> <g ref="quote"/><g ref="thou"/> lixt<g ref="comma"/></l>
+        <l n="497"><lb facs="#BE_line_26v_497" n="497" xml:id="BE_la_26v_497"/><g ref="smalls"/>e where he gethe<g ref="exclamation"/></l>
+        <l n="498"><lb facs="#BE_line_26v_498" n="498" xml:id="BE_la_26v_498"/>But thou hime me to hond take<g ref="semicolon"/></l>
+        <l n="499"><lb facs="#BE_line_26v_499" n="499" xml:id="BE_la_26v_499"/><g ref="smallt"/>hou <g ref="slong"/>chalt haue for his sake</l>
+        <l n="500"><lb facs="#BE_line_26v_500" n="500" xml:id="BE_la_26v_500"/><g ref="smalla"/>n evill dethe<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="501"><lb facs="#BE_line_26v_501" n="501" xml:id="BE_la_26v_501"/>Tho Beuys him his maist<g ref="er"/> threte</l>
+        <l n="502"><lb facs="#BE_line_26v_502" n="502" xml:id="BE_la_26v_502"/><choice><orig>With out</orig><reg>without</reg></choice> delay<g ref="semicolon"/></l>
+        <l n="503"><lb facs="#BE_line_26v_503" n="503" xml:id="BE_la_26v_503"/><g ref="quote"/><g ref="capitall"/>o<g ref="comma"/> I am here<g ref="comma"/> <choice><orig>.B.</orig><reg>Beuys</reg></choice> bi name<g ref="fullstop"/></l>
+        <l n="504"><lb facs="#BE_line_26v_504" n="504" xml:id="BE_la_26v_504"/>Do my mai<g ref="slong"/>ter for me no <g ref="slong"/>chame<g ref="exclamation"/></l>
+        <l n="505"><lb facs="#BE_line_26v_505" n="505" xml:id="BE_la_26v_505"/>Dame<g ref="comma"/> I the pray<g ref="comma"/></l>
+        <l n="506"><lb facs="#BE_line_26v_506" n="506" xml:id="BE_la_26v_506"/>lo nowe <g ref="th"/>ow me <g ref="slong"/>eixt here<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="507"><lb facs="#BE_line_26v_507" n="507" xml:id="BE_la_26v_507"/>The lady toke him by the ere</l>
+        <l n="508"><lb facs="#BE_line_26v_508" n="508" xml:id="BE_la_26v_508"/><g ref="smalls"/>one anone<g ref="semicolon"/></l>
+        <l n="509"><lb facs="#BE_line_26v_509" n="509" xml:id="BE_la_26v_509"/><g ref="quote"/>I wolde<g ref="quote"/> sho <g ref="slong"/>eid<g ref="comma"/> <g ref="quote"/>thou were of lyve<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="510"><lb facs="#BE_line_26v_510" n="510" xml:id="BE_la_26v_510"/><choice><orig>.iij.</orig><reg>Thre</reg></choice> kny<g ref="yogh"/>tis <g ref="slong"/>cho slepid als blyve</l>
+        <l n="511"><lb facs="#BE_line_26v_511" n="511" xml:id="BE_la_26v_511"/><g ref="smallt"/>hat were his fone<g ref="fullstop"/></l>
+        <l n="512"><lb facs="#BE_line_26v_512" n="512" xml:id="BE_la_26v_512"/>To hem sho toke <g ref="the"/> childe an hond<g ref="semicolon"/></l>
+        <l n="513"><lb facs="#BE_line_26v_513" n="513" xml:id="BE_la_26v_513"/><g ref="quote"/>Wyndith<g ref="quote"/> sho seid<g ref="quote"/> <choice><orig>vn to</orig><reg>unto</reg></choice> the <g ref="slong"/>trond</l>
+        <l n="514"><lb facs="#BE_line_26v_514" n="514" xml:id="BE_la_26v_514"/><g ref="smalla"/>ls fa<g ref="slong"/>t as ye may<g ref="fullstop"/></l>
+        
+        <pb facs="data/images/single/BE_26v_colb.jpg" n="26v Col.2" xml:id="BE_26v_colb"/>
+        <l n="515"><lb facs="#BE_line_26v_515" n="515" xml:id="BE_la_26v_515"/>Yef ye <g ref="slong"/>ene chepmen of Sara<g ref="z"/>yne</l>
+        <l n="516"><lb facs="#BE_line_26v_516" n="516" xml:id="BE_la_26v_516"/><g ref="smalls"/>illith hem this wikke hyne</l>
+        <l n="517"><lb facs="#BE_line_26v_517" n="517" xml:id="BE_la_26v_517"/><g ref="smallt"/>his ilke day<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="518"><lb facs="#BE_line_26v_518" n="518" xml:id="BE_la_26v_518"/><g ref="FF"/>urthe went this kni<g ref="yogh"/>tis three</l>
+        <l n="519"><lb facs="#BE_line_26v_519" n="519" xml:id="BE_la_26v_519"/><g ref="smallt"/>il thei come <g ref="v"/>nitll the see</l>
+        <l n="520"><lb facs="#BE_line_26v_520" n="520" xml:id="BE_la_26v_520"/><g ref="smallo"/>n the ground</l>
+        <l n="521"><lb facs="#BE_line_26v_521" n="521" xml:id="BE_la_26v_521"/><g ref="smalla"/>nd chepyn the childe to sale<g ref="fullstop"/></l> 
+        <l n="522"><lb facs="#BE_line_26v_522" n="522" xml:id="BE_la_26v_522"/><g ref="capitalm"/>arch<g ref="aun"/>t<g ref="es"/> thei found<g ref="comma"/> many <g ref="and"/> fale<g ref="comma"/></l>
+        <l n="523"><lb facs="#BE_line_26v_523" n="523" xml:id="BE_la_26v_523"/><g ref="smallo"/>f hethyn lond<g ref="fullstop"/></l>
+        <l n="524"><lb facs="#BE_line_26v_524" n="524" xml:id="BE_la_26v_524"/>Thei solde him for moche au<g ref="yogh"/>t<g ref="comma"/></l>
+        <l n="525"><lb facs="#BE_line_26v_525" n="525" xml:id="BE_la_26v_525"/><g ref="smallt"/>o the Sar<g ref="z"/>ynys thei h<g ref="imacron"/> <choice><orig>bi tau&#541;t</orig><reg>bitaught</reg></choice></l>
+        <l n="526"><lb facs="#BE_line_26v_526" n="526" xml:id="BE_la_26v_526"/><g ref="smallr"/>ight ha<g ref="slong"/>tely<g ref="fullstop"/></l>
+        <l n="527"><lb facs="#BE_line_26v_527" n="527" xml:id="BE_la_26v_527"/>The childe was sonndant o<g ref="uer"/> <g ref="the"/> flood<g ref="comma"/></l>
+        <l n="528"><lb facs="#BE_line_26v_528" n="528" xml:id="BE_la_26v_528"/><g ref="smallw"/>ynde and wedir he had good</l>
+        <l n="529"><lb facs="#BE_line_26v_529" n="529" xml:id="BE_la_26v_529"/><g ref="smallt"/>ull Ermony<g ref="fullstop"/></l>
+        <l n="530"><lb facs="#BE_line_26v_530" n="530" xml:id="BE_la_26v_530"/>With her ship <g ref="ther"/> thei gan lond<g ref="comma"/></l>
+        <l n="531"><lb facs="#BE_line_26v_531" n="531" xml:id="BE_la_26v_531"/><choice><orig>iij</orig><reg>thre</reg></choice> marchaunt<g ref="es"/> gan fond</l>
+        <l n="532"><lb facs="#BE_line_26v_532" n="532" xml:id="BE_la_26v_532"/><g ref="smallt"/>o that <g ref="smallc"/>ite<g ref="fullstop">/</g></l>
+        <l n="533"><lb facs="#BE_line_26v_533" n="533" xml:id="BE_la_26v_533"/>With them thei toke child Benon</l>
+        <l n="534"><lb facs="#BE_line_26v_534" n="534" xml:id="BE_la_26v_534"/><g ref="ff"/>or to sille him in the tou<g ref="n"/></l>
+        <l n="535"><lb facs="#BE_line_26v_535" n="535" xml:id="BE_la_26v_535"/><g ref="ff"/>or golde plente<g ref="fullstop"/></l>
+        <l n="536"><lb facs="#BE_line_26v_536" n="536" xml:id="BE_la_26v_536"/><g ref="With"/> sil<g ref="uer"/> cheynes <g ref="th"/>ei were <choice><orig>bi gurd</orig><reg>bigurd</reg></choice><g ref="comma"/></l>
+        <l n="537"><lb facs="#BE_line_26v_537" n="537" xml:id="BE_la_26v_537"/><g ref="smallt"/>o lede him thei were <choice><orig>a ferd</orig><reg>aferd</reg></choice><g ref="fullstop"/></l>
+        <l n="538"><lb facs="#BE_line_26v_538" n="538" xml:id="BE_la_26v_538"/>Eche helde on him hond</l>
+        <l n="539"><lb facs="#BE_line_26v_539" n="539" xml:id="BE_la_26v_539"/><g ref="ff"/>or him to haue gret <choice><orig>bi &#541;ete</orig><reg>biyete</reg></choice><g ref="fullstop"/></l>
+        <l n="540"><lb facs="#BE_line_26v_540" n="540" xml:id="BE_la_26v_540"/>Thei lad him throwe e<g ref="uer"/>y <g ref="slong"/>trete<g ref="comma"/></l>
+        <l n="541"><lb facs="#BE_line_26v_541" n="541" xml:id="BE_la_26v_541"/><g ref="smallo"/>n his hed a ro<g ref="slong"/>e garlond<g ref="semicolon"/></l>
+        <l n="542"><lb facs="#BE_line_26v_542" n="542" xml:id="BE_la_26v_542"/><g ref="smalla"/>nd ther ne my<g ref="yogh"/>t no man finde</l>
+        <l n="543"><lb facs="#BE_line_26v_542" n="543" xml:id="BE_la_26v_543"/><g ref="smallt"/>o bigge <g ref="the"/> child of cri<g ref="slong"/>ten kynde</l>
+        <l n="544"><lb facs="#BE_line_26v_544" n="544" xml:id="BE_la_26v_544"/>So dere thei gan him holde<g ref="comma"/></l>
+        <l n="545"><lb facs="#BE_line_26v_545" n="545" xml:id="BE_la_26v_545"/><g ref="smallt"/>il <g ref="ther"/> come the king<g ref="es"/> <g ref="slong"/>teward</l>
+        <l n="546"><lb facs="#BE_line_26v_546" n="546" xml:id="BE_la_26v_546"/><g ref="smallt"/>hat was kynd and no negard</l>
+        <l n="547"><lb facs="#BE_line_26v_547" n="547" xml:id="BE_la_26v_547"/><g ref="smalla"/>nd to him thei him <g ref="slong"/>olde<g ref="fullstop"/></l>
+        <l n="548"><lb facs="#BE_line_26v_548" n="548" xml:id="BE_la_26v_548"/>The <g ref="slong"/>teward went to the kyng</l>
+        
+        <pb facs="data/images/single/BE_27r_cola.jpg" n="27r Col.1" xml:id="BE_27r_cola"/> 
+      </div>
+     
+    </body>  
+  </text>
+ 
+ <!-- ISUMBRAS -->
+      
+      <text n="Isumbras" subtype="edition_text" type="verse" xml:id="Text_Isumbras">
+        <front><head><hi rend="bold">Informazioni sul testo</hi></head>
+          <div><p><hi rend="bold">Metro</hi><hi rend="italic"> Tail-rhyme stanzas</hi> di 12 versi</p></div>
+          <div><p><hi rend="bold">Data</hi> <hi rend="italic">ante</hi> 1320</p></div>
+          <div><p><hi rend="bold">Provenienza</hi> Midlands nord-orientali</p></div>
+          <div><p><hi rend="bold">Trama (in inglese)</hi><lb/>Sir Isumbras is a rich and courteous knight, with a beautiful wife and three sons, who has forgotten that he owes his good fortune to God. One day, a bird sent by Christ reminds him of his sin and offers him a choice between suffering in youth or old age. Isumbras repents, and promises to serve Christ while he is young and strong. He calmly accepts his fate as his horse dies, his hawks and hounds flee and his property burns down. He and his family leave the county and wander where Christ leads them, begging for food.
+          As they are crossing a river, Isumbras’ two eldest sons are carried away by a lion and a leopard. Isumbras urges his wife and youngest son to accept God’s will, and the three continue to the Greek sea, where they find the war ships of a Saracen king. Isumbras refuses to convert in return for food and rejects the king’s offer to purchase his wife. She is forcibly taken from him, and he is left, badly beaten, with a cloth full of gold. Before the ships sail the pair is granted a final meeting, where she gives him half of her ring and tells him to search for her.
+          Distraught, Isumbras continues on his way, until a griffin steals his gold and his youngest son is taken by a unicorn. Left alone, he submits himself to God’s will. He joins a community of ironsmiths and spends seven years carrying ore and learning to make armour. When he hears that the Saracens are waging war against a Christian ruler, Isumbras rides a work horse into battle and defeats them, killing their king.
+          The Christian king thanks the mysterious knight and takes him to a nunnery. As soon as his wounds are healed, however, Isumbras dresses as a pilgrim, and continues to wander. He sails to the Holy Land and spends seven years living in poverty until another angel informs him that his sins are forgiven. He then travels to the court of a charitable queen, but weeps instead of eating the feast that is laid before him. Full of pity, the queen gives him a room in her castle, where he regains his strength and beats her best knights in a tournament.
+          One day Isumbras finds a nest containing his cloth and gold, which he conceals under his bed. When the jealous Saracens discover it, they show it to the queen, who realises that it belonged to her husband. Isumbras tells his story and shows her his ring. She produces her half, and the couple are reunited. Isumbras is crowned and decrees the kingdom Christian, but his men desert him when he is attacked by the Saracens. As he and his wife prepare to fight, they are joined by three knights, riding on a leopard, a lion and a unicorn. The five of them defeat the Saracen host, and the knights reveal that they are Isumbras’ sons, sent back to him by God. The family rejoices, and conquers the lands of another three Saracen kings, crowning Isumbras’ sons and converting their inhabitants. When they die, their souls all go to heaven.</p></div>
+          <div><p><hi rend="bold">Altri testimoni</hi>
+          <lb/>Cambridge, Gonville and Caius College, MS 175, fol. 98r–107r
+          <lb/>Edinburgh, National Library of Scotland, MS Advocates 19.3.1, fol. 48r–56v
+          <lb/>Lincoln Cathedral Library, MS 91 ('Thornton Manuscript'), fol. 109r–114v
+            <lb/>London, British Library, MS Cotton Caligula A.ii, fol. 130r–134r
+            <lb/>London, Gray's Inn, MS 20, fol. 228r228-v
+            <lb/>Oxford, Bodleian Library, MS Ashmole 61, fol. 9r–16r
+            <lb/>Oxford, Bodleian Library, MS Douce 261, fol. 1r–7v
+            <lb/>Oxford, University College, MS 142, fol. 128r
+          </p></div></front>
+        <body>
+      <div n="Isumbras" subtype="edition_text" type="verse" xml:id="Isumbras">
+          <pb facs="data/images/single/IS_114v_cola.jpg" n="114v Col.1" xml:id="IS_114v_cola"/>
+        <fw place="top-middle" type="cw">Sir Isumbras</fw>
+          <l n="1"><lb facs="#IS_line_114v_01" n="1" xml:id="IS_lb_114v_01"/><g ref="capitalh"/>e <g ref="that"/> made be<g ref="the"/> hevyn <g ref="and"/> erthe</l>
+          <l n="2"><lb facs="#IS_line_114v_02" n="2" xml:id="IS_lb_114v_02"/><g ref="and"/> al <g ref="this"/> worlde in daies seuyn</l>
+          <l n="3"><lb facs="#IS_line_114v_03" n="3" xml:id="IS_lb_114v_03"/><g ref="dash"/> that is ful of my<g ref="yogh"/>t <g ref="dash"/></l> 
+          <l n="4"><lb facs="#IS_line_114v_04" n="4" xml:id="IS_lb_114v_04"/>send <g ref="v"/>s alle his ble<g ref="slong"/><g ref="slong"/>yng</l>
+          <l n="5"><lb facs="#IS_line_114v_05" n="5" xml:id="IS_lb_114v_05"/>las and more olde and yong</l>
+          <l n="6"><lb facs="#IS_line_114v_06" n="6" xml:id="IS_lb_114v_06"/>and kepe <g ref="v"/>s day and ny<g ref="yogh"/>t<g ref="fullstop"/></l>
+          <l n="7"><lb facs="#IS_line_114v_07" n="7" xml:id="IS_lb_114v_07"/><g ref="capitaly"/> wol you telle of a kny<g ref="yogh"/>t</l>
+          <l n="8"><lb facs="#IS_line_114v_08" n="8" xml:id="IS_lb_114v_08"/>that was dou<g ref="yogh"/>ty in ilke a fi<g ref="yogh"/>t</l>
+          <l n="9"><lb facs="#IS_line_114v_09" n="9" xml:id="IS_lb_114v_09"/>in towne and eke in fielde<g ref="semicolon"/></l>
+          <l n="10"><lb facs="#IS_line_114v_10" n="10" xml:id="IS_lb_114v_10"/>ther dur<g ref="slong"/>t no man his dynt<choice> <orig>a bide</orig><corr>abide</corr></choice></l>
+          <l n="11"><lb facs="#IS_line_114v_11" n="11" xml:id="IS_lb_114v_11"/>with <g ref="slong"/>pere ne with <g ref="slong"/>childe<g ref="fullstop"/></l>
+          <l n="12"><lb facs="#IS_line_114v_12" n="12" xml:id="IS_lb_114v_12"/><g ref="capitalm"/>an he was cuthe <choice><orig>y nowe</orig><reg>ynowe</reg></choice></l>
+          <l n="13"><lb facs="#IS_line_114v_13" n="13" xml:id="IS_lb_114v_13"/><g ref="smallo"/>x to drawe in his plowe</l>
+          <l n="14"><lb facs="#IS_line_114v_14" n="14" xml:id="IS_lb_114v_14"/>and <g ref="slong"/>tedis in his <g ref="slong"/>talle<g ref="semicolon"/></l>
+          <l n="15"><lb facs="#IS_line_114v_15" n="15" xml:id="IS_lb_114v_15"/>man he was curtey<g ref="slong"/>e and kynde<g ref="comma"/></l>
+          <l n="16"><lb facs="#IS_line_114v_16" n="16" xml:id="IS_lb_114v_16"/>euery man was his frende<g ref="semicolon"/></l>
+          <l n="17"><lb facs="#IS_line_114v_17" n="17" xml:id="IS_lb_114v_17"/>he was lord of alle<g ref="fullstop"/></l>
+          <l n="18"><lb facs="#IS_line_114v_18" n="18" xml:id="IS_lb_114v_18"/>Curteis and kynde he was<g ref ="comma"/></l>
+          <l n="19"><lb facs="#IS_line_114v_19" n="19" xml:id="IS_lb_114v_19"/>his name was clepid <g ref="slong"/>ir I<g ref="slong"/>ombras<choice><orig>e</orig><reg></reg></choice><g ref="fullstop"/></l>
+          <l n="20"><lb facs="#IS_line_114v_20" n="20" xml:id="IS_lb_114v_20"/><g ref="capitalb"/>othe curteis and fre<g ref="comma"/></l>
+          <l n="21"><lb facs="#IS_line_114v_21" n="21" xml:id="IS_lb_114v_21"/>the gretti<g ref="slong"/> of his curte<g ref="slong"/>y</l>
+          <l n="22"><lb facs="#IS_line_114v_22" n="22" xml:id="IS_lb_114v_22"/>ne couthe ther no man di<g ref="slong"/>try<g ref="fullstop"/></l>
+          <l n="23"><lb facs="#IS_line_114v_23" n="23" xml:id="IS_lb_114v_23"/><g ref="capitala"/> fulle good man was he<g ref="fullstop"/></l>
+          <l n="24"><lb facs="#IS_line_114v_24" n="24" xml:id="IS_lb_114v_24"/>Eke men he louid in halle</l>
+          <l n="25"><lb facs="#IS_line_114v_25" n="25" xml:id="IS_lb_114v_25"/>and <g ref="yogh"/>aue ham <g ref="smallr"/>obus of riche palle<g ref="comma"/></l>   
+          <l n="26"><lb facs="#IS_line_114v_26" n="26" xml:id="IS_lb_114v_26"/>bothe golde and eke fe<g ref="fullstop"/></l>
+          <l n="27"><lb facs="#IS_line_114v_27" n="27" xml:id="IS_lb_114v_27"/><g ref="capitalo"/>f curte<g ref="slong"/>ie he was kyng<g ref="semicolon"/></l>
+          <l n="28"><lb facs="#IS_line_114v_28" n="28" xml:id="IS_lb_114v_28"/>his curtefie had no endyng<g ref="comma"/></l>
+          <l n="29"><lb facs="#IS_line_114v_29" n="29" xml:id="IS_lb_114v_29"/><g ref="smalli"/>n worlde is none so fre<g ref="fullstop"/></l>
+          <l n="30"><lb facs="#IS_line_114v_30" n="30" xml:id="IS_lb_114v_30"/><g ref="capitala"/>s feire a wife had he</l>
+          <l n="30"><lb facs="#IS_line_114v_31" n="31" xml:id="IS_lb_114v_31"/>as eny in cuthe mi<g ref="yogh"/>t be</l>
+          <l n="31"><lb facs="#IS_line_114v_32" n="32" xml:id="IS_lb_114v_32"/>as <g ref="capitaly"/> telle it <g ref="yogh"/>owe</l>
+          <l n="32"><lb facs="#IS_line_114v_33" n="33" xml:id="IS_lb_114v_33"/>and knowe childryn had he thre</l>
+          <l n="33"><lb facs="#IS_line_114v_34" n="34" xml:id="IS_lb_114v_34"/>as feire as eny my<g ref="yogh"/>t be<g ref="comma"/></l>
+          <l n="34"><lb facs="#IS_line_114v_35" n="35" xml:id="IS_lb_114v_35"/>for they were feire <choice><orig>y nowe</orig><reg>ynowe</reg></choice><g ref="fullstop"/></l>
+          <l n="35"><lb facs="#IS_line_114v_36" n="36" xml:id="IS_lb_114v_36"/>Into his hert a pride was brou<g ref="yogh"/>t</l>
+          <l n="36"><lb facs="#IS_line_114v_37" n="37" xml:id="IS_lb_114v_37"/><g ref="that"/> of <choice><orig>god is</orig><corr>Godis</corr></choice> worke he had no rou<g ref="yogh"/>t</l>
+          <l n="38"><lb facs="#IS_line_114v_38" n="38" xml:id="IS_lb_114v_38"/>his merci for to nomme<g ref="fullstop"/></l>
+          <l n="39"><lb facs="#IS_line_114v_39" n="39" xml:id="IS_lb_114v_39"/>So longe he vayned in hi<g ref="yogh"/>e <g ref="pri"/>de</l>
+          <l n="40"><lb facs="#IS_line_114v_40" n="40" xml:id="IS_lb_114v_40"/>that <g ref="capitalg"/>od uolde no lengue <choice><orig>a bide</orig><reg>abide</reg></choice></l>
+          <l n="41"><lb facs="#IS_line_114v_41" n="41" xml:id="IS_lb_114v_41"/>but <g ref="slong"/>end to him a <g ref="slong"/>tewyne<g ref="fullstop"/></l>        
+           
+          <pb facs="data/images/single/IS_114v_colb.jpg" n="114v Col.2" xml:id="IS_114v_colb"/>
+          <l n="1"><lb facs="#IS_line_114v_42" n="42" xml:id="IS_lb_114v_42"/>So hit <choice><orig>bi fille</orig><corr>bifille</corr> </choice><g ref="v"/>ppon a day</l>
+          <l n="2"><lb facs="#IS_line_114v_43" n="43" xml:id="IS_lb_114v_43"/>the kny<g ref="yogh"/>t went furthe him to play<g ref="semicolon"/></l> 
+          <l n="3"><lb facs="#IS_line_114v_44" n="44" xml:id="IS_lb_114v_44"/> his forest for to <g ref="slong"/>e</l>
+          <l n="4"><lb facs="#IS_line_114v_45" n="45" xml:id="IS_lb_114v_45"/> and as he went in a narowe way</l>
+          <l n="5"><lb facs="#IS_line_114v_46" n="46" xml:id="IS_lb_114v_46"/> a fowle he hird him to say</l>
+          <l n="6"><lb facs="#IS_line_114v_47" n="47" xml:id="IS_lb_114v_47"/> that sate <g ref="v"/>ppon a tre</l>
+          <l n="7"><lb facs="#IS_line_114v_48" n="48" xml:id="IS_lb_114v_48"/> and <g ref="slong"/>aid <g ref="quote"/><g ref="capitalw"/>elcome I<g ref="slong"/>umbras<g ref="exclamation"/></l>
+          <l n="8"><lb facs="#IS_line_114v_49" n="49" xml:id="IS_lb_114v_49"/> <g ref="capitalt"/>hou ha<g ref="slong"/>t <choice><orig>for <g ref="yogh"/>ete</orig><corr>for<g ref="yogh"/>ete</corr></choice> whate thou was</l>
+          <l n="9"><lb facs="#IS_line_114v_50" n="50" xml:id="IS_lb_114v_50"/> for pride and golde an fe<g ref="fullstop"/></l>
+          <l n="10"><lb facs="#IS_line_114v_51" n="51" xml:id="IS_lb_114v_51"/><g ref="capitalt"/>he kynge of heuyn wel gretith the<g ref="colon"/></l>
+          <l n="11"><lb facs="#IS_line_114v_52" n="52" xml:id="IS_lb_114v_52"/>in <g ref="yogh"/>outhe o<g ref="ther"/> elde thou geti<g ref="slong"/>t pouerte<g ref="comma"/></l>
+          <l n="12"><lb facs="#IS_line_114v_53" n="53" xml:id="IS_lb_114v_53"/><g ref="capitala"/>nd che<g ref="slong"/>e whethir thou haddist le<g ref="uer"/> <choice><orig>tobe</orig><corr> to be</corr></choice><g ref="fullstop"/><g ref="quote"/></l>
+          <l n="13"><lb facs="#IS_line_114v_54" n="54" xml:id="IS_lb_114v_54"/><g ref="capitalw"/>ith careful hert and sikyng <choice><orig>sere</orig><corr>sore</corr></choice></l>
+          <l n="14"><lb facs="#IS_line_114v_55" n="55" xml:id="IS_lb_114v_55"/>he fille <g ref="v"/>ppon his kneys there</l> 
+          <l n="15"><lb facs="#IS_line_114v_56" n="56" xml:id="IS_lb_114v_56"/>and his hondis <g ref="v"/>p he hilde</l>
+          <l n="16"><lb facs="#IS_line_114v_57" n="57" xml:id="IS_lb_114v_57"/><g ref="quote"/><g ref="capitalw"/>orldis welthe <g ref="capitaly"/> wol <choice><orig>for sake</orig><corr>forsake</corr></choice></l>
+          <l n="17"><lb facs="#IS_line_114v_58" n="58" xml:id="IS_lb_114v_58"/>and to <g ref="capitalc"/>ristis merci me take<g ref="colon"/></l>
+          <l n="18"><lb facs="#IS_line_114v_59" n="59" xml:id="IS_lb_114v_59"/>myne hert to hym <g ref="capitaly"/> <g ref="yogh"/>ilde<g ref="fullstop"/></l>
+          <l n="19"><lb facs="#IS_line_114v_60" n="60" xml:id="IS_lb_114v_60"/><g ref="capitali"/>n yowthe <g ref="capitaly"/> may ride and go<g ref="comma"/></l>
+          <l n="20"><lb facs="#IS_line_114v_61" n="61" xml:id="IS_lb_114v_61"/>in <g ref="smalli"/>lde <g ref="capitaly"/> may nou<g ref="yogh"/>t do so <g ref="hyphen"/></l>
+          <l n="21"><lb facs="#IS_line_114v_62" n="62" xml:id="IS_lb_114v_62"/>my bonis wol wax olde<g ref="fullstop"/></l>
+          <l n="22"><lb facs="#IS_line_114v_63" n="63" xml:id="IS_lb_114v_63"/><g ref="capitall"/>ord<g ref="comma"/> <g ref="yogh"/>if thi wille be<g ref="comma"/></l>
+          <l n="23"><lb facs="#IS_line_114v_64" n="64" xml:id="IS_lb_114v_64"/>yn youthe send hit me </l>
+          <l n="24"><lb facs="#IS_line_114v_65" n="65" xml:id="IS_lb_114v_65"/>and welthe in myne elde<g ref="fullstop"/><g ref="quote"/></l>
+          <l n="25"><lb facs="#IS_line_114v_66" n="66" xml:id="IS_lb_114v_66"/><g ref="capitala"/>wey the fowle takith his fli<g ref="yogh"/>t</l>
+          <l n="26"><lb facs="#IS_line_114v_67" n="67" xml:id="IS_lb_114v_67"/>and al <choice><orig>a lone</orig><corr>alone</corr></choice> leuys the kny<g ref="yogh"/>t<g ref="comma"/></l>
+          <l n="27"><lb facs="#IS_line_114v_68" n="68" xml:id="IS_lb_114v_68"/>ful sone he went his way<g ref="fullstop"/></l>
+          <l n="28"><lb facs="#IS_line_114v_69" n="69" xml:id="IS_lb_114v_69"/><g ref="capitala"/>nd whan he had the fowle <choice><orig>for lore</orig><reg>forlore</reg></choice></l>
+          <l n="29"><lb facs="#IS_line_114v_70" n="70" xml:id="IS_lb_114v_70"/>his stede that was so li<g ref="yogh"/>t <choice><orig>bi fore</orig><reg>bifore</reg></choice></l>
+          <l n="30"><lb facs="#IS_line_114v_71" n="71" xml:id="IS_lb_114v_71"/>undir him gan die<g ref="fullstop"/></l>
+          <l n="31"><lb facs="#IS_line_114v_72" n="72" xml:id="IS_lb_114v_72"/><g ref="capitalh"/>is houndis and his hawkis bothe</l>
+          <l n="32"><lb facs="#IS_line_114v_73" n="73" xml:id="IS_lb_114v_73"/>wenten to wode <g ref="hyphen"/> to him were lothe <g ref="hyphen"/></l>
+          <l n="33"><lb facs="#IS_line_114v_74" n="74" xml:id="IS_lb_114v_74"/>ilke one to dyuers way<g ref="fullstop"/></l>
+          <l n="34"><lb facs="#IS_line_114v_75" n="75" xml:id="IS_lb_114v_75"/><g ref="capitalw"/>hat wondir was <g ref="th"/>an <g ref="th"/>ei he were wo<g ref="question"/></l> 
+          <l n="35"><lb facs="#IS_line_114v_76" n="76" xml:id="IS_lb_114v_76"/><g ref="capitalo"/>n fote him heuith for to go</l>
+          <l n="36"><lb facs="#IS_line_114v_77" n="77" xml:id="IS_lb_114v_77"/>to payne turnyth alle his play<g ref="fullstop"/></l>
+          <l n="37"><lb facs="#IS_line_114v_78" n="78" xml:id="IS_lb_114v_78"/><g ref="capitala"/>nd also by the wode he went</l>
+          <l n="38"><lb facs="#IS_line_114v_79" n="79" xml:id="IS_lb_114v_79"/>a litil knaue was to him sent</l>
+          <l n="39"><lb facs="#IS_line_114v_80" n="80" xml:id="IS_lb_114v_80"/>that come hym <choice><orig>a <g ref="yogh"/>ayne</orig><corr>a<g ref="yogh"/>ayne</corr></choice><g ref="semicolon"/></l>
+          <l n="40"><lb facs="#IS_line_114v_81" n="81" xml:id="IS_lb_114v_81"/>he come to tal him a won<g ref="der"/> tithing<g ref="comma"/></l>
+          <l n="41"><lb facs="#IS_line_114v_82" n="82" xml:id="IS_lb_114v_82"/>that brende <choice><orig>wal</orig><corr>was</corr></choice> al his thing</l>
+          
+          <pb facs="data/images/single/IS_115r.jpg" n="115r" xml:id="IS_115r"/>
+          <l n="1"><lb facs="#IS_line_114v_83" n="83" xml:id="IS_lb_115r_83"/>and his bestis slayne<g ref="fullstop"/></l>
+          <l n="2"><lb facs="#IS_line_114v_84" n="84" xml:id="IS_lb_115r_84"/><g ref="quote"/><g ref="capitall"/>ord<g ref="comma"/> ther nys nou<g ref="yogh"/>t left on lyue</l>
+          <l n="3"><lb facs="#IS_line_114v_85" n="85" xml:id="IS_lb_115r_85"/>but <g ref="yogh"/>owre childryn and <g ref="yogh"/>oure wyue<g ref="fullstop"/><g ref="quote"/></l>
+          <l n="4"><lb facs="#IS_line_114v_86" n="86" xml:id="IS_lb_115r_86"/><g ref="quote"/><g ref="capitalb"/>i <g ref="ihesu"/> that me bou<g ref="yogh"/>t<g ref="comma"/><g ref="quote"/></l>
+          <l n="5"><lb facs="#IS_line_114v_87" n="87" xml:id="IS_lb_115r_87"/>he seid<g ref="comma"/> <g ref="quote"/><g ref="yogh"/>if thei may on lyue be<g ref="comma"/></l>
+          <l n="6"><lb facs="#IS_line_114v_88" n="88" xml:id="IS_lb_115r_88"/>mi wife and my childryn <choice><orig>iij</orig><reg>three</reg></choice><g ref="comma"/></l>
+          <l n="7"><lb facs="#IS_line_114v_89" n="89" xml:id="IS_lb_115r_89"/>alle drede me ri<g ref="yogh"/>t nou<g ref="yogh"/>t<g ref="exclamation"/><g ref="quote"/></l>
+          <l n="8"><lb facs="#IS_line_114v_90" n="90" xml:id="IS_lb_115r_90"/><g ref="capitala"/>nd alle he went silue alone<g ref="comma"/></l>
+          <l n="9"><lb facs="#IS_line_114v_91" n="91" xml:id="IS_lb_115r_91"/>his hurde men he <choice><orig></orig><corr>met</corr></choice> ilke one<g ref="semicolon"/></l>
+          <l n="10"><lb facs="#IS_line_114v_92" n="92" xml:id="IS_lb_115r_92"/>he seid<g ref="comma"/><g ref="quote"/><g ref="capitalw"/>hate eylith yowe<g ref="question"/><g ref="quote"/></l>
+          <l n="11"><lb facs="#IS_line_114v_93" n="93" xml:id="IS_lb_115r_93"/><g ref="capitalthorn"/>ey seid fee was from hem revid<g ref="fullstop"/></l>
+          <l n="12"><lb facs="#IS_line_114v_94" n="94" xml:id="IS_lb_115r_94"/><g ref="quote"/><g ref="capitall"/>ord<g ref="comma"/> <choice><orig>no thing</orig><reg>nothing</reg></choice> is yowe <choice><orig>bi leuyd</orig><reg>bileuyd</reg></choice><g ref="comma"/></l>
+          <l n="13"><lb facs="#IS_line_114v_95" n="95" xml:id="IS_lb_115r_95"/>an ox to youre plowe<g ref="fullstop"/><g ref="quote"/></l>
+          <l n="14"><lb facs="#IS_line_114v_96" n="96" xml:id="IS_lb_115r_96"/><g ref="capitalt"/>hey wept alle and did hem ille<g ref="comma"/></l>
+          <l n="15"><lb facs="#IS_line_114v_97" n="97" xml:id="IS_lb_115r_97"/>the kny<g ref="yogh"/>t bade ham alle be stille<g ref="fullstop"/></l>
+          <l n="16"><lb facs="#IS_line_114v_98" n="98" xml:id="IS_lb_115r_98"/><g ref="quote"/><g ref="capitali"/> ne wite yow this wo<g ref="comma"/></l>
+          <l n="17"><lb facs="#IS_line_114v_99" n="99" xml:id="IS_lb_115r_99"/><g ref="capitalg"/>od <g ref="yogh"/>ewith <g ref="v"/>s and <g ref="capitalg"/>od take</l>
+          <l n="18"><lb facs="#IS_line_114v_100" n="100" xml:id="IS_lb_115r_100"/>and at <g ref="capitalh"/>is wille riche <g ref="capitalh"/>e make</l>
+          <l n="19"><lb facs="#IS_line_114v_101" n="101" xml:id="IS_lb_115r_101"/>and pore men also<g ref="fullstop"/><g ref="quote"/></l>
+          <l n="20"><lb facs="#IS_line_114v_102" n="102" xml:id="IS_lb_115r_102"/><g ref="capitala"/> deleful si<g ref="yogh"/>t he gan ther se<g ref="clon"/></l>
+          <l n="21"><lb facs="#IS_line_114v_103" n="103" xml:id="IS_lb_115r_103"/>his wife and his children thre</l>
+          <l n="22"><lb facs="#IS_line_114v_104" n="104" xml:id="IS_lb_115r_104"/>out of the fyre were fled<g ref="semicolon"/></l>
+          <l n="23"><lb facs="#IS_line_114v_105" n="105" xml:id="IS_lb_115r_105"/>as nakid as they as thei were borne</l>
+          <l n="23"><lb facs="#IS_line_114v_106" n="106" xml:id="IS_lb_115r_106"/>they sittith stille <g ref="v"/>ndur a thorne</l>
+          <l n="24"><lb facs="#IS_line_114v_107" n="107" xml:id="IS_lb_115r_107"/>brent out of hare bed<g ref="fullstop"/></l>
+          <l n="25"><lb facs="#IS_line_114v_108" n="108" xml:id="IS_lb_115r_108"/><g ref="capitaln"/>e chaungid he <choice><orig>no thing</orig><reg>nothing</reg></choice> of his ble</l>
+          <l n="26"><lb facs="#IS_line_114v_109" n="109" xml:id="IS_lb_115r_109"/>tille he sawe ham nakid be</l>
+          <l n="27"><lb facs="#IS_line_114v_110" n="110" xml:id="IS_lb_115r_110"/>that ere were comely clad<g ref="fullstop"/></l>
+          <l n="28"><lb facs="#IS_line_114v_111" n="111" xml:id="IS_lb_115r_111"/><g ref="capitalt"/>he lady bade ham be blithe<g ref="comma"/></l>
+          <l n="29"><lb facs="#IS_line_114v_112" n="112" xml:id="IS_lb_115r_112"/><g ref="quote"/><g ref="capitaly"/> <g ref="and"/> your fadre come ful swithe</l>
+          <l n="30"><lb facs="#IS_line_114v_113" n="113" xml:id="IS_lb_115r_113"/>for no thinge be ye <choice><orig>a drad</orig><corr>adrad</corr></choice><g ref="fullstop"/><g ref="quote"/></l>
+          <l n="31"><lb facs="#IS_line_114v_114" n="114" xml:id="IS_lb_115r_114"/><g ref="capitalt"/>hey wepte alle and made gret care<g ref="semicolon"/></l>
+          <l n="32"><lb facs="#IS_line_114v_115" n="115" xml:id="IS_lb_115r_115"/>the kny<g ref="yogh"/>t bade ham leue har fare</l>
+          <l n="33"><lb facs="#IS_line_114v_116" n="116" xml:id="IS_lb_115r_116"/>and wepe not so sore<g ref="fullstop"/></l>
+          <l n="34"><lb facs="#IS_line_114v_117" n="117" xml:id="IS_lb_115r_117"/><g ref="quote"/><g ref="capitala"/>lle that care that we be yn</l>
+          <l n="35"><lb facs="#IS_line_114v_118" n="118" xml:id="IS_lb_115r_118"/>it is for our wikke syn<g ref="fullstop"/></l>
+          <l n="36"><lb facs="#IS_line_114v_119" n="119" xml:id="IS_lb_115r_119"/><g ref="capitalw"/>orthe we were wel more</l>
+          <l n="37"><lb facs="#IS_line_114v_120" n="120" xml:id="IS_lb_115r_120"/>and we al come no work wirch</l>
+          <l n="38"><lb facs="#IS_line_114v_121" n="121" xml:id="IS_lb_115r_121"/>our frend of <choice><orig>v</orig><corr>u</corr></choice>s schulle be <g ref="smalli"/></l>
+          <l n="39"><lb facs="#IS_line_114v_122" n="122" xml:id="IS_lb_115r_122"/>ouer londe <g ref="capitaly"/> rede we fare<g ref="fullstop"/><g ref="quote"/></l>
+      </div>  
+        </body>
+      </text>
+
+      <!-- COSTANTINO -->
+      <text n="Costantino" type="verse" xml:id="Costantino">
+        <front><head><hi rend="bold">Informazioni sul testo</hi></head>
+          <div><p><hi rend="bold">Metro</hi> breve poema a rima alternata</p></div>
+          <div><p><hi rend="bold">Data di composizione</hi> sconosciuta</p></div>
+          <div><p><hi rend="bold">Provenienza</hi> sconosciuta</p></div>
+          <div><p>Breve poema in italiano sull'imperatore Costantino e su sua madre, Sant'Elena, la scopritrice della Vera Croce.</p></div>
+        </front>
+        <body>
+          <pb facs="data/images/single/CO_117r.jpg" n="117r" xml:id="CO_117r"/>
+          <lg>
+            <l n="1"><lb facs="#CO_line_117r_1" n="1" xml:id="CO_lb_117r_1"/><choice><orig>Sonquello</orig><reg>Son quello</reg></choice><choice><orig>Im peratore</orig><reg>imperatore</reg></choice><choice><orig>cōſtantjno</orig><reg>Constantino</reg></choice></l>
+            <l n="2"><lb facs="#CO_line_117r_2" n="2" xml:id="CO_lb_117r_2"/><g ref="hstroke"/> con mia matre Elena <choice><orig>In</orig><reg>in</reg></choice><choice><orig>meſtauoce</orig><reg>mesta uoce</reg></choice></l>
+            <l n="3"><lb facs="#CO_line_117r_3" n="3" xml:id="CO_lb_117r_3"/><choice><orig>tro way</orig><reg>troway</reg></choice> del mio factore <choice><orig>quellacroce</orig><reg>quella croce</reg></choice></l>
+            <l n="4"><lb facs="#CO_line_117r_4" n="4" xml:id="CO_lb_117r_4"/>qual tene tucto el mundo <choice><orig>Jnsuo</orig><reg>in suo</reg></choice> domino</l>      
+          </lg>
+        </body>
+      </text>
+
+</TEI>
