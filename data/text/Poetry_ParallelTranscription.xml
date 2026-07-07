@@ -531,7 +531,7 @@
   
   <facsimile xml:id="fac_Bevis">
     <surface xml:id="BE_surf_23r_cola" corresp="#BE_23r_cola"> 
-      <graphic height="1947px" url="data\images\single\BE_23r_cola.jpg" width="1308px"/>
+      <graphic height="1947px" url="data\images\single\BE_23r_cola." width="1308px"/>
       <zone corresp="#BE_lb_23r_00" lrx="534" lry="118" rend="visible" rendition="line" ulx="239" uly="21" xml:id="BE_line_23r_00"/>
       <zone corresp="#BE_lb_23r_01" lrx="533" lry="212" rend="visible" rendition="line" ulx="64" uly="154" xml:id="BE_line_23r_01"/>
       <zone corresp="#BE_lb_23r_02" lrx="541" lry="261" rend="visible" rendition="line" ulx="146" uly="211" xml:id="BE_line_23r_02"/>
@@ -571,7 +571,7 @@
       <zone corresp="#BE_lb_23r_36" lrx="479" lry="1812" rend="visible" rendition="line" ulx="91" uly="1682" xml:id="BE_line_23r_36"/>
     </surface>
     <surface xml:id="BE_surf_23r_colb" corresp="#BE_23r_colb"> 
-      <graphic height="1947px" url="data\images\single\BE_23r_colb.jpg" width="1308px"/>
+      <graphic height="1947px" url="data\images\single\BE_23r_colb." width="1308px"/>
       <zone corresp="#BE_lb_23r_37" lrx="988" lry="214" rend="visible" rendition="line" ulx="562" uly="160" xml:id="BE_line_23r_37"/>
       <zone corresp="#BE_lb_23r_38" lrx="1059" lry="253" rend="visible" rendition="line" ulx="586" uly="217" xml:id="BE_line_23r_38"/>
       <zone corresp="#BE_lb_23r_39" lrx="829" lry="295" rend="visible" rendition="line" ulx="589" uly="258" xml:id="BE_line_23r_39"/>
