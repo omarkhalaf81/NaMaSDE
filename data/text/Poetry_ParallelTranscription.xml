@@ -109,23 +109,23 @@
       <mapping type="normalized">the</mapping>
     </glyph> 
    <glyph xml:id="the"> 
-      <mapping type="diplomatic"><g ref="th"/>&#868;</mapping>
+      <mapping type="diplomatic"><g ref="#th"/>&#868;</mapping>
       <mapping type="normalized">the</mapping>
     </glyph>  
     <glyph xml:id="there"> 
-      <mapping type="diplomatic"><g ref="th"/>&#7651;</mapping>
+      <mapping type="diplomatic"><g ref="#th"/>&#7651;</mapping>
       <mapping type="normalized">there</mapping>
     </glyph> 
     <glyph xml:id="this"> 
-      <mapping type="diplomatic"><g ref="th"/>&#7652;</mapping>
+      <mapping type="diplomatic"><g ref="#th"/>&#7652;</mapping>
       <mapping type="normalized">this</mapping>
     </glyph> 
     <glyph xml:id="that"> 
-      <mapping type="diplomatic"><g ref="th"/>&#877;</mapping>
+      <mapping type="diplomatic"><g ref="#th"/>&#877;</mapping>
       <mapping type="normalized">that</mapping>
     </glyph> 
     <glyph xml:id="thou"> 
-      <mapping type="diplomatic"><g ref="th"/>&#871;</mapping>
+      <mapping type="diplomatic"><g ref="#th"/>&#871;</mapping>      
       <mapping type="normalized">thou</mapping>
     </glyph> 
     <glyph xml:id="ihesu"> 
@@ -143,7 +143,6 @@
       <mapping type="normalized">der</mapping>
     </glyph> 
     <glyph xml:id="quod"> 
-      <mapping type="codepoint"></mapping>
       <mapping type="diplomatic">q&#598;</mapping>
       <mapping type="normalized">quod</mapping>
     </glyph> 
@@ -215,7 +214,6 @@
       <mapping type="normalized">f</mapping>
     </char>
     <char xml:id="FF">
-      <mapping type="codepoint"></mapping>
       <mapping type="diplomatic">ff</mapping>
       <mapping type="normalized">F</mapping>
     </char>
@@ -253,17 +251,14 @@
       <mapping type="normalized">un</mapping>
     </char>
     <char xml:id="supe">
-      <mapping type="codepoint"></mapping>
       <mapping type="diplomatic">&#x1D49;</mapping>
       <mapping type="normalized">e</mapping>
     </char>
     <char xml:id="supr">
-      <mapping type="codepoint"></mapping>
       <mapping type="diplomatic">&#876;</mapping>
       <mapping type="normalized">er</mapping>
     </char>
     <char xml:id="supt">
-      <mapping type="codepoint"></mapping>
       <mapping type="diplomatic">&#x1D57;</mapping>
       <mapping type="normalized">at</mapping>
     </char>
@@ -273,12 +268,10 @@
       <mapping type="normalized">u</mapping>
     </char> 
     <char xml:id="imacron">
-      <mapping type="codepoint"></mapping>
       <mapping type="diplomatic">&#299;</mapping>
       <mapping type="normalized">im</mapping>
     </char>
     <char xml:id="omacron">
-      <mapping type="codepoint"></mapping>
       <mapping type="diplomatic">&#333;</mapping>
       <mapping type="normalized">ou</mapping>
     </char>
@@ -398,7 +391,6 @@
       <mapping type="normalized">O</mapping>
     </char>
     <char xml:id="capitalp">
-    <mapping type="codepoint"></mapping>
     <mapping type="diplomatic">p</mapping>
     <mapping type="normalized">P</mapping>
     </char>
@@ -419,8 +411,8 @@
     </char>
     <char xml:id="capitalthorn">
       <mapping type="codepoint">U+00DE</mapping>
-      <mapping type="diplomatic"><g ref="th"/></mapping>
-      <mapping type="normalized"><g ref="th"/></mapping>
+      <mapping type="diplomatic"><g ref="#th"/></mapping>
+      <mapping type="normalized"><g ref="#th"/></mapping>
     </char>
     <char xml:id="capitaluv">
       <mapping type="diplomatic">v</mapping>
@@ -467,7 +459,6 @@
       <mapping type="normalized">e</mapping>
     </char>
     <char xml:id="smallg">
-      <mapping type="codepoint"></mapping>
       <mapping type="diplomatic">G</mapping>
       <mapping type="normalized">g</mapping>
     </char>
@@ -1315,7 +1306,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
 <lb facs="#RM_line_03_07" xml:id="RM_lb_03_07"/><fw place="top-middle" type="cw"><g ref="FF"/>or the same</fw>  
 <l n="6"><lb facs="#RM_line_03_08" n="6" xml:id="RM_lb_03_08"/>Take the marowe of an hors and <choice><orig>ther with</orig><reg>therwith</reg></choice> <choice><orig>a noynte</orig><reg>anoynte</reg></choice> the sore tothe and it <g ref="slong"/>chalbe</l>
 <l n="7"><lb facs="#RM_line_03_09" n="7" xml:id="RM_lb_03_09"/>&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;&#10240;hole<g ref="semicolon"/></l>
-<l n="8"><lb facs="#RM_line_03_10" n="8" xml:id="RM_lb_3_10"/>al<g ref="slong"/>o<g ref="comma"/> take the rote of <g ref="smallr"/>o<g ref="slong"/>emarie and chewe it and it voidi<g ref="th"/> <g ref="the"/> ache <choice><orig>a non</orig><reg>anon</reg></choice><g ref="middotfullstop"/></l>
+<l n="8"><lb facs="#RM_line_03_10" n="8" xml:id="RM_lb_3_10"/>al<g ref="slong"/>o<g ref="comma"/> take the rote of <g ref="smallr"/>o<g ref="slong"/>emarie and chewe it and it voidi<g ref="#th"/> <g ref="the"/> ache <choice><orig>a non</orig><reg>anon</reg></choice><g ref="middotfullstop"/></l>
 <l n="9"><lb facs="#RM_line_03_11" n="9" xml:id="RM_lb_3_11"/><g ref="capitala"/>l<g ref="slong"/>o<g ref="comma"/> take the rote of peletorie of Englond or of Spayne and lei it on <g ref="that"/> <g ref="slong"/>ide that</l>
 <l n="10"><lb facs="#RM_line_03_12" n="10" xml:id="RM_lb_3_12"/>the tothe akith and it helpith sone<g ref="semicolon"/> and the rote of henbane dothe the <g ref="slong"/>ame<g ref="fullstop"/></l> 
 
@@ -1627,7 +1618,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <lb facs="#BE_line_23r_00" xml:id="BE_lb_23r_00"/><fw place="top-middle" type="cw"><g ref="capitals"/>ir <g ref="capitalb"/>euys of <g ref="capitalh"/>ampto<g ref="utilde"/></fw>
         <l n="1"><lb facs="#BE_line_23r_01" n="1" xml:id="BE_lb_23r_01"/><choice><orig>l&#8195;ordlingis</orig><reg>Lordlingis</reg></choice><g ref="comma"/> 
                                                                           ly<g ref="slong"/>stenith to my tale</l> 
-        <l n="2"><lb facs="#BE_line_23r_02" n="2" xml:id="BE_lb_23r_02"/><choice><orig>&#10240;&#10240;</orig><reg></reg></choice><g ref="that"/> is meriour <g ref="th"/>an 
+        <l n="2"><lb facs="#BE_line_23r_02" n="2" xml:id="BE_lb_23r_02"/><choice><orig>&#10240;&#10240;</orig><reg></reg></choice><g ref="that"/> is meriour <g ref="#th"/>an 
                                                                          <g ref="the"/> ny<g ref="yogh"/>tingale<g ref="fullstop"/></l>
         <l n="3"><lb facs="#BE_line_23r_03" n="3" xml:id="BE_lb_23r_03"/>That I wolle yow synge<g ref="middot"/><g ref="comma"/></l>
         <l n="4"><lb facs="#BE_line_23r_04" n="4" xml:id="BE_lb_23r_04"/><g ref="smallo"/>f a knyght<g ref="comma"/> sir Beno<g ref="utilde"/><g ref="comma"/></l> 
@@ -1645,7 +1636,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="16"><lb facs="#BE_line_23r_16" n="16" xml:id="BE_lb_23r_16"/><g ref="smallo"/>f <g ref="capitalh"/>ampton he was lord <g ref="and"/> <g ref="slong"/>ire</l>
         <l n="17"><lb facs="#BE_line_23r_17" n="17" xml:id="BE_lb_23r_17"/><g ref="smalla"/>nd of alle that ilke shire</l>
         <l n="18"><lb facs="#BE_line_23r_18" n="18" xml:id="BE_lb_23r_18"/>him to wardy<g ref="middotfullstop"/></l>
-        <l n="19"><lb facs="#BE_line_23r_19" n="19" xml:id="BE_lb_23r_19"/><choice><orig>Lordling<g ref="es"/></orig><corr>Lordinges</corr></choice><g ref="comma"/> <g ref="th"/>e <g ref="smalle"/>rle <g ref="that"/> I of telle</l>
+        <l n="19"><lb facs="#BE_line_23r_19" n="19" xml:id="BE_lb_23r_19"/><choice><orig>Lordling<g ref="es"/></orig><corr>Lordinges</corr></choice><g ref="comma"/> <g ref="#th"/>e <g ref="smalle"/>rle <g ref="that"/> I of telle</l>
         <l n="20"><lb facs="#BE_line_23r_20" n="20" xml:id="BE_lb_23r_20"/><g ref="smalli"/>n his tyme man of fle<g ref="slong"/>che ne felle</l>
         <l n="21"><lb facs="#BE_line_23r_21" n="21" xml:id="BE_lb_23r_21"/>nas none so stronge<g ref="middot"/></l> 
         <l n="22"><lb facs="#BE_line_23r_22" n="22" xml:id="BE_lb_23r_22"/><g ref="smalla"/>nd euer he lyvid <g ref="with"/>out wife</l>
@@ -1655,7 +1646,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="26"><lb facs="#BE_line_23r_26" n="26" xml:id="BE_lb_23r_26"/><g ref="smallt"/>hat he ne my<g ref="yogh"/>t <choice><orig>him <g ref="slong"/>ilfe</orig><reg>himsilfe</reg></choice> welde<g ref="semicolon"/></l>
         <l n="27"><lb facs="#BE_line_23r_26" n="27" xml:id="BE_lb_23r_27"/>he wolde a wife take</l>
         <l n="28"><lb facs="#BE_line_23r_28" n="28" xml:id="BE_lb_23r_28"/><g ref="smalla"/>nd sone <choice><orig><g ref="thorn"/><g ref="supr"/> aftir</orig><reg>theraftir</reg></choice><g ref="comma"/> I <g ref="v"/>ndirstond<g ref="comma"/></l>
-        <l n="29"><lb facs="#BE_line_23r_29" n="29" xml:id="BE_lb_23r_29"/>him had ben le<g ref="uer"/> <g ref="th"/>an all <g ref="this"/> lond</l>  
+        <l n="29"><lb facs="#BE_line_23r_29" n="29" xml:id="BE_lb_23r_29"/>him had ben le<g ref="uer"/> <g ref="#th"/>an all <g ref="this"/> lond</l>  
         <l n="30"><lb facs="#BE_line_23r_30" n="30" xml:id="BE_lb_23r_30"/>had he hur for<g ref="slong"/>ake.</l>
         <l n="31"><lb facs="#BE_line_23r_31" n="31" xml:id="BE_lb_23r_31"/>A wife in elde he toke an hond<g ref="comma"/></l>
         <l n="32"><lb facs="#BE_line_23r_32" n="32" xml:id="BE_lb_23r_32"/><g ref="smallt"/>he kyngis doghte<g ref="rlong"/> of Skotlond<g ref="comma"/></l>
@@ -1805,7 +1796,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="161"><lb facs="#BE_line_24r_160" n="160" xml:id="BE_lb_24r_160"/>And <choice><orig>with in</orig><reg>within</reg></choice> this furtenyght</l>
         <l n="162"><lb facs="#BE_line_24r_161" n="161" xml:id="BE_lb_24r_161"/><choice><orig>my silfe</orig><reg>mysilfe</reg></choice> I wolle dubbe <g ref="the"/> knyght</l>
         <l n="163"><lb facs="#BE_line_24r_162" n="162" xml:id="BE_lb_24r_162"/>yef that I leue<g ref="fullstop"/><g ref="quote"/></l>
-        <l n="164"><lb facs="#BE_line_24r_163" n="163" xml:id="BE_lb_24r_163"/>The me<g ref="slong"/>ynger him <g ref="th"/>onkid yorne<g ref="semicolon"/></l>
+        <l n="164"><lb facs="#BE_line_24r_163" n="163" xml:id="BE_lb_24r_163"/>The me<g ref="slong"/>ynger him <g ref="#th"/>onkid yorne<g ref="semicolon"/></l>
         <l n="165"><lb facs="#BE_line_24r_164" n="164" xml:id="BE_lb_24r_164"/>home <choice><orig>a gayne</orig><reg>agayne</reg></choice> he gan turne</l>
         <l n="166"><lb facs="#BE_line_24r_165" n="165" xml:id="BE_lb_24r_165"/><g ref="smallt"/>o <choice><orig>South hampto<g ref="nflour"/></orig><reg>Southampton</reg></choice><g ref="fullstop"/></l>
         <l n="167"><lb facs="#BE_line_24r_166" n="166" xml:id="BE_lb_24r_166"/>The lady lay on hur tour</l>
@@ -1931,7 +1922,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="274"><lb facs="#BE_line_24v_274" n="274" xml:id="BE_lb_24v_274"/><g ref="smallb"/>ut my yong <g ref="slong"/>on Befe</l>
         <l n="275"><lb facs="#BE_line_24v_275" n="275" xml:id="BE_lb_24v_275"/><g ref="smalla"/>nd my wife <g ref="that"/> is me lefe<g ref="comma"/></l>
         <l n="276"><lb facs="#BE_line_24v_276" n="276" xml:id="BE_lb_24v_276"/>hem leue ye me<g ref="fullstop"/></l>
-        <l n="277"><lb facs="#BE_line_24v_277" n="277" xml:id="BE_lb_24v_277"/>The <g ref="smalle"/>m<g ref="per"/>our <g ref="th"/>o to him gan tel<g ref="comma"/></l>
+        <l n="277"><lb facs="#BE_line_24v_277" n="277" xml:id="BE_lb_24v_277"/>The <g ref="smalle"/>m<g ref="per"/>our <g ref="#th"/>o to him gan tel<g ref="comma"/></l>
         <l n="278"><lb facs="#BE_line_24v_278" n="278" xml:id="BE_lb_24v_278"/><g ref="capitalf"/>for <g ref="capitalg"/>od<g ref="quote"/> he <g ref="slong"/>eid<g ref="comma"/> <g ref="quote"/>that do I nel<g ref="exclamation"/><g ref="quote"/></l>
         <l n="279"><lb facs="#BE_line_24v_279" n="279" xml:id="BE_lb_24v_279"/><g ref="smalla"/>nd was <choice><orig>a greuid</orig><reg>agreuid</reg></choice><g ref="fullstop"/></l>
         <l n="280"><lb facs="#BE_line_24v_280" n="280" xml:id="BE_lb_24v_280"/>Anone his <g ref="slong"/>werde he <g ref="there"/> drowe<g ref="comma"/></l>
@@ -2041,7 +2032,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="376"><lb facs="#BE_line_25v_376" n="376" xml:id="BE_lb_25v_376"/>with wer to wyn <choice><orig>in to</orig><reg>into</reg></choice> thi hond</l>
         <l n="377"><lb facs="#BE_line_25v_377" n="377" xml:id="BE_lb_25v_377"/><g ref="smallt"/>hyne <g ref="smalle"/>ritage</l>
         <l n="378"><lb facs="#BE_line_25v_378" n="378" xml:id="BE_lb_25v_378"/>I wol the help <g ref="with"/> al my my<g ref="yogh"/>t<g ref="comma"/></l>
-        <l n="379"><lb facs="#BE_line_25v_379" n="379" xml:id="BE_lb_25v_379"/>with dynt od swerd to grete <g ref="th"/>i ri<g ref="yogh"/>t<g ref="comma"/></l>
+        <l n="379"><lb facs="#BE_line_25v_379" n="379" xml:id="BE_lb_25v_379"/>with dynt od swerd to grete <g ref="#th"/>i ri<g ref="yogh"/>t<g ref="comma"/></l>
         <l n="380"><lb facs="#BE_line_25v_380" n="380" xml:id="BE_lb_25v_380"/><g ref="smallb"/>e thow of elde<g ref="exclamation"/><g ref="quote"/></l>
         <l n="381"><lb facs="#BE_line_25v_381" n="381" xml:id="BE_lb_25v_381"/>the childe him pouke <g ref="and"/> <g ref="slong"/>ore wept<g ref="comma"/></l>
         
@@ -2070,7 +2061,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="403"><lb facs="#BE_line_25v_403" n="403" xml:id="BE_lb_25v_403"/><g ref="quote"/>Thi prowde wordis nie hole nor paid</l>
         <l n="404"><lb facs="#BE_line_25v_404" n="404" xml:id="BE_lb_25v_404"/><g ref="smallg"/>o forthe on the gate<g ref="comma"/></l>
         <l n="405"><lb facs="#BE_line_25v_405" n="405" xml:id="BE_lb_25v_405"/><g ref="smallb"/>ut thou go hens blyne</l>
-        <l n="406"><lb facs="#BE_line_25v_406" n="406" xml:id="BE_lb_25v_406"/>thou schalt hit a <g ref="th"/>ink so mot I <g ref="th"/>ryve</l>
+        <l n="406"><lb facs="#BE_line_25v_406" n="406" xml:id="BE_lb_25v_406"/>thou schalt hit a <g ref="#th"/>ink so mot I <g ref="#th"/>ryve</l>
         <l n="407"><lb facs="#BE_line_25v_407" n="407" xml:id="BE_lb_25v_407"/><g ref="smalla"/>nd thou come ther ate<g ref="exclamation"/></l>
         <l n="408"><lb facs="#BE_line_25v_408" n="408" xml:id="BE_lb_25v_408"/>Seist <g ref="thou"/> <g ref="this"/> horson<g ref="comma"/> <g ref="that"/> is <g ref="slong"/>o lite<g ref="semicolon"/></l>
         <l n="409"><lb facs="#BE_line_25v_409" n="409" xml:id="BE_lb_25v_409"/>lokith as he wolde me <g ref="slong"/>myte</l>
@@ -2124,7 +2115,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="454"><lb facs="#BE_line_26r_454" n="454" xml:id="BE_lb_26r_454"/>The <g ref="smalle"/>m<g ref="per"/>our fille <g ref="slong"/>owne<g ref="comma"/></l>
         <l n="455"><lb facs="#BE_line_26r_455" n="455" xml:id="BE_lb_26r_455"/><g ref="smallt"/>her he <g ref="slong"/>ate<g ref="fullstop"/></l>
         <l n="456"><lb facs="#BE_line_26r_456" n="456" xml:id="BE_lb_26r_456"/>The lady gan anon to grede<g ref="semicolon"/></l>
-        <l n="457"><lb facs="#BE_line_26r_457" n="457" xml:id="BE_lb_26r_457"/><g ref="quote"/>Nym the traitou<g ref="rlong"/><g ref="exclamation"/><g ref="quote"/> <g ref="slong"/>cho <g ref="th"/>an <g ref="slong"/>eide</l>
+        <l n="457"><lb facs="#BE_line_26r_457" n="457" xml:id="BE_lb_26r_457"/><g ref="quote"/>Nym the traitou<g ref="rlong"/><g ref="exclamation"/><g ref="quote"/> <g ref="slong"/>cho <g ref="#th"/>an <g ref="slong"/>eide</l>
         <l n="458"><lb facs="#BE_line_26r_458" n="458" xml:id="BE_lb_26r_458"/><g ref="smalla"/>nd swithe spake<g ref="fullstop"/></l>
         <l n="459"><lb facs="#BE_line_26r_459" n="459" xml:id="BE_lb_26r_459"/>Tho he ne dur<g ref="slong"/>t no lengur <choice><orig>a bide</orig><reg>abide</reg></choice><g ref="semicolon"/></l>
         <l n="460"><lb facs="#BE_line_26r_460" n="460" xml:id="BE_lb_26r_460"/>knyghtis ro<g ref="slong"/> <g ref="v"/>p on eche <g ref="slong"/>ide<g ref="comma"/></l>
@@ -2175,7 +2166,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="503"><lb facs="#BE_line_26v_503" n="503" xml:id="BE_la_26v_503"/><g ref="quote"/><g ref="capitall"/>o<g ref="comma"/> I am here<g ref="comma"/> <choice><orig>.B.</orig><reg>Beuys</reg></choice> bi name<g ref="fullstop"/></l>
         <l n="504"><lb facs="#BE_line_26v_504" n="504" xml:id="BE_la_26v_504"/>Do my mai<g ref="slong"/>ter for me no <g ref="slong"/>chame<g ref="exclamation"/></l>
         <l n="505"><lb facs="#BE_line_26v_505" n="505" xml:id="BE_la_26v_505"/>Dame<g ref="comma"/> I the pray<g ref="comma"/></l>
-        <l n="506"><lb facs="#BE_line_26v_506" n="506" xml:id="BE_la_26v_506"/>lo nowe <g ref="th"/>ow me <g ref="slong"/>eixt here<g ref="exclamation"/><g ref="quote"/></l>
+        <l n="506"><lb facs="#BE_line_26v_506" n="506" xml:id="BE_la_26v_506"/>lo nowe <g ref="#th"/>ow me <g ref="slong"/>eixt here<g ref="exclamation"/><g ref="quote"/></l>
         <l n="507"><lb facs="#BE_line_26v_507" n="507" xml:id="BE_la_26v_507"/>The lady toke him by the ere</l>
         <l n="508"><lb facs="#BE_line_26v_508" n="508" xml:id="BE_la_26v_508"/><g ref="smalls"/>one anone<g ref="semicolon"/></l>
         <l n="509"><lb facs="#BE_line_26v_509" n="509" xml:id="BE_la_26v_509"/><g ref="quote"/>I wolde<g ref="quote"/> sho <g ref="slong"/>eid<g ref="comma"/> <g ref="quote"/>thou were of lyve<g ref="fullstop"/><g ref="quote"/></l>
@@ -2207,7 +2198,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="533"><lb facs="#BE_line_26v_533" n="533" xml:id="BE_la_26v_533"/>With them thei toke child Benon</l>
         <l n="534"><lb facs="#BE_line_26v_534" n="534" xml:id="BE_la_26v_534"/><g ref="ff"/>or to sille him in the tou<g ref="n"/></l>
         <l n="535"><lb facs="#BE_line_26v_535" n="535" xml:id="BE_la_26v_535"/><g ref="ff"/>or golde plente<g ref="fullstop"/></l>
-        <l n="536"><lb facs="#BE_line_26v_536" n="536" xml:id="BE_la_26v_536"/><g ref="With"/> sil<g ref="uer"/> cheynes <g ref="th"/>ei were <choice><orig>bi gurd</orig><reg>bigurd</reg></choice><g ref="comma"/></l>
+        <l n="536"><lb facs="#BE_line_26v_536" n="536" xml:id="BE_la_26v_536"/><g ref="With"/> sil<g ref="uer"/> cheynes <g ref="#th"/>ei were <choice><orig>bi gurd</orig><reg>bigurd</reg></choice><g ref="comma"/></l>
         <l n="537"><lb facs="#BE_line_26v_537" n="537" xml:id="BE_la_26v_537"/><g ref="smallt"/>o lede him thei were <choice><orig>a ferd</orig><reg>aferd</reg></choice><g ref="fullstop"/></l>
         <l n="538"><lb facs="#BE_line_26v_538" n="538" xml:id="BE_la_26v_538"/>Eche helde on him hond</l>
         <l n="539"><lb facs="#BE_line_26v_539" n="539" xml:id="BE_la_26v_539"/><g ref="ff"/>or him to haue gret <choice><orig>bi &#541;ete</orig><reg>biyete</reg></choice><g ref="fullstop"/></l>
@@ -2234,7 +2225,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="558"><lb facs="#BE_line_27r_558" n="558" xml:id="BE_lb_27r_558"/>neithi<g ref="rlong"/> of lengthe ne of brede<g ref="comma"/></l>
         <l n="559"><lb facs="#BE_line_27r_559" n="559" xml:id="BE_lb_27r_559"/>ne so feire lemys hede<g ref="fullstop"/><g ref="quote"/></l>
         <l n="560"><lb facs="#BE_line_27r_560" n="560" xml:id="BE_lb_27r_560"/><g ref="quote"/>Childe<g ref="comma"/><g ref="quote"/> he seid<g ref="comma"/> <g ref="quote"/>where were <g ref="thou"/> bore<g ref="question"/></l>
-        <l n="561"><lb facs="#BE_line_27r_561" n="561" xml:id="BE_lb_27r_561"/>Whate is <g ref="th"/>i name<g ref="comma"/> tell me fore<g ref="exclamation"/></l>
+        <l n="561"><lb facs="#BE_line_27r_561" n="561" xml:id="BE_lb_27r_561"/>Whate is <g ref="#th"/>i name<g ref="comma"/> tell me fore<g ref="exclamation"/></l>
         <l n="562"><lb facs="#BE_line_27r_562" n="562" xml:id="BE_lb_27r_562"/><g ref="capitaly"/>ef I wist<g ref="comma"/> hit were me lefe<g ref="fullstop"/><g ref="quote"/></l>
         <l n="563"><lb facs="#BE_line_27r_563" n="563" xml:id="BE_lb_27r_563"/><g ref="quote"/>Sir<g ref="comma"/><g ref="quote"/> he seid<g ref="comma"/> <g ref="quote"/>my name is Befe<g ref="fullstop"/></l>
         <l n="564"><lb facs="#BE_line_27r_564" n="564" xml:id="BE_lb_27r_564"/><choice><orig>I bore</orig><reg>Ibore</reg></choice> ich was in Englond<g ref="comma"/></l>
@@ -2252,8 +2243,8 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="576"><lb facs="#BE_line_27r_576" n="576" xml:id="BE_lb_27r_576"/>Whan <g ref="middot"/> <choice><orig>B</orig><reg>Bevis</reg></choice> <g ref="middot"/> had <g ref="this"/> him tolde<g ref="comma"/></l>
         <l n="577"><lb facs="#BE_line_27r_577" n="577" xml:id="BE_lb_27r_577"/><choice><orig>Ther fore</orig><reg>therfore</reg></choice> <g ref="the"/> kingis hert was cold</l>
         <l n="578"><lb facs="#BE_line_27r_578" n="578" xml:id="BE_lb_27r_578"/><g ref="smalla"/>nd <g ref="slong"/>aid<g ref="comma"/> <g ref="quote"/>I haue not heire aft<g ref="er"/> my day<g ref="comma"/></l>
-        <l n="579"><lb facs="#BE_line_27r_579" n="579" xml:id="BE_lb_27r_579"/><g ref="smallb"/>ut Io<g ref="slong"/>ian <g ref="th"/>at feire may<g ref="middot"/></l>
-        <l n="580"><lb facs="#BE_line_27r_580" n="580" xml:id="BE_lb_27r_580"/><g ref="smalla"/>nd you wolt <g ref="th"/>i lord for<g ref="slong"/>ake<g ref="semicolon"/></l>
+        <l n="579"><lb facs="#BE_line_27r_579" n="579" xml:id="BE_lb_27r_579"/><g ref="smallb"/>ut Io<g ref="slong"/>ian <g ref="#th"/>at feire may<g ref="middot"/></l>
+        <l n="580"><lb facs="#BE_line_27r_580" n="580" xml:id="BE_lb_27r_580"/><g ref="smalla"/>nd you wolt <g ref="#th"/>i lord for<g ref="slong"/>ake<g ref="semicolon"/></l>
        
        <pb facs="data/images/single/BE_27r_colb.jpg" n="27r Col.2" xml:id="BE_27r_colb"/>
         <l n="581"><lb facs="#BE_line_27r_581" n="581" xml:id="BE_lb_27r_581"/>hue I wol yeue the to <g ref="smallw"/>ine</l>
@@ -2978,7 +2969,7 @@ Insieme i cinque sconfiggono l'esercito saraceno. I tre cavalieri rivelano allor
           <l n="31"><lb facs="#IS_line_114v_72" n="72" xml:id="IS_lb_114v_72"/><g ref="capitalh"/>is houndis and his hawkis bothe</l>
           <l n="32"><lb facs="#IS_line_114v_73" n="73" xml:id="IS_lb_114v_73"/>wenten to wode <g ref="hyphen"/> to him were lothe <g ref="hyphen"/></l>
           <l n="33"><lb facs="#IS_line_114v_74" n="74" xml:id="IS_lb_114v_74"/>ilke one to dyuers way<g ref="fullstop"/></l>
-          <l n="34"><lb facs="#IS_line_114v_75" n="75" xml:id="IS_lb_114v_75"/><g ref="capitalw"/>hat wondir was <g ref="th"/>an <g ref="th"/>ei he were wo<g ref="question"/></l> 
+          <l n="34"><lb facs="#IS_line_114v_75" n="75" xml:id="IS_lb_114v_75"/><g ref="capitalw"/>hat wondir was <g ref="#th"/>an <g ref="#th"/>ei he were wo<g ref="question"/></l> 
           <l n="35"><lb facs="#IS_line_114v_76" n="76" xml:id="IS_lb_114v_76"/><g ref="capitalo"/>n fote him heuith for to go</l>
           <l n="36"><lb facs="#IS_line_114v_77" n="77" xml:id="IS_lb_114v_77"/>to payne turnyth alle his play<g ref="fullstop"/></l>
           <l n="37"><lb facs="#IS_line_114v_78" n="78" xml:id="IS_lb_114v_78"/><g ref="capitala"/>nd also by the wode he went</l>
