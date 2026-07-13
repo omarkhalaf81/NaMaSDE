@@ -3035,7 +3035,7 @@ Insieme i cinque sconfiggono l'esercito saraceno. I tre cavalieri rivelano allor
           <pb facs="data/images/single/CO_117r.jpg" n="117r" xml:id="CO_117r"/>
           <lg>
             <l n="1"><lb facs="#CO_line_117r_1" n="1" xml:id="CO_lb_117r_1"/><choice><orig>Sonquello</orig><reg>Son quello</reg></choice> <choice><orig>Im peratore</orig><reg> imperatore</reg></choice> <choice><orig>cōſtantjno</orig><reg>Constantino</reg></choice></l>
-            <l n="2"><lb facs="#CO_line_117r_2" n="2" xml:id="CO_lb_117r_2"/><g ref="hstroke"/> con mia matre Elena <choice><orig>In</orig><reg>in</reg></choice> <choice><orig>meſtauoce</orig><reg>mesta uoce</reg></choice></l>
+            <l n="2"><lb facs="#CO_line_117r_2" n="2" xml:id="CO_lb_117r_2"/>c<g ref="hstroke"/> con mia matre Elena <choice><orig>In</orig><reg>in</reg></choice> <choice><orig>meſtauoce</orig><reg>mesta uoce</reg></choice></l>
             <l n="3"><lb facs="#CO_line_117r_3" n="3" xml:id="CO_lb_117r_3"/><choice><orig>tro way</orig><reg>troway</reg></choice> del mio factore <choice><orig>quellacroce</orig><reg>quella croce</reg></choice></l>
             <l n="4"><lb facs="#CO_line_117r_4" n="4" xml:id="CO_lb_117r_4"/>qual tene tucto el mundo <choice><orig>Jnsuo</orig><reg>in suo</reg></choice> domino</l>      
           </lg>
