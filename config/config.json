@@ -34,7 +34,7 @@
          "label": "IMAGE_TEXT",
          "icon": "mode-imgTxt",
          "viewMode": "imgTxt",
-         "visible": true
+         "visible": false
       },
       {
          "label": "TEXT_TEXT",
