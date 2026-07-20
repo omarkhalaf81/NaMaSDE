@@ -173,7 +173,7 @@
 .tei-page-columns span.l.tei-line,
 .tei-page-columns .tei-line {
   display: block !important;
-  line-height: 0.85 !important;
+  line-height: 0.8 !important;
   margin-bottom: 0 !important;
   padding: 0 !important;
 }
