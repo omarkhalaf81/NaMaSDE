@@ -313,8 +313,8 @@ function findRenderedLine(lbId, info) {
           setTimeout(applyColumns, 1500);
           setTimeout(applyColumns, 3000);
         });
-
-        setInterval(applyColumns, 2500);
+        
+        // setInterval(applyColumns, 2500);
       });
     });
   }
