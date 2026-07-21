@@ -293,10 +293,6 @@
   display: inline !important;
 }
 
-#mainContentToTranform.diplomatic .choice > .reg,
-.diplomatic .choice > .reg {
-  display: none !important;
-}
 
 /* Livello normalizzato / interpretativo: mostra reg, nasconde orig */
 #mainContentToTranform.interpretative .choice > .orig,
@@ -319,11 +315,6 @@
 #mainContentToTranform.diplomatic .tei-column-break choice > orig,
 .diplomatic .tei-column-break choice > orig {
   display: inline !important;
-}
-
-#mainContentToTranform.diplomatic .tei-column-break choice > reg,
-.diplomatic .tei-column-break choice > reg {
-  display: none !important;
 }
 
 /* Interpretativa / normalizzata: mostra reg, nasconde orig */
