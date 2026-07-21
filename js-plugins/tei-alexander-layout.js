@@ -183,13 +183,7 @@ function findRenderedLine(lbId, info) {
   var node = lb;
 
   while (node && node !== document.body) {
-    var nodeName = (node.localName || node.nodeName || '').toLowerCase();
 
-    /* Preferisce SEMPRE il verso già renderizzato da EVT:
-       <span class="l"> ... </span>
-       e non il nodo TEI grezzo:
-       <l> ... </l>
-    */
     if (hasClass(node, 'l')) {
       return node;
     }
