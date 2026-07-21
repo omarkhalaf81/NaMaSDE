@@ -281,3 +281,7 @@
   padding: 0 !important;
 }
 
+.tei-column-layout .lb br {
+  line-height: 0.7 !important;
+}
+
