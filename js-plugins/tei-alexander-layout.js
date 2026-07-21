@@ -122,7 +122,7 @@ function findRenderedLine(lbId, info) {
   var lb = null;
 
   if (info && info.facs) {
-    lb = findByDataFacs(info.facs);
+    lb = findRenderedLbByFacs(info.facs);
   }
 
   if (!lb) {
@@ -136,6 +136,26 @@ function findRenderedLine(lbId, info) {
   if (!lb) {
     return null;
   }
+
+  var node = lb;
+
+  while (node && node !== document.body) {
+    var nodeName = (node.localName || node.nodeName || '').toLowerCase();
+
+    /* Preferisce SEMPRE il verso già renderizzato da EVT:
+       <span class="l"> ... </span>
+       e non il nodo TEI grezzo:
+       <l> ... </l>
+    */
+    if (hasClass(node, 'l')) {
+      return node;
+    }
+
+    node = node.parentNode;
+  }
+
+  return null;
+}
 
   var node = lb;
 
