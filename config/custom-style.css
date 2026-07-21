@@ -15,8 +15,8 @@
 
 /* Pannello immagine (manoscritto) */
 .evt-mode-imgTxt .evt-imageTextWrapper .evt-image-panel {
-  flex: 0 0 75% !important; /* Larghezza iniziale */
-  max-width: 75% !important;
+  flex: 0 0 82% !important; /* Larghezza iniziale */
+  max-width: 82% !important;
   min-width: 30%; /* Larghezza minima */
   background-color: #f8f8f8;
   overflow: hidden;
