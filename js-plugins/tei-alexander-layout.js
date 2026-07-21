@@ -117,7 +117,50 @@
 
   return null;
 }
+function findRenderedLbByFacs(facs) {
+  if (!facs) {
+    return null;
+  }
 
+  var all = document.querySelectorAll('[data-facs="' + facs + '"]');
+  var fallback = null;
+
+  for (var i = 0; i < all.length; i++) {
+    var el = all[i];
+    var nodeName = (el.localName || el.nodeName || '').toLowerCase();
+
+    /*
+      Caso buono:
+      EVT ha già trasformato <lb> in:
+      <span class="lb" data-facs="...">
+    */
+    if (hasClass(el, 'lb')) {
+      var parent = el.parentNode;
+
+      while (parent && parent !== document.body) {
+        if (hasClass(parent, 'l')) {
+          return el;
+        }
+
+        parent = parent.parentNode;
+      }
+
+      fallback = el;
+    }
+
+    /*
+      Caso da evitare se possibile:
+      nodo TEI grezzo <lb>.
+      Lo teniamo solo come ultima riserva.
+    */
+    if (!fallback && nodeName === 'lb') {
+      fallback = el;
+    }
+  }
+
+  return fallback;
+}
+  
 function findRenderedLine(lbId, info) {
   var lb = null;
 
