@@ -273,8 +273,7 @@
 .tei-column-layout .tei-line {
   display: block !important;
 
-  /* rientro sporgente */
-  padding-left: 2em !important;
+  padding-left: 3em !important;
   text-indent: -2em !important;
 }
 
