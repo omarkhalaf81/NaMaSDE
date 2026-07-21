@@ -227,7 +227,9 @@ function findRenderedLine(lbId, info) {
     }
 
     container.setAttribute('data-tei-page', page);
-
+    
+    var secondColumnStarted = false;
+    
     for (var j = 0; j < items.length; j++) {
       var item = items[j];
 
@@ -245,11 +247,13 @@ function findRenderedLine(lbId, info) {
         item.node.className = item.node.className.replace(/\btei-column-break\b/g, '').trim();
       }
 
-      if (String(item.column) === '2') {
-        if (!hasClass(item.node, 'tei-column-break')) {
-          item.node.className += ' tei-column-break';
-        }
-      }
+     if (String(item.column) === '2' && !secondColumnStarted) {
+  if (!hasClass(item.node, 'tei-column-break')) {
+    item.node.className += ' tei-column-break';
+  }
+
+  secondColumnStarted = true;
+} 
 
       var lbInLine = item.node.querySelector('span.lb, lb, .lb');
 
