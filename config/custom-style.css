@@ -271,10 +271,9 @@
 }
 
 .tei-column-layout .tei-line {
+  display: block !important;
   line-height: 0.95 !important;
   margin: 0 !important;
-
-  padding-left: 0.5em !important;
+  padding: 0 !important;
 }
-
 
