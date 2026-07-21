@@ -118,32 +118,43 @@
   return null;
 }
 
-function findRenderedLbByFacs(facs) {
-  if (!facs) {
+function findRenderedLine(lbId, info) {
+  var lb = null;
+
+  if (info && info.facs) {
+    lb = findByDataFacs(info.facs);
+  }
+
+  if (!lb) {
+    lb = document.getElementById(lbId);
+  }
+
+  if (!lb) {
+    lb = findElementByXmlId(lbId);
+  }
+
+  if (!lb) {
     return null;
   }
 
-  var all = document.querySelectorAll('[data-facs="' + facs + '"]');
+  var node = lb;
 
-  for (var i = 0; i < all.length; i++) {
-    var el = all[i];
+  while (node && node !== document.body) {
+    var nodeName = (node.localName || node.nodeName || '').toLowerCase();
 
-    /*
-      Accettiamo solo il rendering HTML di EVT:
-      <span class="lb" data-facs="...">
-      ed evitiamo il nodo TEI grezzo:
-      <lb facs="...">
-    */
-    if (hasClass(el, 'lb')) {
-      var parent = el.parentNode;
+    if (nodeName === 'l') {
+      return node;
+    }
 
-      while (parent && parent !== document.body) {
-        if (hasClass(parent, 'l')) {
-          return el;
-        }
+    if (hasClass(node, 'l')) {
+      return node;
+    }
 
-        parent = parent.parentNode;
-      }
+    node = node.parentNode;
+  }
+
+  return lb.parentNode;
+}
     }
   }
 
