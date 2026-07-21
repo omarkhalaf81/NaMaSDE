@@ -351,3 +351,25 @@
 .tei-column-break choice > reg {
   display: none !important;
 }
+
+/* Marcatore invisibile per forzare l'inizio della seconda colonna */
+
+.tei-column-layout .tei-column-break-marker {
+  display: block !important;
+  break-before: column !important;
+  -webkit-column-break-before: always !important;
+
+  height: 0 !important;
+  line-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+}
+
+/* Primo verso dopo il marcatore */
+
+.tei-column-layout .tei-column-break {
+  display: block !important;
+  break-before: auto !important;
+  -webkit-column-break-before: auto !important;
+}
