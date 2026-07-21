@@ -304,7 +304,7 @@ function findRenderedLine(lbId, info) {
       loadText(teiUrl, function (teiText) {
         buildLineMap(teiText);
 
-        setTimeout(applyColumns, 1000);
+        setTimeout(applyColumns, 50);
         setTimeout(applyColumns, 3000);
         setTimeout(applyColumns, 5000);
 
@@ -313,7 +313,7 @@ function findRenderedLine(lbId, info) {
           setTimeout(applyColumns, 1500);
           setTimeout(applyColumns, 3000);
         });
-        
+
         // setInterval(applyColumns, 2500);
       });
     });
