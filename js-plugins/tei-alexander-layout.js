@@ -155,41 +155,6 @@ function findRenderedLine(lbId, info) {
 
   return lb.parentNode;
 }
-    }
-  }
-
-  return null;
-}
-
-function findRenderedLine(lbId, info) {
-  var lb = null;
-
-  if (info && info.facs) {
-    lb = findRenderedLbByFacs(info.facs);
-  }
-
-  /*
-    Se non troviamo il rendering HTML di EVT,
-    NON ripieghiamo sul <lb> TEI grezzo.
-    Meglio saltare temporaneamente la riga
-    che trasformare un <l> grezzo in inizio colonna.
-  */
-  if (!lb) {
-    return null;
-  }
-
-  var node = lb;
-
-  while (node && node !== document.body) {
-    if (hasClass(node, 'l')) {
-      return node;
-    }
-
-    node = node.parentNode;
-  }
-
-  return null;
-}
   function insideColumns(node) {
     var current = node;
 
