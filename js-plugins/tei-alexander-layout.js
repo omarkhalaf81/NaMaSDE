@@ -205,6 +205,12 @@ function findRenderedLine(lbId, info) {
     var page = pageNames[p];
     var items = pages[page];
 
+    items = items.filter(function(item, index, arr) {
+  return arr.findIndex(function(x) {
+    return x.line === item.line;
+  }) === index;
+});
+
     items.sort(function (a, b) {
       return a.line - b.line;
     });
@@ -246,7 +252,15 @@ function findRenderedLine(lbId, info) {
         item.node.className = item.node.className.replace(/\btei-column-break\b/g, '').trim();
       }
 
-if (String(item.column) === '2' && !secondColumnStarted) {
+if (
+  String(item.column) === '2' &&
+  item.line === Math.min.apply(
+    null,
+    items
+      .filter(function(x){ return String(x.column) === '2'; })
+      .map(function(x){ return x.line; })
+  )
+) {
   var previous = item.node.previousElementSibling;
 
   if (!previous || !hasClass(previous, 'tei-column-break-marker')) {
