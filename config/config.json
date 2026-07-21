@@ -226,7 +226,7 @@
       "defaultZoomLevel": 0.80,
       "panHorizontal": false,
       "constrainDuringPan": false,
-      "minZoomLevel": 0.55,
+      "minZoomLevel": 1.0,
       "maxZoomLevel": 3.0,
       "wrapVertical": false
    },
