@@ -285,46 +285,6 @@
   line-height: 0.7 !important;
 }
 
-/* Gestione corretta di orig/reg nei diversi livelli editoriali */
-
-/* Livello diplomatico: mostra orig, nasconde reg */
-#mainContentToTranform.diplomatic .choice > .orig,
-.diplomatic .choice > .orig {
-  display: inline !important;
-}
-
-
-/* Livello normalizzato / interpretativo: mostra reg, nasconde orig */
-#mainContentToTranform.interpretative .choice > .orig,
-#mainContentToTranform.normalized .choice > .orig,
-.interpretative .choice > .orig,
-.normalized .choice > .orig {
-  display: none !important;
-}
-
-#mainContentToTranform.interpretative .choice > .reg,
-#mainContentToTranform.normalized .choice > .reg,
-.interpretative .choice > .reg,
-.normalized .choice > .reg {
-  display: inline !important;
-}
-
-/* Correzione dei <choice> rimasti grezzi nei primi versi di colonna */
-
-/* Diplomatica: mostra orig, nasconde reg */
-#mainContentToTranform.diplomatic .tei-column-break choice > orig,
-.diplomatic .tei-column-break choice > orig {
-  display: inline !important;
-}
-
-/* Interpretativa / normalizzata: mostra reg, nasconde orig */
-#mainContentToTranform.interpretative .tei-column-break choice > orig,
-#mainContentToTranform.normalized .tei-column-break choice > orig,
-.interpretative .tei-column-break choice > orig,
-.normalized .tei-column-break choice > orig {
-  display: none !important;
-}
-
 #mainContentToTranform.interpretative .tei-column-break choice > reg,
 #mainContentToTranform.normalized .tei-column-break choice > reg,
 .interpretative .tei-column-break choice > reg,
