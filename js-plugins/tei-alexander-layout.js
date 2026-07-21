@@ -194,22 +194,6 @@ function findRenderedLine(lbId, info) {
   return null;
 }
 
-  var node = lb;
-
-  while (node && node !== document.body) {
-    var nodeName = (node.localName || node.nodeName || '').toLowerCase();
-
-    if (nodeName === 'l') {
-      return node;
-    }
-
-    if (hasClass(node, 'l')) {
-      return node;
-    }
-
-    node = node.parentNode;
-  }
-
   return lb.parentNode;
 }
 
