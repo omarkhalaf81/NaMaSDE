@@ -246,13 +246,23 @@ function findRenderedLine(lbId, info) {
         item.node.className = item.node.className.replace(/\btei-column-break\b/g, '').trim();
       }
 
-     if (String(item.column) === '2' && !secondColumnStarted) {
+if (String(item.column) === '2' && !secondColumnStarted) {
+  var previous = item.node.previousElementSibling;
+
+  if (!previous || !hasClass(previous, 'tei-column-break-marker')) {
+    var marker = document.createElement('span');
+    marker.className = 'tei-column-break-marker';
+    marker.setAttribute('aria-hidden', 'true');
+
+    item.node.parentNode.insertBefore(marker, item.node);
+  }
+
   if (!hasClass(item.node, 'tei-column-break')) {
     item.node.className += ' tei-column-break';
   }
 
   secondColumnStarted = true;
-} 
+}
 
       var lbInLine = item.node.querySelector('span.lb, lb, .lb');
 
