@@ -117,22 +117,22 @@
 
   return null;
 }
+
 function findRenderedLbByFacs(facs) {
   if (!facs) {
     return null;
   }
 
   var all = document.querySelectorAll('[data-facs="' + facs + '"]');
-  var fallback = null;
 
   for (var i = 0; i < all.length; i++) {
     var el = all[i];
-    var nodeName = (el.localName || el.nodeName || '').toLowerCase();
 
     /*
-      Caso buono:
-      EVT ha già trasformato <lb> in:
+      Accettiamo solo il rendering HTML di EVT:
       <span class="lb" data-facs="...">
+      ed evitiamo il nodo TEI grezzo:
+      <lb facs="...">
     */
     if (hasClass(el, 'lb')) {
       var parent = el.parentNode;
@@ -144,23 +144,12 @@ function findRenderedLbByFacs(facs) {
 
         parent = parent.parentNode;
       }
-
-      fallback = el;
-    }
-
-    /*
-      Caso da evitare se possibile:
-      nodo TEI grezzo <lb>.
-      Lo teniamo solo come ultima riserva.
-    */
-    if (!fallback && nodeName === 'lb') {
-      fallback = el;
     }
   }
 
-  return fallback;
+  return null;
 }
-  
+
 function findRenderedLine(lbId, info) {
   var lb = null;
 
@@ -168,14 +157,12 @@ function findRenderedLine(lbId, info) {
     lb = findRenderedLbByFacs(info.facs);
   }
 
-  if (!lb) {
-    lb = document.getElementById(lbId);
-  }
-
-  if (!lb) {
-    lb = findElementByXmlId(lbId);
-  }
-
+  /*
+    Se non troviamo il rendering HTML di EVT,
+    NON ripieghiamo sul <lb> TEI grezzo.
+    Meglio saltare temporaneamente la riga
+    che trasformare un <l> grezzo in inizio colonna.
+  */
   if (!lb) {
     return null;
   }
@@ -183,7 +170,6 @@ function findRenderedLine(lbId, info) {
   var node = lb;
 
   while (node && node !== document.body) {
-
     if (hasClass(node, 'l')) {
       return node;
     }
@@ -193,10 +179,6 @@ function findRenderedLine(lbId, info) {
 
   return null;
 }
-
-  return lb.parentNode;
-}
-
   function insideColumns(node) {
     var current = node;
 
