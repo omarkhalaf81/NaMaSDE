@@ -293,13 +293,7 @@ function findRenderedLine(lbId, info) {
     'tei-column-layout create',
     document.querySelectorAll('.tei-column-layout').length
   );
-
-  var main = document.getElementById('mainContentToTranform');
-
-if (main) {
-  main.classList.add('tei-columns-ready');
-}
-
+  
   running = false;
 }
   function start() {
