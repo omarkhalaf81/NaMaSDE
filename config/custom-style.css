@@ -340,3 +340,14 @@
 .normalized .tei-column-break choice > reg {
   display: inline !important;
 }
+
+/* Fallback: nei primi versi di colonna, in assenza del selettore di livello,
+   privilegia la forma diplomatica */
+
+.tei-column-break choice > orig {
+  display: inline !important;
+}
+
+.tei-column-break choice > reg {
+  display: none !important;
+}
