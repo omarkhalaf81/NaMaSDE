@@ -205,12 +205,6 @@ function findRenderedLine(lbId, info) {
     var page = pageNames[p];
     var items = pages[page];
 
-    items = items.filter(function(item, index, arr) {
-  return arr.findIndex(function(x) {
-    return x.line === item.line;
-  }) === index;
-});
-
     items.sort(function (a, b) {
       return a.line - b.line;
     });
@@ -232,9 +226,9 @@ function findRenderedLine(lbId, info) {
     }
 
     container.setAttribute('data-tei-page', page);
-    
+
     var secondColumnStarted = false;
-    
+
     for (var j = 0; j < items.length; j++) {
       var item = items[j];
 
@@ -249,34 +243,28 @@ function findRenderedLine(lbId, info) {
       item.node.setAttribute('data-tei-column', item.column);
 
       if (hasClass(item.node, 'tei-column-break')) {
-        item.node.className = item.node.className.replace(/\btei-column-break\b/g, '').trim();
+        item.node.className = item.node.className
+          .replace(/\btei-column-break\b/g, '')
+          .trim();
       }
 
-if (
-  String(item.column) === '2' &&
-  item.line === Math.min.apply(
-    null,
-    items
-      .filter(function(x){ return String(x.column) === '2'; })
-      .map(function(x){ return x.line; })
-  )
-) {
-  var previous = item.node.previousElementSibling;
+      if (String(item.column) === '2' && !secondColumnStarted) {
+        var previous = item.node.previousElementSibling;
 
-  if (!previous || !hasClass(previous, 'tei-column-break-marker')) {
-    var marker = document.createElement('span');
-    marker.className = 'tei-column-break-marker';
-    marker.setAttribute('aria-hidden', 'true');
+        if (!previous || !hasClass(previous, 'tei-column-break-marker')) {
+          var marker = document.createElement('span');
+          marker.className = 'tei-column-break-marker';
+          marker.setAttribute('aria-hidden', 'true');
 
-    item.node.parentNode.insertBefore(marker, item.node);
-  }
+          item.node.parentNode.insertBefore(marker, item.node);
+        }
 
-  if (!hasClass(item.node, 'tei-column-break')) {
-    item.node.className += ' tei-column-break';
-  }
+        if (!hasClass(item.node, 'tei-column-break')) {
+          item.node.className += ' tei-column-break';
+        }
 
-  secondColumnStarted = true;
-}
+        secondColumnStarted = true;
+      }
 
       var lbInLine = item.node.querySelector('span.lb, lb, .lb');
 
