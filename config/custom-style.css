@@ -285,3 +285,30 @@
   line-height: 0.7 !important;
 }
 
+/* Gestione corretta di orig/reg nei diversi livelli editoriali */
+
+/* Livello diplomatico: mostra orig, nasconde reg */
+#mainContentToTranform.diplomatic .choice > .orig,
+.diplomatic .choice > .orig {
+  display: inline !important;
+}
+
+#mainContentToTranform.diplomatic .choice > .reg,
+.diplomatic .choice > .reg {
+  display: none !important;
+}
+
+/* Livello normalizzato / interpretativo: mostra reg, nasconde orig */
+#mainContentToTranform.interpretative .choice > .orig,
+#mainContentToTranform.normalized .choice > .orig,
+.interpretative .choice > .orig,
+.normalized .choice > .orig {
+  display: none !important;
+}
+
+#mainContentToTranform.interpretative .choice > .reg,
+#mainContentToTranform.normalized .choice > .reg,
+.interpretative .choice > .reg,
+.normalized .choice > .reg {
+  display: inline !important;
+}
