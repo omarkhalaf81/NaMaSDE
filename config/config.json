@@ -222,7 +222,7 @@
       "prefixUrl": "images/osd-images/",
       "showRotationControl": true,
       "showNavigator": true,
-      "visibilityRatio": 1.0,
+      "visibilityRatio": 2.0,
       "defaultZoomLevel": 0.80,
       "panHorizontal": false,
       "constrainDuringPan": false,
