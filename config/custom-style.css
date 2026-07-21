@@ -216,4 +216,58 @@
   margin-bottom: 2.5em !important;
 }
 
+/* Doppia colonna stabile: non sposta i nodi EVT */
+
+.tei-column-layout {
+  column-count: 2 !important;
+  column-gap: 2.5rem !important;
+  column-rule: none !important;
+
+  -webkit-column-count: 2 !important;
+  -webkit-column-gap: 2.5rem !important;
+  -webkit-column-rule: none !important;
+}
+
+.tei-column-layout .tei-column-break {
+  break-before: column !important;
+  -webkit-column-break-before: always !important;
+}
+
+.tei-column-layout .tei-line {
+  display: block !important;
+  break-inside: avoid !important;
+  -webkit-column-break-inside: avoid !important;
+
+  line-height: 0.95 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.tei-column-layout .lb,
+.tei-column-layout lb,
+.tei-column-layout span.lb {
+  display: inline !important;
+}
+
+.tei-column-layout .lineN {
+  display: inline-block !important;
+  min-width: 2.2em !important;
+  margin-right: 0.5em !important;
+  text-align: right !important;
+  color: #777 !important;
+  font-size: 0.9em !important;
+}
+
+/* Titolo del poema/catchword */
+.tei-column-layout .fw[data-type="cw"],
+.fw[data-type="cw"] {
+  display: block !important;
+  column-span: all !important;
+  -webkit-column-span: all !important;
+
+  text-align: left !important;
+  margin-left: 3em !important;
+  margin-bottom: 2.2em !important;
+}
+
 
