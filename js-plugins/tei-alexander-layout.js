@@ -305,13 +305,13 @@ function findRenderedLine(lbId, info) {
         buildLineMap(teiText);
 
         setTimeout(applyColumns, 50);
-        setTimeout(applyColumns, 50);
-        setTimeout(applyColumns, 50);
+        setTimeout(applyColumns, 250);
+        setTimeout(applyColumns, 750);
 
         window.addEventListener('hashchange', function () {
-          setTimeout(applyColumns, 500);
-          setTimeout(applyColumns, 1500);
-          setTimeout(applyColumns, 3000);
+          setTimeout(applyColumns, 50);
+          setTimeout(applyColumns, 250);
+          setTimeout(applyColumns, 750);
         });
 
         // setInterval(applyColumns, 2500);
