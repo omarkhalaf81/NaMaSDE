@@ -294,6 +294,12 @@ function findRenderedLine(lbId, info) {
     document.querySelectorAll('.tei-column-layout').length
   );
 
+  var main = document.getElementById('mainContentToTranform');
+
+if (main) {
+  main.classList.add('tei-columns-ready');
+}
+
   running = false;
 }
   function start() {
