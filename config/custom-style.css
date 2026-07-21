@@ -312,3 +312,31 @@
 .normalized .choice > .reg {
   display: inline !important;
 }
+
+/* Correzione dei <choice> rimasti grezzi nei primi versi di colonna */
+
+/* Diplomatica: mostra orig, nasconde reg */
+#mainContentToTranform.diplomatic .tei-column-break choice > orig,
+.diplomatic .tei-column-break choice > orig {
+  display: inline !important;
+}
+
+#mainContentToTranform.diplomatic .tei-column-break choice > reg,
+.diplomatic .tei-column-break choice > reg {
+  display: none !important;
+}
+
+/* Interpretativa / normalizzata: mostra reg, nasconde orig */
+#mainContentToTranform.interpretative .tei-column-break choice > orig,
+#mainContentToTranform.normalized .tei-column-break choice > orig,
+.interpretative .tei-column-break choice > orig,
+.normalized .tei-column-break choice > orig {
+  display: none !important;
+}
+
+#mainContentToTranform.interpretative .tei-column-break choice > reg,
+#mainContentToTranform.normalized .tei-column-break choice > reg,
+.interpretative .tei-column-break choice > reg,
+.normalized .tei-column-break choice > reg {
+  display: inline !important;
+}
