@@ -324,15 +324,3 @@
   break-before: auto !important;
   -webkit-column-break-before: auto !important;
 }
-
-/* Nasconde il testo durante il rendering iniziale */
-
-#mainContentToTranform {
-  visibility: hidden;
-}
-
-/* Mostra il testo quando la doppia colonna è pronta */
-
-#mainContentToTranform.tei-columns-ready {
-  visibility: visible;
-}
