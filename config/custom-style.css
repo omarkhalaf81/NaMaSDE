@@ -324,3 +324,12 @@
   break-before: auto !important;
   -webkit-column-break-before: auto !important;
 }
+
+#msDesc {
+    max-height: none !important;
+}
+
+.main-container {
+    overflow-y: visible !important;
+}
+
