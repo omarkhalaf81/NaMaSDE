@@ -325,4 +325,8 @@
   -webkit-column-break-before: auto !important;
 }
 
+#msDesc {
+    font-size: 0.9em !important;
+}
+
 
