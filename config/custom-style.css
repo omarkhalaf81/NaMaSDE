@@ -329,7 +329,7 @@
     max-height: none !important;
 }
 
-.main-container {
+#main-container {
     overflow: visible !important;
 }
 
