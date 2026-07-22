@@ -1285,9 +1285,9 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
 <div n="Ricette mediche" subtype="edition_text" type="prose" xml:id="RicetteMediche">
 <pb facs="data/images/single/RM_01.jpg" n="1" xml:id="RM_01"/>
 <lb facs="#RM_line_01_00" xml:id="RM_lb_01_00"/><fw place="top-middle" type="cw"><g ref="capitalt"/>o helpe a woman in travel of childe</fw>
-    <l n="1"><lb facs="#RM_line_01_01" n="1" xml:id="RM_lb_01_01"/>Take a dark <g ref="slong"/>tone and <g ref="slong"/>chave it to powdir <g ref="middot"/> and yeve it to traveling woman to</l>
-    <l n="2"><lb facs="#RM_line_01_02" n="2" xml:id="RM_lb_01_02"/>drinke <g ref="with"/> wyne<g ref="middotcomma"/> and she shalbe deliuerid anon<g ref="middotfullstop"/> <g ref="capitala"/>l<g ref="slong"/>o take the <g ref="smalli"/>u<g ref="slong"/>e of leke and yeve</l>
-    <l n="3"><lb facs="#RM_line_01_03" n="3" xml:id="RM_lb_01_03"/>hur to drinke <g ref="middot"/> or els yeve hur to drinke detany<g ref="middotfullstop"/></l>
+    <l n="1"><lb facs="#RM_line_01_01" xml:id="RM_lb_01_01"/>Take a dark <g ref="slong"/>tone and <g ref="slong"/>chave it to powdir <g ref="middot"/> and yeve it to traveling woman to</l>
+    <l n="2"><lb facs="#RM_line_01_02" xml:id="RM_lb_01_02"/>drinke <g ref="with"/> wyne<g ref="middotcomma"/> and she shalbe deliuerid anon<g ref="middotfullstop"/> <g ref="capitala"/>l<g ref="slong"/>o take the <g ref="smalli"/>u<g ref="slong"/>e of leke and yeve</l>
+    <l n="3"><lb facs="#RM_line_01_03" xml:id="RM_lb_01_03"/>hur to drinke <g ref="middot"/> or els yeve hur to drinke detany<g ref="middotfullstop"/></l>
 
 <p><lb/></p>   
 
