@@ -92,7 +92,7 @@
    "viscollButton": false,
 
    "toolPinAppEntries": true,
-   "toolImageTextLinking": true,
+   "toolImageTextLinking": false,
 
    "namedEntitiesSelector": false,
    "namedEntitiesToHandle": [
