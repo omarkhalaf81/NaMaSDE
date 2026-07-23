@@ -332,3 +332,7 @@
 #mainText .l {
     font-size: 1em;
 }
+
+#msDesc {
+    padding-bottom: 120px;
+}
