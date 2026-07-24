@@ -3139,7 +3139,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
           <div><p>Breve poema in italiano sull'imperatore Costantino e su sua madre, Sant'Elena, la scopritrice della Vera Croce.</p></div>
         </front>
         <body>
-          <pb facs="data/images/single/CO_117.jpg" n="117" xml:id="CO_117"/>
+          <pb facs="data/images/single/CO_117r.jpg" n="117" xml:id="CO_117"/>
           <lg>
             <l n="1"><lb facs="#CO_line_117r_1" n="1" xml:id="CO_lb_117r_1"/><choice><orig>Sonquello</orig><reg>Son quello</reg></choice><choice><orig>Im peratore</orig><reg>imperatore</reg></choice><choice><orig>cōſtantjno</orig><reg>Constantino</reg></choice></l>
             <l n="2"><lb facs="#CO_line_117r_2" n="2" xml:id="CO_lb_117r_2"/><g ref="hstroke"/> con mia matre Elena <choice><orig>In</orig><reg>in</reg></choice><choice><orig>meſtauoce</orig><reg>mesta uoce</reg></choice></l>
