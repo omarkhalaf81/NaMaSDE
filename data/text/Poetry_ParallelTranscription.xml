@@ -1153,8 +1153,8 @@
        </facsimile>
    
   <facsimile xml:id="fac_Costantino">
-      <surface xml:id="CO_surf_117r" corresp="CO_117r">
-    <graphic height="1973px" url="data\images\single\CO_117r.jpg" width="1325px"/> 
+      <surface xml:id="CO_surf_117" corresp="CO_117">
+    <graphic height="1973px" url="data\images\single\CO_117.jpg" width="1325px"/> 
       <zone corresp="#CO_lb_117r_1" lrx="716" lry="183" rend="visible" rendition="line" ulx="101" uly="97" xml:id="CO_line_117r_1"/> 
       <zone corresp="#CO_lb_117r_2" lrx="832" lry="239" rend="visible" rendition="line" ulx="154" uly="168" xml:id="CO_line_117r_2"/>
       <zone corresp="#CO_lb_117r_3" lrx="854" lry="286" rend="visible" rendition="line" ulx="155" uly="222" xml:id="CO_line_117r_3"/>
