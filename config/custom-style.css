@@ -285,24 +285,19 @@
   line-height: 0.7 !important;
 }
 
-/* choice non elaborati nel primo verso di colonna */
-
-.normalized .tei-column-break choice > orig,
-.interpretative .tei-column-break choice > orig {
-    display: none !important;
+#mainContentToTranform.interpretative .tei-column-break choice > reg,
+#mainContentToTranform.normalized .tei-column-break choice > reg,
+.interpretative .tei-column-break choice > reg,
+.normalized .tei-column-break choice > reg {
+  display: inline !important;
 }
 
-.normalized .tei-column-break choice > reg,
-.interpretative .tei-column-break choice > reg {
-    display: inline !important;
+.tei-column-break choice > orig {
+  display: inline !important;
 }
 
-.diplomatic .tei-column-break choice > orig {
-    display: inline !important;
-}
-
-.diplomatic .tei-column-break choice > reg {
-    display: none !important;
+.tei-column-break choice > reg {
+  display: none !important;
 }
 
 /* Marcatore invisibile per forzare l'inizio della seconda colonna */
