@@ -336,3 +336,11 @@
 #msDesc {
     padding-bottom: 120px;
 }
+
+choice orig {
+    display: none;
+}
+
+choice reg {
+    display: inline;
+}
