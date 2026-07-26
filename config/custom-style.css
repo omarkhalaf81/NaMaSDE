@@ -337,11 +337,3 @@
 choice reg {
     display: inline !important;
 }
-
-choice > orig {
-    display: none !important;
-}
-
-choice > reg {
-    display: inline !important;
-}
