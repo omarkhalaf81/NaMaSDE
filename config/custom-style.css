@@ -285,50 +285,6 @@
   line-height: 0.7 !important;
 }
 
-/* ============================================== */
-/* Correzione choice rimasti grezzi in EVT        */
-/* ============================================== */
-
-/* Livello diplomatico: mostra orig/sic, nasconde reg/corr */
-
-#mainContentToTranform.diplomatic choice > orig,
-#mainContentToTranform.diplomatic choice > sic,
-#mainContentToTranform.diplomatic .choice > .orig,
-#mainContentToTranform.diplomatic .choice > .sic {
-  display: inline !important;
-}
-
-#mainContentToTranform.diplomatic choice > reg,
-#mainContentToTranform.diplomatic choice > corr,
-#mainContentToTranform.diplomatic .choice > .reg,
-#mainContentToTranform.diplomatic .choice > .corr {
-  display: none !important;
-}
-
-
-/* Livello interpretativo/normalizzato: mostra reg/corr, nasconde orig/sic */
-
-#mainContentToTranform.interpretative choice > orig,
-#mainContentToTranform.interpretative choice > sic,
-#mainContentToTranform.normalized choice > orig,
-#mainContentToTranform.normalized choice > sic,
-#mainContentToTranform.interpretative .choice > .orig,
-#mainContentToTranform.interpretative .choice > .sic,
-#mainContentToTranform.normalized .choice > .orig,
-#mainContentToTranform.normalized .choice > .sic {
-  display: none !important;
-}
-
-#mainContentToTranform.interpretative choice > reg,
-#mainContentToTranform.interpretative choice > corr,
-#mainContentToTranform.normalized choice > reg,
-#mainContentToTranform.normalized choice > corr,
-#mainContentToTranform.interpretative .choice > .reg,
-#mainContentToTranform.interpretative .choice > .corr,
-#mainContentToTranform.normalized .choice > .reg,
-#mainContentToTranform.normalized .choice > .corr {
-  display: inline !important;
-}
 
 /* Marcatore invisibile per forzare l'inizio della seconda colonna */
 
@@ -362,4 +318,31 @@
 
 #msDesc {
     padding-bottom: 120px;
+}
+
+/* Correzione solo per choice TEI rimasti grezzi.
+   Non tocca gli span.choice già trasformati da EVT. */
+
+#mainContentToTranform.diplomatic choice > orig,
+#mainContentToTranform.diplomatic choice > sic {
+  display: inline !important;
+}
+
+#mainContentToTranform.diplomatic choice > reg,
+#mainContentToTranform.diplomatic choice > corr {
+  display: none !important;
+}
+
+#mainContentToTranform.interpretative choice > orig,
+#mainContentToTranform.interpretative choice > sic,
+#mainContentToTranform.normalized choice > orig,
+#mainContentToTranform.normalized choice > sic {
+  display: none !important;
+}
+
+#mainContentToTranform.interpretative choice > reg,
+#mainContentToTranform.interpretative choice > corr,
+#mainContentToTranform.normalized choice > reg,
+#mainContentToTranform.normalized choice > corr {
+  display: inline !important;
 }
