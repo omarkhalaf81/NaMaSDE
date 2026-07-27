@@ -285,19 +285,49 @@
   line-height: 0.7 !important;
 }
 
-#mainContentToTranform.interpretative .tei-column-break choice > reg,
-#mainContentToTranform.normalized .tei-column-break choice > reg,
-.interpretative .tei-column-break choice > reg,
-.normalized .tei-column-break choice > reg {
+/* ============================================== */
+/* Correzione choice rimasti grezzi in EVT        */
+/* ============================================== */
+
+/* Livello diplomatico: mostra orig/sic, nasconde reg/corr */
+
+#mainContentToTranform.diplomatic choice > orig,
+#mainContentToTranform.diplomatic choice > sic,
+#mainContentToTranform.diplomatic .choice > .orig,
+#mainContentToTranform.diplomatic .choice > .sic {
   display: inline !important;
 }
 
-.tei-column-break choice > orig {
-  display: inline !important;
-}
-
-.tei-column-break choice > reg {
+#mainContentToTranform.diplomatic choice > reg,
+#mainContentToTranform.diplomatic choice > corr,
+#mainContentToTranform.diplomatic .choice > .reg,
+#mainContentToTranform.diplomatic .choice > .corr {
   display: none !important;
+}
+
+
+/* Livello interpretativo/normalizzato: mostra reg/corr, nasconde orig/sic */
+
+#mainContentToTranform.interpretative choice > orig,
+#mainContentToTranform.interpretative choice > sic,
+#mainContentToTranform.normalized choice > orig,
+#mainContentToTranform.normalized choice > sic,
+#mainContentToTranform.interpretative .choice > .orig,
+#mainContentToTranform.interpretative .choice > .sic,
+#mainContentToTranform.normalized .choice > .orig,
+#mainContentToTranform.normalized .choice > .sic {
+  display: none !important;
+}
+
+#mainContentToTranform.interpretative choice > reg,
+#mainContentToTranform.interpretative choice > corr,
+#mainContentToTranform.normalized choice > reg,
+#mainContentToTranform.normalized choice > corr,
+#mainContentToTranform.interpretative .choice > .reg,
+#mainContentToTranform.interpretative .choice > .corr,
+#mainContentToTranform.normalized .choice > .reg,
+#mainContentToTranform.normalized .choice > .corr {
+  display: inline !important;
 }
 
 /* Marcatore invisibile per forzare l'inizio della seconda colonna */
