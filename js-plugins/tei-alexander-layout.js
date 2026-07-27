@@ -303,15 +303,12 @@ function findRenderedLine(lbId, info) {
 
       loadText(teiUrl, function (teiText) {
         buildLineMap(teiText);
-
-        setTimeout(applyColumns, 0);
-        setTimeout(applyColumns, 50);
-        setTimeout(applyColumns, 150);
+        
+      setTimeout(applyColumns, 1000);
 
         window.addEventListener('hashchange', function () {
-          setTimeout(applyColumns, 0);
-          setTimeout(applyColumns, 50);
-          setTimeout(applyColumns, 150);
+         setTimeout(applyColumns, 1000);
+          
         });
 
         // setInterval(applyColumns, 2500);
