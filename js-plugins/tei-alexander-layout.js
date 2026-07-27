@@ -304,10 +304,14 @@ function findRenderedLine(lbId, info) {
       loadText(teiUrl, function (teiText) {
         buildLineMap(teiText);
         
-      setTimeout(applyColumns, 1000);
+      setTimeout(applyColumns, 0);
+      setTimeout(applyColumns, 50);
+      setTimeout(applyColumns, 150);
 
         window.addEventListener('hashchange', function () {
-         setTimeout(applyColumns, 1000);
+         setTimeout(applyColumns, 0);
+        setTimeout(applyColumns, 50);
+        setTimeout(applyColumns, 150);
           
         });
 
