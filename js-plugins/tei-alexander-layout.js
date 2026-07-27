@@ -155,6 +155,68 @@ function findRenderedLine(lbId, info) {
 
   return lb.parentNode;
 }
+
+function firstChildByName(node, name) {
+  if (!node || !node.children) {
+    return null;
+  }
+
+  for (var i = 0; i < node.children.length; i++) {
+    if (getName(node.children[i]) === name) {
+      return node.children[i];
+    }
+  }
+
+  return null;
+}
+
+function moveChildrenIntoSpan(source, className) {
+  var span = document.createElement('span');
+  span.className = className;
+
+  while (source.firstChild) {
+    span.appendChild(source.firstChild);
+  }
+
+  return span;
+}
+
+function fixRawChoices(root) {
+  root = root || document;
+
+  var rawChoices = Array.prototype.slice.call(root.querySelectorAll('choice'));
+
+  for (var i = 0; i < rawChoices.length; i++) {
+    var choice = rawChoices[i];
+
+    var orig = firstChildByName(choice, 'orig');
+    var reg = firstChildByName(choice, 'reg');
+    var sic = firstChildByName(choice, 'sic');
+    var corr = firstChildByName(choice, 'corr');
+
+    var spanChoice = document.createElement('span');
+    spanChoice.className = 'choice';
+
+    if (orig) {
+      spanChoice.appendChild(moveChildrenIntoSpan(orig, 'orig'));
+    }
+
+    if (sic) {
+      spanChoice.appendChild(moveChildrenIntoSpan(sic, 'sic'));
+    }
+
+    if (reg) {
+      spanChoice.appendChild(moveChildrenIntoSpan(reg, 'reg'));
+    }
+
+    if (corr) {
+      spanChoice.appendChild(moveChildrenIntoSpan(corr, 'corr'));
+    }
+
+    choice.parentNode.replaceChild(spanChoice, choice);
+  }
+}
+
   function insideColumns(node) {
     var current = node;
 
@@ -289,13 +351,21 @@ function findRenderedLine(lbId, info) {
     }
   }
 
+    fixRawChoices(document.getElementById('mainContentToTranform'));
+
   console.log(
     'tei-column-layout create',
     document.querySelectorAll('.tei-column-layout').length
   );
+
+  console.log(
+  'choice trovati',
+  document.querySelectorAll('choice').length
+);
   
   running = false;
 }
+
   function start() {
     loadText('config/config.json', function (configText) {
       var config = JSON.parse(configText);
