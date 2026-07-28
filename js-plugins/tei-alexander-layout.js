@@ -118,6 +118,69 @@
   return null;
 }
 
+function getLineFromLb(lb) {
+  var node = lb;
+
+  while (node && node !== document.body) {
+    var nodeName = (node.localName || node.nodeName || '').toLowerCase();
+
+    if (nodeName === 'l') {
+      return node;
+    }
+
+    if (hasClass(node, 'l')) {
+      return node;
+    }
+
+    node = node.parentNode;
+  }
+
+  return lb.parentNode;
+}
+
+function findRenderedLines(lbId, info) {
+  var lbs = [];
+  var lines = [];
+  var seen = [];
+
+  if (info && info.facs) {
+    var all = document.querySelectorAll('[data-facs]');
+
+    for (var i = 0; i < all.length; i++) {
+      if (all[i].getAttribute('data-facs') === info.facs) {
+        lbs.push(all[i]);
+      }
+    }
+  }
+
+  if (!lbs.length) {
+    var byId = document.querySelectorAll('[id="' + lbId + '"]');
+
+    for (var j = 0; j < byId.length; j++) {
+      lbs.push(byId[j]);
+    }
+  }
+
+  if (!lbs.length) {
+    var fallback = findElementByXmlId(lbId);
+
+    if (fallback) {
+      lbs.push(fallback);
+    }
+  }
+
+  for (var k = 0; k < lbs.length; k++) {
+    var line = getLineFromLb(lbs[k]);
+
+    if (line && seen.indexOf(line) < 0) {
+      seen.push(line);
+      lines.push(line);
+    }
+  }
+
+  return lines;
+}
+
 function findRenderedLine(lbId, info) {
   var lb = null;
 
@@ -244,46 +307,78 @@ function fixRawChoices(root) {
   var ids = Object.keys(lineMap);
 
   for (var i = 0; i < ids.length; i++) {
-    var id = ids[i];
-    var info = lineMap[id];
-    var line = findRenderedLine(id, info);
+  var id = ids[i];
+  var info = lineMap[id];
+  var lines = findRenderedLines(id, info);
 
-    if (!line) {
-      continue;
-    }
+  if (!lines.length) {
+    continue;
+  }
 
-    if (!pages[info.page]) {
-      pages[info.page] = [];
-    }
+  if (!pages[info.page]) {
+    pages[info.page] = [];
+  }
 
+  for (var l = 0; l < lines.length; l++) {
     pages[info.page].push({
-      node: line,
+      node: lines[l],
       column: info.column,
       line: parseInt(info.line || '0', 10)
     });
   }
+}
 
   var pageNames = Object.keys(pages);
 
   for (var p = 0; p < pageNames.length; p++) {
-    var page = pageNames[p];
-    var items = pages[page];
+  var page = pageNames[p];
+  var items = pages[page];
 
-    items.sort(function (a, b) {
+  items.sort(function (a, b) {
+    return a.line - b.line;
+  });
+
+  if (!items.length) {
+    continue;
+  }
+
+  var groups = [];
+
+  for (var g = 0; g < items.length; g++) {
+    var node = items[g].node;
+
+    if (!node || !node.parentNode) {
+      continue;
+    }
+
+    var parent = node.parentNode;
+    var group = null;
+
+    for (var h = 0; h < groups.length; h++) {
+      if (groups[h].container === parent) {
+        group = groups[h];
+        break;
+      }
+    }
+
+    if (!group) {
+      group = {
+        container: parent,
+        items: []
+      };
+      groups.push(group);
+    }
+
+    group.items.push(items[g]);
+  }
+
+  for (var gi = 0; gi < groups.length; gi++) {
+    var container = groups[gi].container;
+    var groupItems = groups[gi].items;
+
+    groupItems.sort(function (a, b) {
       return a.line - b.line;
     });
-
-    if (!items.length) {
-      continue;
-    }
-
-    var first = items[0].node;
-
-    if (!first || !first.parentNode) {
-      continue;
-    }
-
-    var container = first.parentNode;
 
     if (!hasClass(container, 'tei-column-layout')) {
       container.className += ' tei-column-layout';
@@ -293,8 +388,8 @@ function fixRawChoices(root) {
 
     var secondColumnStarted = false;
 
-    for (var j = 0; j < items.length; j++) {
-      var item = items[j];
+    for (var j = 0; j < groupItems.length; j++) {
+      var item = groupItems[j];
 
       if (!item.node) {
         continue;
@@ -352,7 +447,7 @@ function fixRawChoices(root) {
       }
     }
   }
-        fixRawChoices(document.getElementById('mainContentToTranform'));
+}
         
   console.log(
     'tei-column-layout create',
