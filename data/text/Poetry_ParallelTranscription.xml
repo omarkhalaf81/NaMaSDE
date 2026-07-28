@@ -266,29 +266,30 @@
       <mapping type="diplomatic">&#120119;</mapping>
       <mapping type="normalized">z</mapping>
     </char>
-    <char xml:id="middot">
-      <mapping type="codepoint">U+00B7</mapping>
-      <mapping type="diplomatic">&#183;</mapping>   
-    </char>
-   <char xml:id="dot">
+    <glyph xml:id="dot">
     <mapping type="codepoint">U+002E</mapping>
     <mapping type="diplomatic">.</mapping>
      <mapping type="normalized">&#32;</mapping>
-    </char>
-    <char xml:id="middotfullstop">
+    </glyph>
+    <glyph xml:id="middot">
+      <mapping type="codepoint">U+00B7</mapping>
+      <mapping type="diplomatic">&#183;</mapping> 
+       <mapping type="normalized"></mapping> 
+    </glyph>
+    <glyph xml:id="middotfullstop">
       <mapping type="codepoint">U+00B7</mapping>
       <mapping type="diplomatic"> ·</mapping>
       <mapping type="normalized">.</mapping>
-    </char>
-    <char xml:id="middotcolon">
+    </glyph>
+    <glyph xml:id="middotcolon">
       <mapping type="diplomatic"> &#183;</mapping>
       <mapping type="normalized">:</mapping>
-    </char>
-    <char xml:id="and">
+    </glyph>
+    <glyph xml:id="and">
       <mapping type="codepoint">U+0026</mapping>
       <mapping type="diplomatic">&#38;</mapping>
       <mapping type="normalized">and</mapping>
-    </char> 
+    </glyph> 
     <char xml:id="utilde">
       <mapping type="codepoint">U+00F1</mapping>
       <mapping type="diplomatic">&#x169;</mapping>
@@ -343,46 +344,46 @@
       <mapping type="diplomatic">v</mapping>
       <mapping type="normalized">U</mapping>
     </char>
-    <char xml:id="comma">
+    <glyph xml:id="comma">
       <mapping type="codepoint">U+002C</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">,</mapping>
-    </char>
-    <char xml:id="quote">
+    </glyph>
+    <glyph xml:id="quote">
       <mapping type="codepoint">U+0022</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">"</mapping>
-    </char>
-    <char xml:id="fullstop">
+    </glyph>
+    <glyph xml:id="fullstop">
       <mapping type="codepoint">U+002E</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">.</mapping>
-    </char>
-    <char xml:id="exclamation">
+    </glyph>
+    <glyph xml:id="exclamation">
       <mapping type="codepoint">U+0021</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">!</mapping>
-    </char>
-    <char xml:id="hyphen">
+    </glyph>
+    <glyph xml:id="hyphen">
       <mapping type="codepoint">U+002D</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">-</mapping>
-    </char>
-    <char xml:id="colon">
+    </glyph>
+    <glyph xml:id="colon">
       <mapping type="codepoint">U+003A</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">:</mapping>
-    </char>
-    <char xml:id="semicolon">
+    </glyph>
+    <glyph xml:id="semicolon">
       <mapping type="codepoint">U+003B</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">;</mapping>
-    </char>
-    <char xml:id="question">
+    </glyph>
+    <glyph xml:id="question">
       <mapping type="codepoint">U+003F</mapping>
       <mapping type="diplomatic"></mapping>
       <mapping type="normalized">?</mapping>
-    </char>
+    </glyph>
     <char xml:id="capitala">
       <mapping type="codepoint">U+0041</mapping>
       <mapping type="diplomatic">a</mapping>
@@ -1950,7 +1951,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
         <l n="222"><lb facs="#BE_line_26_222" n="222" xml:id="BE_lb_26_222"/><g ref="smalla"/>nd gan to cry<g ref="middotcolon"/></l>
         <l n="223"><lb facs="#BE_line_26_223" n="223" xml:id="BE_lb_26_223"/><g ref="quote"/><choice><orig>A yelde</orig><reg>Ayelde</reg></choice> the traitour<g ref="comma"/> <g ref="thou"/> olde dote<g ref="exclamation"/></l>
         <l n="224"><lb facs="#BE_line_26_224" n="224" xml:id="BE_lb_26_224"/>Thou <g ref="slong"/>halt honge bi the throte<g ref="comma"/></l>
-        <l n="225"><lb facs="#BE_line_26_225" n="225" xml:id="BE_lb_26_225"/><g ref="smallt"/>hine hed thou <g ref="slong"/>halt le<g ref="slong"/><g ref="fullstop"/></l>
+        <l n="225"><lb facs="#BE_line_26_225" n="225" xml:id="BE_lb_26_225"/><g ref="smallt"/>hyne hed thou <g ref="slong"/>halt le<g ref="slong"/><g ref="fullstop"/></l>
         <l n="226"><lb facs="#BE_line_26_226" n="226" xml:id="BE_lb_26_226"/>Thi <g ref="slong"/>onne Beuys <g ref="slong"/>hal anhongid be</l>
         <l n="227"><lb facs="#BE_line_26_227" n="227" xml:id="BE_lb_26_227"/><g ref="smalla"/>nd thi wife that is so fre</l>
         <l n="228"><lb facs="#BE_line_26_228" n="228" xml:id="BE_lb_26_228"/><g ref="smallt"/>o lemman I hur che<g ref="slong"/>e<g ref="exclamation"/><g ref="quote"/></l>
