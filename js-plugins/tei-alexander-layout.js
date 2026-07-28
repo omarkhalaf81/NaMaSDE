@@ -373,11 +373,13 @@ function fixRawChoices(root) {
       setTimeout(applyColumns, 0);
       setTimeout(applyColumns, 50);
       setTimeout(applyColumns, 150);
+      setTimeout(applyColumns, 1500);
 
         window.addEventListener('hashchange', function () {
          setTimeout(applyColumns, 0);
         setTimeout(applyColumns, 50);
         setTimeout(applyColumns, 150);
+        setTimeout(applyColumns, 1500);
           
         });
 
