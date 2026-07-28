@@ -3000,7 +3000,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
       <div n="Isumbras" subtype="edition_text" type="verse" xml:id="Isumbras">
           <pb facs="data/images/single/IS_114.jpg" n="114" xml:id="IS_114"/>
           <cb n="1"/>
-        <fw place="top-middle" type="cw">Sir Isumbras</fw>
+        <choice><orig></orig><reg><fw place="top-middle" type="cw">Sir Isumbras</fw></reg>
           <l n="1"><lb facs="#IS_line_114v_01" n="1" xml:id="IS_lb_114v_01"/><g ref="capitalh"/><choice><orig>&#10240;&#10240;&#10240;&#10240;</orig><reg></reg></choice>e <g ref="that"/> made be<g ref="the"/> hevyn <g ref="and"/> erthe</l>
           <l n="2"><lb facs="#IS_line_114v_02" n="2" xml:id="IS_lb_114v_02"/><choice><orig>&#10240;&#10240;&#10240;&#10240;</orig><reg></reg></choice><g ref="and"/> al <g ref="this"/> worlde in daies seuyn</l>
           <l n="3"><lb facs="#IS_line_114v_03" n="3" xml:id="IS_lb_114v_03"/><choice><orig>&#10240;&#10240;&#10240;&#10240;</orig><reg></reg></choice><g ref="dash"/>that is ful of my<g ref="yogh"/>t<g ref="dash"/></l> 
