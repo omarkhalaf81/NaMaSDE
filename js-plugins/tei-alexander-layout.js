@@ -201,36 +201,6 @@ function findRenderedLine(lbId, info) {
   }
 
   return lb.parentNode;
-}
-
-function firstChildByName(node, name) {
-  if (!node || !node.children) {
-    return null;
-  }
-
-  for (var i = 0; i < node.children.length; i++) {
-    if (getName(node.children[i]) === name) {
-      return node.children[i];
-    }
-  }
-
-  return null;
-}
-
-function moveChildrenIntoSpan(source, className) {
-  var span = document.createElement('span');
-  span.className = className;
-
-  while (source.firstChild) {
-    span.appendChild(source.firstChild);
-  }
-
-  return span;
-}
-
-function fixRawChoices(root) {
-  if (!root) {
-    return;
   }
 
   var rawChoices = Array.prototype.slice.call(root.querySelectorAll('choice'));
@@ -452,13 +422,11 @@ function fixRawChoices(root) {
       setTimeout(applyColumns, 0);
       setTimeout(applyColumns, 50);
       setTimeout(applyColumns, 150);
-      setTimeout(applyColumns, 1500);
 
         window.addEventListener('hashchange', function () {
          setTimeout(applyColumns, 0);
         setTimeout(applyColumns, 50);
         setTimeout(applyColumns, 150);
-        setTimeout(applyColumns, 1500);
           
         });
 
