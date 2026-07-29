@@ -106,6 +106,12 @@
          "label": "Luoghi",
          "available": true
       },
+
+   {
+   "tagName": "plantName",
+   "label": "Piante",
+   "available": true
+},
       {
          "tagName": "orgName",
          "label": "Organizzazioni",
