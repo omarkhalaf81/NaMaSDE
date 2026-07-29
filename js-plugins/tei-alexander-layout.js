@@ -140,29 +140,49 @@ function getLineFromLb(lb) {
   return lb.parentNode;
 }
 
-function findRenderedLines(lbId, info) {
+function buildRenderedLineIndex() {
+  var index = {};
+  var containers = document.querySelectorAll('#mainContentToTranform');
+
+  for (var c = 0; c < containers.length; c++) {
+    var nodes = containers[c].querySelectorAll('[data-facs], [facs]');
+
+    for (var i = 0; i < nodes.length; i++) {
+      var facs =
+        nodes[i].getAttribute('data-facs') ||
+        nodes[i].getAttribute('facs');
+
+      if (!facs) {
+        continue;
+      }
+
+      var line = getLineFromLb(nodes[i]);
+
+      if (!line) {
+        continue;
+      }
+
+      if (!index[facs]) {
+        index[facs] = [];
+      }
+
+      if (index[facs].indexOf(line) < 0) {
+        index[facs].push(line);
+      }
+    }
+  }
+
+  return index;
+}
+
+function findRenderedLines(lbId, info, renderedLineIndex) {
   var lbs = [];
   var lines = [];
   var seen = [];
 
-if (info && info.facs) {
-  var all = document.querySelectorAll('[data-facs]');
-
-  for (var i = 0; i < all.length; i++) {
-    if (all[i].getAttribute('data-facs') === info.facs) {
-      lbs.push(all[i]);
-    }
+  if (info && info.facs && renderedLineIndex[info.facs]) {
+    return renderedLineIndex[info.facs];
   }
-
-  if (!lbs.length) {
-    var raw = document.querySelectorAll('[facs="' + info.facs + '"]');
-
-    for (var r = 0; r < raw.length; r++) {
-      lbs.push(raw[r]);
-    }
-  }
-}
-
 
   if (!lbs.length) {
     var byId = document.querySelectorAll('[id="' + lbId + '"]');
@@ -190,7 +210,7 @@ if (info && info.facs) {
   }
 
   return lines;
-  }
+}
 
   function insideColumns(node) {
     var current = node;
@@ -215,6 +235,7 @@ if (info && info.facs) {
 
   var pages = {};
   var ids = Object.keys(lineMap);
+  var renderedLineIndex = buildRenderedLineIndex();
 
   for (var i = 0; i < ids.length; i++) {
   var id = ids[i];
