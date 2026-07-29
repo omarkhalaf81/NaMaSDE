@@ -202,38 +202,7 @@ function findRenderedLine(lbId, info) {
 
   return lb.parentNode;
   }
-
-  var rawChoices = Array.prototype.slice.call(root.querySelectorAll('choice'));
-
-  for (var i = 0; i < rawChoices.length; i++) {
-    var choice = rawChoices[i];
-
-    var orig = firstChildByName(choice, 'orig');
-    var reg = firstChildByName(choice, 'reg');
-    var sic = firstChildByName(choice, 'sic');
-    var corr = firstChildByName(choice, 'corr');
-
-    var spanChoice = document.createElement('span');
-    spanChoice.className = 'choice';
-
-    if (orig) {
-      spanChoice.appendChild(moveChildrenIntoSpan(orig, 'orig'));
-    }
-
-    if (sic) {
-      spanChoice.appendChild(moveChildrenIntoSpan(sic, 'sic'));
-    }
-
-    if (reg) {
-      spanChoice.appendChild(moveChildrenIntoSpan(reg, 'reg'));
-    }
-
-    if (corr) {
-      spanChoice.appendChild(moveChildrenIntoSpan(corr, 'corr'));
-    }
-
-    choice.parentNode.replaceChild(spanChoice, choice);
-  }
+  
 }
 
   function insideColumns(node) {
