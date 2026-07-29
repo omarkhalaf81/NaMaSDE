@@ -145,15 +145,31 @@ function findRenderedLines(lbId, info) {
   var lines = [];
   var seen = [];
 
-if (info && info.facs) {
-  var all = document.querySelectorAll('[data-facs]');
+  if (info && info.facs) {
+    var all = document.querySelectorAll('[data-facs]');
 
-  for (var i = 0; i < all.length; i++) {
-    if (all[i].getAttribute('data-facs') === info.facs) {
-      lbs.push(all[i]);
+    for (var i = 0; i < all.length; i++) {
+      if (all[i].getAttribute('data-facs') === info.facs) {
+        lbs.push(all[i]);
+      }
     }
   }
-}
+
+  if (!lbs.length) {
+    var byId = document.querySelectorAll('[id="' + lbId + '"]');
+
+    for (var j = 0; j < byId.length; j++) {
+      lbs.push(byId[j]);
+    }
+  }
+
+  if (!lbs.length) {
+    var fallback = findElementByXmlId(lbId);
+
+    if (fallback) {
+      lbs.push(fallback);
+    }
+  }
 
   for (var k = 0; k < lbs.length; k++) {
     var line = getLineFromLb(lbs[k]);
@@ -165,47 +181,7 @@ if (info && info.facs) {
   }
 
   return lines;
-}
-
-function findRenderedLine(lbId, info) {
-  var lb = null;
-
-  if (info && info.facs) {
-    lb = findByDataFacs(info.facs);
   }
-
-  if (!lb) {
-    lb = document.getElementById(lbId);
-  }
-
-  if (!lb) {
-    lb = findElementByXmlId(lbId);
-  }
-
-  if (!lb) {
-    return null;
-  }
-
-  var node = lb;
-
-  while (node && node !== document.body) {
-    var nodeName = (node.localName || node.nodeName || '').toLowerCase();
-
-    if (nodeName === 'l') {
-      return node;
-    }
-
-    if (hasClass(node, 'l')) {
-      return node;
-    }
-
-    node = node.parentNode;
-  }
-
-  return lb.parentNode;
-  }
-
-}
 
   function insideColumns(node) {
     var current = node;
