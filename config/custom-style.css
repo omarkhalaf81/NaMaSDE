@@ -346,22 +346,3 @@
 #mainContentToTranform.normalized choice > corr {
   display: inline !important;
 }
-
-.tei-medical-entity {
-  border-bottom: 1px dotted currentColor;
-  cursor: help;
-  padding: 0 0.08em;
-  border-radius: 0.15em;
-}
-
-.tei-entity-plant {
-  background-color: #dff3df;
-}
-
-.tei-entity-animal {
-  background-color: #f3e4d7;
-}
-
-.tei-entity-mineral {
-  background-color: #e5e5f5;
-}
