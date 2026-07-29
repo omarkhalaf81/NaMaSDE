@@ -144,30 +144,22 @@ function findRenderedLines(lbId, info) {
   var seen = [];
 
   if (info && info.facs) {
-    var all = document.querySelectorAll('[data-facs]');
+  var allDataFacs = document.querySelectorAll('[data-facs]');
 
-    for (var i = 0; i < all.length; i++) {
-      if (all[i].getAttribute('data-facs') === info.facs) {
-        lbs.push(all[i]);
-      }
+  for (var i = 0; i < allDataFacs.length; i++) {
+    if (allDataFacs[i].getAttribute('data-facs') === info.facs) {
+      lbs.push(allDataFacs[i]);
     }
   }
 
-  if (!lbs.length) {
-    var byId = document.querySelectorAll('[id="' + lbId + '"]');
+  var allFacs = document.querySelectorAll('[facs]');
 
-    for (var j = 0; j < byId.length; j++) {
-      lbs.push(byId[j]);
+  for (var j = 0; j < allFacs.length; j++) {
+    if (allFacs[j].getAttribute('facs') === info.facs) {
+      lbs.push(allFacs[j]);
     }
   }
-
-  if (!lbs.length) {
-    var fallback = findElementByXmlId(lbId);
-
-    if (fallback) {
-      lbs.push(fallback);
-    }
-  }
+}
 
   for (var k = 0; k < lbs.length; k++) {
     var line = getLineFromLb(lbs[k]);
