@@ -1,5 +1,7 @@
 (function () {
   console.log('tei-alexander-layout caricato');
+  console.log('ALEXANDER VERSIONE 2026-07-29');
+
 
   var lineMap = {};
   var running = false;
@@ -202,7 +204,7 @@ function findRenderedLine(lbId, info) {
 
   return lb.parentNode;
   }
-  
+
 }
 
   function insideColumns(node) {
