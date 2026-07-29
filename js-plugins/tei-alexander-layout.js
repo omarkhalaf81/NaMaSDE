@@ -180,9 +180,14 @@ function findRenderedLines(lbId, info, renderedLineIndex) {
   var lines = [];
   var seen = [];
 
-  if (info && info.facs && renderedLineIndex[info.facs]) {
-    return renderedLineIndex[info.facs];
-  }
+ if (
+  info &&
+  info.facs &&
+  renderedLineIndex &&
+  renderedLineIndex[info.facs]
+) {
+  return renderedLineIndex[info.facs];
+}
 
   if (!lbs.length) {
     var byId = document.querySelectorAll('[id="' + lbId + '"]');
@@ -233,14 +238,14 @@ function findRenderedLines(lbId, info, renderedLineIndex) {
 
   running = true;
 
-  var pages = {};
-  var ids = Object.keys(lineMap);
-  var renderedLineIndex = buildRenderedLineIndex();
+var pages = {};
+var ids = Object.keys(lineMap);
+var renderedLineIndex = buildRenderedLineIndex();
 
-  for (var i = 0; i < ids.length; i++) {
+for (var i = 0; i < ids.length; i++) {
   var id = ids[i];
   var info = lineMap[id];
-  var lines = findRenderedLines(id, info);
+  var lines = findRenderedLines(id, info, renderedLineIndex);
 
   if (!lines.length) {
     continue;
