@@ -145,15 +145,24 @@ function findRenderedLines(lbId, info) {
   var lines = [];
   var seen = [];
 
-  if (info && info.facs) {
-    var all = document.querySelectorAll('[data-facs]');
+if (info && info.facs) {
+  var all = document.querySelectorAll('[data-facs]');
 
-    for (var i = 0; i < all.length; i++) {
-      if (all[i].getAttribute('data-facs') === info.facs) {
-        lbs.push(all[i]);
-      }
+  for (var i = 0; i < all.length; i++) {
+    if (all[i].getAttribute('data-facs') === info.facs) {
+      lbs.push(all[i]);
     }
   }
+
+  if (!lbs.length) {
+    var raw = document.querySelectorAll('[facs="' + info.facs + '"]');
+
+    for (var r = 0; r < raw.length; r++) {
+      lbs.push(raw[r]);
+    }
+  }
+}
+
 
   if (!lbs.length) {
     var byId = document.querySelectorAll('[id="' + lbId + '"]');
