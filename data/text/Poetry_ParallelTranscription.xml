@@ -267,18 +267,28 @@
       <mapping type="normalized">z</mapping>
     </char>
     <glyph xml:id="dot">
-    <mapping type="codepoint">U+002E</mapping>
     <mapping type="diplomatic">.</mapping>
      <mapping type="normalized">&#32;</mapping>
     </glyph>
+    <glyph xml:id="dotcomma">
+    <mapping type="diplomatic">.</mapping>
+     <mapping type="normalized">,</mapping>
+    </glyph>
+    <glyph xml:id="dotcolon">
+    <mapping type="diplomatic">.</mapping>
+     <mapping type="normalized">:</mapping>
+    </glyph>
+    <glyph xml:id="dotsemicolon">
+    <mapping type="diplomatic">.</mapping>
+     <mapping type="normalized">:</mapping>
+    </glyph>
     <glyph xml:id="middot">
-      <mapping type="codepoint">U+00B7</mapping>
       <mapping type="diplomatic">&#183;</mapping> 
        <mapping type="normalized"></mapping> 
     </glyph>
     <glyph xml:id="middotfullstop">
       <mapping type="codepoint">U+00B7</mapping>
-      <mapping type="diplomatic"> ·</mapping>
+      <mapping type="diplomatic"> &#183;</mapping>
       <mapping type="normalized">.</mapping>
     </glyph>
     <glyph xml:id="middotcolon">
