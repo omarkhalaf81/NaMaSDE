@@ -2953,7 +2953,44 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
 
 <pb facs="data/images/single/BE_40.jpg" n="40" xml:id="BE_40"/>
 <cb n="1"/> 
-        <l n="1156"><lb facs="#BE_line_40_1156" n="1156" xml:id="BE_lb_39_1156"/></l> 
+        <l n="1156"><lb facs="#BE_line_40_1156" n="1156" xml:id="BE_lb_40_1156"/>Whanne that he was <choice><orig>a wey</orig><reg>awey</reg> go<g ref="comma"/></l>
+        <l n="1157"><lb facs="#BE_line_40_1157" n="1157" xml:id="BE_lb_40_1157"/><g ref="smallt"/> <choice><orig>a wake</orig><reg>awake</reg/> alle hur wo<g ref="semicolon"/></l>
+        <l n="1158"><lb facs="#BE_line_40_1158" n="1158" xml:id="BE_lb_40_1158"/><g ref="smalls"/>withe wo hur was <choice><orig>with alle</orig><reg>withalle</reg><g ref="dash"/></l>
+        <l n="1159"><lb facs="#BE_line_40_1159" n="1159" xml:id="BE_lb_40_1159"/>hu<g ref="rlong"/> thoght the towre wold on hur falle<g ref="dash"/></l>
+        <l n="1160"><lb facs="#BE_line_40_1160" n="1160" xml:id="BE_lb_40_1160"/><g reft="smalla"/>nd clepid hur chamburleyn <g ref="capitalb"/>onyfas</l>
+        <l n="1161"><lb facs="#BE_line_40_1161" n="1161" xml:id="BE_lb_40_1161"/><g ref="smalla"/>nd tolde him alle the cas<g ref="comma"/></l>
+        <l n="1162"><lb facs="#BE_line_40_1162" n="1162" xml:id="BE_lb_40_1162"/><g ref="smalla"/>nd bade to <choice><orig><g ref="middot"/>B<g ref="middot"/><reg>Bevis</reg></choice> he wolde wend</l>
+        <l n="1163"><lb facs="#BE_line_40_1163" n="1163" xml:id="BE_lb_40_1163"/><g ref="smalla"/>nd alle hur tre<g ref="slong"/>pas <g ref="slong"/>cho wold amend<g ref="comma"/></l>
+        <l n="1164"><lb facs="#BE_line_40_1164" n="1164" xml:id="BE_lb_40_1164"/><g ref="smalla"/>lle <choice><orig>to gadir</orig><reg>togadir</reg></choice><g ref="comma"/> worde and dede<g ref="comma"/></l>
+        <l n="1165"><lb facs="#BE_line_40_1165" n="1165" xml:id="BE_lb_40_1165"/><g ref="smallt"/>hat euer <g ref="slong"/>cho had <<choice><orig>a mys>/orig><reg>amys</reg></choice> seide<g ref="fullstop"/></l>
+        <l n="1166"><lb facs="#BE_line_40_1166" n="1166" xml:id="BE_lb_40_1166"/><g ref="capitalf"/>orth went Bonyfas in <g ref"that"/> <g ref="slong"/>tound</l>
+        <l n="1167"><lb facs="#BE_line_40_1167" n="1167" xml:id="BE_lb_40_1167"/><g ref="smalla"/>nd <choice><orig><g ref="middot">B<g ref="middot"/></orig><reg>Beuys</reg></choice> in his chambur he found</l>
+        <l n="1168"><lb facs="#BE_line_40_1168" n="1168" xml:id="BE_lb_40_1168"/><g ref="smalla"/>nd seid<g ref="comma"/> <g ref="quote"/>Iosyan me hedir send</l>
+        <l n="1169"><lb facs="#BE_line_40_1169" n="1169" xml:id="BE_lb_40_1169"/><g ref="smalla"/>nd <g ref="slong"/>eid <g ref="slong"/>cho wolde al amend</l>
+        <l n="1170"><lb facs="#BE_line_40_1170" n="1170" xml:id="BE_lb_40_1170"/><choice><orig>Alto gadir</orig><reg>altogadir</reg></choice> at thi wille</l>
+        <l n="1171"><lb facs="#BE_line_40_1171" n="1171" xml:id="BE_lb_40_1171"/><g ref="smallt"/>hat sho <choice><orig>mys <g ref="slong"/>aid</orig><reg>myssaid</reg></choice><g ref="comma"/> lowde or <g ref="slong"/>tille<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="1172"><lb facs="#BE_line_40_1172" n="1172" xml:id="BE_lb_40_1172"/>Than an<g ref="slong"/>werid <choice><orig><g ref="middot"/>B<g ref="middot"/></orig><reg>Beuys</reg></choice> the fere<g ref="comma"/>
+        <l n="1173"><lb facs="#BE_line_40_1173" n="1173" xml:id="BE_lb_40_1173"/><g ref="quote"/>Sei thow mai<g ref="slong"/>t not <g ref="slong"/>pede here<g ref="semicolon"/></l>
+        <l n="1174"><lb facs="#BE_line_40_1174" n="1174" xml:id="BE_lb_40_1174"/><g ref="smallb"/>ut for thou broghti<g ref="slong"/>t fro hur me<g ref="slong"/><g ref="slong"/>age<g ref="comma"/></l>
+        <l n="1175"><lb facs="#BE_line_40_1175" n="1175" xml:id="BE_lb_40_1175"/>I <g ref="slong"/>challe the yelde good t<g ref="rlong"/>ewage<g ref="colon"/></l>
+        <l n="1176"><lb facs="#BE_line_40_1176" n="1176" xml:id="BE_lb_40_1176"/><g ref="smalla"/> mantel as white as eny mylke<g ref="comma"/></l>
+        <l n="1177"><lb facs="#BE_line_40_1177" n="1177" xml:id="BE_lb_40_1177"/><g ref="smallt"/>he bordure is of twily silke</l>
+        <l n="1178"><lb facs="#BE_line_40_1178" n="1178" xml:id="BE_lb_40_1178"/><choice><orig>I botenyd</orig><reg>ibotenid</reg></choice> with rede golde<g ref="comma"/></l>
+        <l n="1179"><lb facs="#BE_line_40_1179" n="1179" xml:id="BE_lb_40_1179"/><g ref0"smallt"/>hei the king hit weren <g ref="slong"/>chulde<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="1180"><lb facs="#BE_line_40_1180" n="1180" xml:id="BE_lb_40_1180"/>Bonyfas him <choice><orig>thonkd</orig><corr>thonkid</corr></choice> yorne<g ref="semicolon"/></l>
+        <l n="1181"><lb facs="#BE_line_40_1181" n="1181" xml:id="BE_lb_40_1181"/><choice><orig>A yen</orig><reg>ayen</reg></chocie> home he gan turne</l>
+        <l n="1182"><lb facs="#BE_line_40_1182" n="1182" xml:id="BE_lb_40_1182"/><g ref="smalla"/>nd found that maid in <g ref="slong"/>orow and care<g ref="comma"/></l>
+        <l n="1183"><lb facs="#BE_line_40_1183" n="1183" xml:id="BE_lb_40_1183"/><g ref="smalla"/>nd tolde hur his an<g ref="slong"/>were<g ref="comma"/></l>
+        <l n="1184"><lb facs="#BE_line_40_1184" n="1184" xml:id="BE_lb_40_1184"/><g ref="smallt"/>hat he ne myght no<g ref="th"/>ing <g ref="slong"/>pede<g ref0"colon"/></l>
+        <l n="1185"><lb facs="#BE_line_40_1185" n="1185" xml:id="BE_lb_40_1185"/><g ref="quote"/>I rede the go <g ref0"slong"/>eche <choice><orig>thi nowne</orig><corr>thin owne</corr></choice> nede<g ref="fullstop"/></l>
+        <l n="1186"><lb facs="#BE_line_40_1186" n="1186" xml:id="BE_lb_40_1186"/><choice><orig>ffor <g ref="slong"/>othe</orig><reg>Forsothe</reg> thou ha<g ref="slong"/>t moche <g ref="v"/>nright</l>
+        <l n="1187"><lb facs="#BE_line_40_1187" n="1187" xml:id="BE_lb_40_1187"/><g ref="smallt"/>o my<g ref="slong"/><g ref="slong"/>ay a nobull knyght<g ref0"fullstop"/></l>
+        <l n="1188"><lb facs="#BE_line_40_1188" n="1188" xml:id="BE_lb_40_1188"/><g ref="capitalh"/>e yaue me this ilke wede<g ref0"comma"/></l>
+        <l n="1189"><lb facs="#BE_line_40_1189" n="1189" xml:id="BE_lb_40_1189"/><choice><orig><g ref="middot"/>B<g ref="middot"/></orig><reg>Beuys</reg></choice><g ref="comma"/> that kynde knyght<g ref="quote"/><g ref0"comma"/> he <g ref0"slong"/>eide<g ref="fullstop"/></l>
+        <l n="1190"><lb facs="#BE_line_40_1190" n="1190" xml:id="BE_lb_40_1190"/><g ref0"quote"/>Alas<g ref="exclamation"/><g ref="quote"/> sho <g ref="slong"/>eid<g ref="comma"/> <g ref="quote"/>I was to blame</l>
+        <l n="1191"><lb facs="#BE_line_40_1191" n="1191" xml:id="BE_lb_40_1191"/><g ref="smallt"/>hat I him <g ref="slong"/>eide <g ref="slong"/>uche a <g ref="slong">chame<g ref0"comma"/></l>
+
+        <cb n="2"/> 
 
 
 
