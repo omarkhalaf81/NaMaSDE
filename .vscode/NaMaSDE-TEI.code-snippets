@@ -1,0 +1,81 @@
+{
+  "TEI line": {
+    "prefix": "l",
+    "body": [
+      "<l n=\"$1\"><lb facs=\"#BE_line_${2}_${1}\" n=\"$1\" xml:id=\"BE_lb_${2}_${1}\"/>$0</l>"
+    ],
+    "description": "TEI verse line"
+  },
+
+  "Choice orig-reg": {
+    "prefix": "choice",
+    "body": [
+      "<choice><orig>$1</orig><reg>$2</reg></choice>"
+    ],
+    "description": "TEI choice orig/reg"
+  },
+
+  "Choice orig-corr": {
+    "prefix": "corr",
+    "body": [
+      "<choice><orig>$1</orig><corr>$2</corr></choice>"
+    ],
+    "description": "TEI choice orig/corr"
+  },
+
+  "Glyph": {
+    "prefix": "g",
+    "body": [
+      "<g ref=\"$1\"/>"
+    ],
+    "description": "TEI glyph"
+  },
+
+  "Column break": {
+    "prefix": "cb",
+    "body": [
+      "<cb n=\"$1\"/>"
+    ],
+    "description": "TEI column break"
+  },
+
+  "Page break": {
+    "prefix": "pb",
+    "body": [
+      "<pb n=\"$1\" xml:id=\"$2\" facs=\"$3\"/>"
+    ],
+    "description": "TEI page break"
+  },
+
+  "Plant name": {
+    "prefix": "plant",
+    "body": [
+      "<name type=\"plant\">$1</name>"
+    ],
+    "description": "Botanical name"
+  },
+
+  "Animal substance": {
+    "prefix": "animal",
+    "body": [
+      "<name type=\"animal\">$1</name>"
+    ],
+    "description": "Animal-derived ingredient"
+  },
+
+  "Mineral substance": {
+    "prefix": "mineral",
+    "body": [
+      "<name type=\"mineral\">$1</name>"
+    ],
+    "description": "Mineral ingredient"
+  },
+
+  "Bevis abbreviation": {
+    "prefix": "beuys",
+    "body": [
+      "<choice><orig><g ref=\"middot\"/>B<g ref=\"middot\"/></orig><reg>Beuys</reg></choice>"
+    ],
+    "description": "Expansion of abbreviated Beuys"
+  }
+}
