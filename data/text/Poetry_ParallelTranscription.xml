@@ -83,6 +83,11 @@
       <mapping type="diplomatic">&#541;</mapping>
       <mapping type="normalized">&#541;</mapping>
     </glyph> 
+    <glyph xml:id="capitalyogh">
+      <localProp value="LATIN CAPITAL LETTER YOGH" name="name"/>
+      <mapping type="diplomatic">&#540;</mapping>
+      <mapping type="normalized">&#540;</mapping>
+    </glyph> 
     <glyph xml:id="yoghy">
       <localProp value="LATIN SMALL LETTER YOGH" name="name"/>
       <mapping type="diplomatic">&#541;</mapping>
@@ -238,6 +243,10 @@
     <glyph xml:id="nflourn">
       <mapping type="diplomatic">&#61850;</mapping>
       <mapping type="normalized">n</mapping>
+    </glyph>
+    <glyph xml:id="lettre">
+      <mapping type="diplomatic">&#322;re</mapping>
+      <mapping type="normalized">lettre</mapping>
     </glyph>
     <glyph xml:id="un">
       <mapping type="diplomatic">&#60351;</mapping>
@@ -3030,7 +3039,41 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
 
 <pb facs="data/images/single/BE_41.jpg" n="41" xml:id="BE_41"/>
 <cb n="1"/>   
-        <l n="1228"><lb facs="#BE_line_41_1228" n="1228" xml:id="BE_lb_411228"/></l>
+        <l n="1228"><lb facs="#BE_line_41_1228" n="1228" xml:id="BE_lb_411228"/><g ref="smallt"/>hi toghter<g ref="comma"/> sir<g ref="comma"/> he hath <choice><orig>for layn</orig><reg>forlayn</reg></choice><g ref="comma"/></l>
+        <l n="1229"><lb facs="#BE_line_41_1229" n="1229" xml:id="BE_lb_41_1229"/>hit were good good that that he were slayn<g ref="exclamation"/></l>
+        <l n="1230"><lb facs="#BE_line_41_1230" n="1230" xml:id="BE_lb_41_1230"/>This that <g ref="slong"/>chrewe gan him wry<g ref="comma"/></l>
+        <l n="1231"><lb facs="#BE_line_41_1231" n="1231" xml:id="BE_lb_41_1231"/><g ref="smalla"/> fowle dethe mote he on dy<g ref="exclamation"/></l>
+        <l n="1232"><lb facs="#BE_line_41_1232" n="1232" xml:id="BE_lb_41_1232"/><choice><orig>no thing</orig><reg>Nothing</reg></choice> bi him ther he wi<g ref="slong"/>t</l>
+        <l n="1233"><lb facs="#BE_line_41_1233" n="1233" xml:id="BE_lb_41_1233"/><g ref="smallb"/>ut onys that he hir mow<g ref="the"/> ki<g ref="slong"/>t<g ref="fullstop"/></l>
+        <l n="1234"><lb facs="#BE_line_41_1234" n="1234" xml:id="BE_lb_41_1234"/><g ref="capitalyogh"/>it hit wel <g ref="slong"/>ethe seide</l>
+        <l n="1235"><lb facs="#BE_line_41_1235" n="1235" xml:id="BE_lb_41_1235"/><g ref="smalla"/>s hit is in romanus leide<g ref="colon"/></l>
+        <l n="1236"><lb facs="#BE_line_41_1236" n="1236" xml:id="BE_lb_41_1236"/><g ref="quote"/>Delyuer a thefe fro the with<g ref="comma"/></l>
+        <l n="1237"><lb facs="#BE_line_41_1237" n="1237" xml:id="BE_lb_41_1237"/><g ref="smalla"/>nd he dothe the <g ref="slong"/>hame <g ref="slong"/>ith<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="1238"><lb facs="#BE_line_41_1238" n="1238" xml:id="BE_lb_41_1238"/><g ref="quote"/>Alas<g ref="comma"/><g ref="quote"/> <g ref="quoth"/> Ermyne the kyng<g ref="comma"/></l>
+        <l n="1239"><lb facs="#BE_line_41_1239" n="1239" xml:id="BE_lb_41_1239"/><g ref="quote"/><g ref="smalls"/>ore me rewith thet tithing<g ref="fullstop"/></l>
+        <l n="1240"><lb facs="#BE_line_41_1240" n="1240" xml:id="BE_lb_41_1240"/>Sith sir <choice><orig><g ref="middot"/>B<g ref="middot"/></orig><reg>Beuys</reg></choice> come to me to<g ref="comma"/></l>
+        <l n="1241"><lb facs="#BE_line_41_1241" n="1241" xml:id="BE_lb_41_1241"/><g ref="ff"/>aire <g ref="pro"/>ve<g ref="slong"/><g ref="slong"/>e he hath me do<g ref="fullstop"/></l>
+        <l n="1242"><lb facs="#BE_line_41_1242" n="1242" xml:id="BE_lb_41_1242"/>I nolde for alle Ermony</l>
+        <l n="1243"><lb facs="#BE_line_41_1243" n="1243" xml:id="BE_lb_41_1243"/><choice><sic>To se</sic><corr>Se</corr></choice> hym haue a velony<g ref="semicolon"/></l>
+        <l n="1244"><lb facs="#BE_line_41_1244" n="1244" xml:id="BE_lb_41_1244"/><g ref="ff"/>ul fayne I wolde hit noght se<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="1245"><lb facs="#BE_line_41_1245" n="1245" xml:id="BE_lb_41_1245"/><g ref="smallt"/>han <g ref="slong"/>eid a Sar<g ref="slong"/>yne <g ref="dash"/></l>
+        <l n="1246"><lb facs="#BE_line_41_1246" n="1246" xml:id="BE_lb_41_1246"/><choice><orig>God is</orig><reg>Godis</reg></choice> curs haue he<g ref="comma"/> and myne <g ref="dash"/></l>
+        <l n="1247"><lb facs="#BE_line_41_1247" n="1247" xml:id="BE_lb_41_1247"/><g ref="quote"/>Sir<g ref="comma"/> we <g ref="slong"/>hull for his sake</l>
+        <l n="1248"><lb facs="#BE_line_41_1248" n="1248" xml:id="BE_lb_41_1248"/><g ref="smalla"/> swithe good lettir make</l>
+        <l n="1249"><lb facs="#BE_line_41_1249" n="1249" xml:id="BE_lb_41_1249"/><g ref="smallt"/>o Bradmond that <g ref="slong"/>trong king</l>
+        <l n="1250"><lb facs="#BE_line_41_1250" n="1250" xml:id="BE_lb_41_1250"/><g ref="smalla"/>nd lete him thedir <g ref="the"/> <g ref="lettre"/> bring<g ref="comma"/></l>
+        <l n="1251"><lb facs="#BE_line_41_1251" n="1251" xml:id="BE_lb_41_1251"/><g ref="smalla"/>nd in that <g ref="lettre"/> do him to seyne</l>
+        <l n="1252"><lb facs="#BE_line_41_1252" n="1252" xml:id="BE_lb_41_1252"/><g ref="smallt"/>hat he hath Iosian forlayne<g ref="fullstop"/></l>
+        <l n="1253"><lb facs="#BE_line_41_1253" n="1253" xml:id="BE_lb_41_1253"/>And bid him bring h<g ref="ymacron"/> out of lyfe<g ref="comma"/></l>
+        <l n="1254"><lb facs="#BE_line_41_1254" n="1254" xml:id="BE_lb_41_1254"/><g ref="ff"/>or he <g ref="slong"/>halle haue Io<g ref="slong"/>ian to wife<g ref="fullstop"/><g ref="quote"/></l>
+        <l n="1255"><lb facs="#BE_line_41_1255" n="1255" xml:id="BE_lb_41_1255"/>Tho the <g ref="lettre"/> was made to ende<g ref="comma"/></l>
+        <l n="1256"><lb facs="#BE_line_41_1256" n="1256" xml:id="BE_lb_41_1256"/><g ref="smalla"/>ftir <choice><orig>B</orig><reg>Beuys</reg></choice>he gand <g ref="slong"/>ende</l>
+        <l n="1257"><lb facs="#BE_line_41_1257" n="1257" xml:id="BE_lb_41_1257"/><g ref="smalla"/>nd <g ref="slong"/>eid<g ref="comma"/><g ref="quote"/>Sir <choice><orig><g ref="middot"/>B<g ref="middot"/></orig><reg>Beuys</reg></choice><g ref="comma"/> thou mo<g ref="slong"/>t gon</l>
+        <l n="1258"><lb facs="#BE_line_41_1258" n="1258" xml:id="BE_lb_41_1258"/><g ref="smallt"/>o Bradmond <choice><sic>thi nowne</sic><reg>thin owne</reg></choice> mon<g ref="fullstop"/></l>
+        <l n="1259"><lb facs="#BE_line_41_1259" n="1259" xml:id="BE_lb_41_1259"/>I pray the that thou the dight<g ref="semicolon"/></l>
+        <l n="1260"><lb facs="#BE_line_41_1260" n="1260" xml:id="BE_lb_41_1260"/><g ref="smallt"/>hou mu<g ref="slong"/>t him bere <g ref="this"/> <g ref="lettre"/> bright<g ref="fullstop"/></l>
+        <l n="1261"><lb facs="#BE_line_41_1261" n="1261" xml:id="BE_lb_41_1261"/>And yef thou wolt this <g ref="lettre"/> <choice><sic>brere</sic><corr>bere</corr></choice><g ref="comma"/></l>
+        <l n="1262"><lb facs="#BE_line_41_1262" n="1262" xml:id="BE_lb_41_1262"/><g ref="smallb"/>i thi lay thou <g ref="slong"/>chalt me <g ref="slong"/>were</l>
 
         
       </div>
