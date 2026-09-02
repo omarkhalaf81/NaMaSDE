@@ -3113,7 +3113,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
 
 <pb facs="data/images/single/BE_42.jpg" n="42" xml:id="BE_42"/>
 <cb n="1"/> 
-<l n="1299"><lb facs="#BE_line_42_" n="" xml:id="BE_lb_42_"/><g ref="quote"/>I wol him <g ref="slong"/>eche til I him fynde<g ref="comma"/></l>
+        <l n="1299"><lb facs="#BE_line_42_1299" n="1299" xml:id="BE_lb_42_1299"/><g ref="quote"/>I wol him <g ref="slong"/>eche til I him fynde<g ref="comma"/></l>
         <l n="1300"><lb facs="#BE_line_42_1300" n="1300" xml:id="BE_lb_42_1300"/><g ref="smallt"/>hei he be in the lond of <g ref="capitaly"/>nde<g ref="fullstop"/><g ref="quote"/></l>
         <l n="1301"><lb facs="#BE_line_42_1301" n="1301" xml:id="BE_lb_42_1301"/><g ref="FF"/>urthe in his wey Tirry is fare</l>
         <l n="1302"><lb facs="#BE_line_42_1302" n="1302" xml:id="BE_lb_42_1302"/><g ref="smalla"/>nd <g ref="slong"/>ought <choice><orig>B</orig><reg>Beuys</reg></choice> <choice><orig>wide whare</orig><reg>widewhare</reg></choice><g ref="fullstop"/></l>
