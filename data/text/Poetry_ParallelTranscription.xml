@@ -3038,7 +3038,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
 <pb facs="data/images/single/BE_41.jpg" n="41" xml:id="BE_41"/>
 <cb n="1"/>   
         <l n="1228"><lb facs="#BE_line_41_1228" n="1228" xml:id="BE_lb_411228"/><g ref="smallt"/>hi toghter<g ref="comma"/> sir<g ref="comma"/> he hath <choice><orig>for layn</orig><reg>forlayn</reg></choice><g ref="comma"/></l>
-        <l n="1229"><lb facs="#BE_line_41_1229" n="1229" xml:id="BE_lb_41_1229"/>hit were good good that that he were slayn<g ref="exclamation"/></l>
+        <l n="1229"><lb facs="#BE_line_41_1229" n="1229" xml:id="BE_lb_41_1229"/>hit were good that that he were slayn<g ref="fullstop"/></l>
         <l n="1230"><lb facs="#BE_line_41_1230" n="1230" xml:id="BE_lb_41_1230"/>This that <g ref="slong"/>chrewe gan him wry<g ref="comma"/></l>
         <l n="1231"><lb facs="#BE_line_41_1231" n="1231" xml:id="BE_lb_41_1231"/><g ref="smalla"/> fowle dethe mote he on dy<g ref="exclamation"/></l>
         <l n="1232"><lb facs="#BE_line_41_1232" n="1232" xml:id="BE_lb_41_1232"/><choice><orig>no thing</orig><reg>Nothing</reg></choice> bi him ther he wi<g ref="slong"/>t</l>
