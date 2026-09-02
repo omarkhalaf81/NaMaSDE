@@ -551,6 +551,11 @@
       <mapping type="diplomatic">G</mapping>
       <mapping type="normalized">g</mapping>
     </char>
+    <char xml:id="smallh">
+      <mapping type="codepoint"></mapping>
+      <mapping type="diplomatic">H</mapping>
+      <mapping type="normalized">h</mapping>
+    </char>
     <char xml:id="smalli">
       <mapping type="codepoint">U+0069</mapping>
       <mapping type="diplomatic">I</mapping>
