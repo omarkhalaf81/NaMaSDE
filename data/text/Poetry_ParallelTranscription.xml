@@ -1270,7 +1270,7 @@ Da Giovan Battista il codice potrebbe essere passato a un parente, il Diomede De
 <body>
 <div n="Colofone Leonardis" subtype="edition_text" type="prose" xml:id="Colofone">
 <pb facs="data/images/single/MS_iir.jpg" n="iir" xml:id="MS_iir"/>
-    <l n="1"><lb/>Questo manuscrito in lingua tedesca inglese</l>
+    <l n="1"><lb/>Questo manuscrito in lingua <subst><del rend="strikethrough">tedesca</del><add place="above">inglese</add></subst></l>
     <l n="2"><lb/>l'ho hauuto da Diomede di Leonardis</l>
     <l n="3"><lb/>e fu primieramente . . . . . . . . . </l>
     </div>
